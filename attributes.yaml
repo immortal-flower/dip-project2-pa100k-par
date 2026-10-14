@@ -1,0 +1,58 @@
+# 全局属性词表（PA100K 课程实验版）
+#
+# 每个属性组声明：
+#   type 说明:
+#     binary     : 单个二值属性，1 维输出 + BCEWithLogits（attrs 只能有 1 个）
+#     softmax    : 组内互斥多分类，N 维输出 + CrossEntropy
+#     multilabel : 组内多标签可共存，N 维输出 + BCEWithLogits
+#
+# group 内 attrs 的顺序即该组输出向量的维度顺序，也是模型的 head 结构依据。
+
+groups:
+  gender:
+    type: binary
+    attrs: [male]
+
+  age:
+    type: softmax
+    attrs: [age_lt18, age_18_60, age_gt60]
+
+  orientation:
+    type: softmax
+    attrs: [front, back, side]
+
+  accessory:
+    type: multilabel
+    attrs: [hat, glasses]
+
+  upper:
+    type: multilabel
+    attrs: [short_sleeve, long_sleeve, upper_stripe, upper_logo, upper_plaid, upper_splice]
+
+  lower:
+    type: multilabel
+    attrs: [lower_stripe, lower_pattern, long_coat, trousers, shorts, skirt_dress]
+
+  bag:
+    type: multilabel
+    attrs: [backpack, shoulder_bag, handbag]
+
+  boots:
+    type: binary
+    attrs: [boots]
+
+  holding:
+    type: binary
+    attrs: [holding]
+
+# 每个 group 的 loss 权重（缺省为 1.0）
+loss_weights:
+  gender: 1.0
+  age: 1.0
+  orientation: 1.0
+  accessory: 1.0
+  upper: 1.0
+  lower: 1.0
+  bag: 1.0
+  boots: 1.0
+  holding: 1.0

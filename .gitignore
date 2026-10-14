@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# PA100K data must not be committed
+data/pa100k/
+
+# Training outputs and model checkpoints
+runs/
+outputs/
+checkpoints/
+*.pt
+*.pth
+
+# Local logs
+*.log
