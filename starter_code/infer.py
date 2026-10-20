@@ -25,17 +25,23 @@ def main():
     p.add_argument("--ckpt", required=True)
     p.add_argument("--img", required=True, help="图片路径或目录")
     p.add_argument("--threshold", type=float, default=0.5)
-    p.add_argument("--image-size", type=int, nargs=2, default=[256, 128])
+    p.add_argument("--image-size", type=int, nargs=2, default=None,
+                   help="默认使用 checkpoint 保存的训练尺寸")
     args = p.parse_args()
 
     ckpt = torch.load(args.ckpt, map_location="cpu", weights_only=False)
     spec = ckpt["spec"]
-    model = PAResNet(spec, hidden=ckpt["args"].get("hidden", 256),
-                     drop=ckpt["args"].get("drop", 0.3))
+    model_args = ckpt.get("args", {})
+    model = PAResNet(spec, hidden=model_args.get("hidden", 256),
+                     drop=model_args.get("drop", 0.3),
+                     attention=model_args.get("attention", "none"),
+                     se_reduction=model_args.get("se_reduction", 16),
+                     pretrained=False)
     model.load_state_dict(ckpt["model"])
     model.eval()
 
-    transform = build_transform(False, args.image_size)
+    transform = build_transform(False, args.image_size or
+                                model_args.get("image_size", [256, 128]))
 
     if os.path.isdir(args.img):
         paths = sorted(sum((glob.glob(os.path.join(args.img, f"*.{e}"))

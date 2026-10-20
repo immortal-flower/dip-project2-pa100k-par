@@ -1,12 +1,14 @@
-"""PA100K 数据集加载与图像预处理（starter code）。
+"""PA100K 数据集加载与图像预处理。
 
 每个样本返回 (image, target)：
   image  : (3, H, W) float tensor，已归一化
   target : (num_attrs,) float tensor，26 个全局属性标签（0/1）
 
-列表文件格式：每行 "相对路径<TAB>v1,v2,...,v26"，v_i ∈ {0, 1}。
-标签列与 ATTR_ORDER 一一对应。
+支持原始 PA-100K 的 train/val/test.csv + data/*.jpg，也支持课程
+train/val/test_list.txt。两种来源都按列名转换为 ATTR_ORDER 的语义。
 """
+import argparse
+import csv
 import os
 
 import torch
@@ -19,7 +21,7 @@ from torchvision import transforms as T
 IMAGENET_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_STD = (0.229, 0.224, 0.225)
 
-# PA100K 列表文件中 26 列标签对应的属性名（顺序固定，不可改动）
+# 模型使用的 26 个属性顺序；它不等于原始 CSV 或课程列表文件的列顺序。
 ATTR_ORDER = [
     "hat", "glasses",
     "short_sleeve", "long_sleeve", "upper_stripe", "upper_logo",
@@ -33,6 +35,42 @@ ATTR_ORDER = [
     "male",
     "front", "back", "side",
 ]
+
+# 原始 CSV 中的列名。Female 与模型的 male 语义相反。
+CSV_COLUMNS = {
+    "hat": "Hat", "glasses": "Glasses",
+    "short_sleeve": "ShortSleeve", "long_sleeve": "LongSleeve",
+    "upper_stripe": "UpperStride", "upper_logo": "UpperLogo",
+    "upper_plaid": "UpperPlaid", "upper_splice": "UpperSplice",
+    "lower_stripe": "LowerStripe", "lower_pattern": "LowerPattern",
+    "long_coat": "LongCoat", "trousers": "Trousers",
+    "shorts": "Shorts", "skirt_dress": "Skirt&Dress",
+    "boots": "boots", "backpack": "Backpack",
+    "shoulder_bag": "ShoulderBag", "handbag": "HandBag",
+    "holding": "HoldObjectsInFront", "age_lt18": "AgeLess18",
+    "age_18_60": "Age18-60", "age_gt60": "AgeOver60",
+    "male": "Female", "front": "Front", "back": "Back", "side": "Side",
+}
+
+# 课程 *_list.txt 的真实列顺序，与 starter code 原有的 ATTR_ORDER 不同。
+LIST_COLUMNS = [
+    "Hat", "Glasses", "ShortSleeve", "LongSleeve", "UpperStride",
+    "UpperLogo", "UpperPlaid", "UpperSplice", "LowerStripe", "LowerPattern",
+    "LongCoat", "Trousers", "Shorts", "Skirt&Dress", "boots", "HandBag",
+    "ShoulderBag", "Backpack", "HoldObjectsInFront", "AgeOver60",
+    "Age18-60", "AgeLess18", "Female", "Front", "Side", "Back",
+]
+
+
+def _ordered_labels(columns):
+    """按模型属性顺序读取 0/1 标签，并把 Female 转为 male。"""
+    values = []
+    for attr in ATTR_ORDER:
+        value = int(columns[CSV_COLUMNS[attr]])
+        if value not in (0, 1):
+            raise ValueError(f"{attr} must be 0 or 1, got {value}")
+        values.append(1 - value if attr == "male" else value)
+    return values
 
 
 def load_spec(path="attributes.yaml"):
@@ -89,7 +127,8 @@ def build_transform(train, image_size):
 class PA100KDataset(Dataset):
     """PA100K 数据集。
 
-    把列表文件中的 26 列标签映射到全局属性向量 target。
+    CSV 模式：root 是原始 PA-100K 目录，图片在 root/data/。
+    列表模式：root 是课程 pa100k 目录，图片在 root/train|val|test/。
     """
 
     def __init__(self, root, list_file, spec, transform=None):
@@ -98,22 +137,37 @@ class PA100KDataset(Dataset):
         self.spec = spec
         self.col2global = [spec["attr2idx"][a] for a in ATTR_ORDER]
         self.samples = []
-        with open(os.path.join(root, list_file)) as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                path, vals = line.split("\t")
-                vals = [int(v) for v in vals.split(",")]
-                assert len(vals) == len(ATTR_ORDER)
-                self.samples.append((path, vals))
+        source = os.path.join(root, list_file)
+        if list_file.endswith(".csv"):
+            with open(source, newline="", encoding="utf-8-sig") as f:
+                reader = csv.DictReader(f)
+                required = {"Image", *CSV_COLUMNS.values()}
+                missing = required - set(reader.fieldnames or [])
+                if missing:
+                    raise ValueError(f"Missing CSV columns: {sorted(missing)}")
+                for row in reader:
+                    self.samples.append((os.path.join("data", row["Image"]),
+                                         _ordered_labels(row)))
+        else:
+            with open(source, encoding="utf-8-sig") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    path, raw = line.split("\t")
+                    vals = raw.split(",")
+                    if len(vals) != len(LIST_COLUMNS):
+                        raise ValueError(f"Expected 26 labels for {path}")
+                    columns = dict(zip(LIST_COLUMNS, vals))
+                    self.samples.append((path, _ordered_labels(columns)))
 
     def __len__(self):
         return len(self.samples)
 
     def __getitem__(self, i):
         path, vals = self.samples[i]
-        img = Image.open(os.path.join(self.root, path)).convert("RGB")
+        with Image.open(os.path.join(self.root, path)) as source:
+            img = source.convert("RGB")
         if self.transform:
             img = self.transform(img)
         target = torch.zeros(self.spec["num_attrs"])
@@ -151,10 +205,13 @@ def attribute_stats(dataset):
 
 
 if __name__ == "__main__":
-    # 第 1 周可直接运行本文件，观察数据集分布与样例图片
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data-root", default=os.path.join(
+        os.path.dirname(__file__), "..", "data", "pa100k"))
+    args = parser.parse_args()
     spec = load_spec(os.path.join(os.path.dirname(__file__), "..", "attributes.yaml"))
-    ds = PA100KDataset(os.path.join(os.path.dirname(__file__), "..", "data", "pa100k"),
-                       "train_list.txt", spec)
+    train_file = "train.csv" if os.path.isfile(os.path.join(args.data_root, "train.csv")) else "train_list.txt"
+    ds = PA100KDataset(args.data_root, train_file, spec)
     print(f"训练集样本数: {len(ds)}")
     print("各属性正例率:")
     attribute_stats(ds)
