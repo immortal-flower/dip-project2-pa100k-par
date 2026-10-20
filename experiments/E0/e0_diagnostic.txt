@@ -1,0 +1,136 @@
+=== E0 配置与结果 ===
+{"attention": "none", "attributes": "./attributes.yaml", "batch_size": 64, "data_root": "./PA-100K", "drop": 0.3, "epochs": 15, "hidden": 256, "image_size": [256, 128], "lr": 0.0003, "out": "./runs/E0_baseline", "pos_weight": false, "se_reduction": 16, "seed": 42, "warmup_epochs": 1, "weight_decay": 0.0005, "workers": 4}
+最佳轮次: 10 九组平均 AttrAcc: 92.36 参数量: 12365146 总耗时(分钟): 19.93
+
+=== 每轮耗时与九组平均 AttrAcc ===
+epoch= 1 train=  87.3s val=  5.4s mean_AttrAcc= 90.46%
+epoch= 2 train=  82.4s val=  5.7s mean_AttrAcc= 92.08%
+epoch= 3 train=  58.6s val=  5.6s mean_AttrAcc= 91.85%
+epoch= 4 train=  74.0s val=  5.5s mean_AttrAcc= 92.06%
+epoch= 5 train=  84.7s val=  5.6s mean_AttrAcc= 92.09%
+epoch= 6 train=  68.1s val=  5.5s mean_AttrAcc= 92.20%
+epoch= 7 train=  58.3s val=  5.4s mean_AttrAcc= 92.12%
+epoch= 8 train=  84.1s val=  5.6s mean_AttrAcc= 92.12%
+epoch= 9 train=  84.9s val=  5.8s mean_AttrAcc= 92.12%
+epoch=10 train=  59.0s val=  5.7s mean_AttrAcc= 92.36%
+epoch=11 train=  72.9s val=  5.4s mean_AttrAcc= 92.30%
+epoch=12 train=  85.6s val=  5.6s mean_AttrAcc= 92.22%
+epoch=13 train=  69.3s val=  5.4s mean_AttrAcc= 92.23%
+epoch=14 train=  57.4s val=  5.6s mean_AttrAcc= 92.31%
+epoch=15 train=  85.0s val=  5.7s mean_AttrAcc= 92.23%
+
+=== 26 个属性：正例率与验证集指标 ===
+属性              训练正例% 验证正例% AttrAcc%    mA%      P%      R%     F1%    TP   FP   FN   TN
+male                 54.38    50.52    86.03   86.02   85.29   87.43   86.35  4417  762  635 4186
+age_lt18              5.19    14.43    93.39   80.41   88.64   62.16   73.08   897  115  546 8442
+age_18_60            93.40    84.73    92.50   78.88   93.06   98.49   95.70  8345  622  128  905
+age_gt60              1.41     0.84    99.05   52.90   23.81    5.95    9.52     5   16   79 9900
+front                35.90    30.22    91.15   89.68   84.93   85.97   85.45  2598  461  424 6517
+back                 35.72    31.68    92.69   91.30   89.22   87.50   88.35  2772  335  396 6497
+side                 28.38    38.10    88.68   88.06   84.92   85.46   85.19  3256  578  554 5612
+hat                   4.40     4.03    96.89   64.50   81.94   29.28   43.14   118   26  285 9571
+glasses              17.91    18.67    88.66   79.02   72.31   63.63   67.69  1188  455  679 7678
+short_sleeve         58.60    56.28    90.21   90.22   92.30   90.12   91.20  5072  423  556 3949
+long_sleeve          41.40    43.72    90.26   90.28   87.67   90.44   89.03  3954  556  418 5072
+upper_stripe          5.10     3.76    97.39   81.14   65.84   63.56   64.68   239  124  137 9500
+upper_logo           15.40    12.71    92.14   80.44   70.89   64.75   67.68   823  338  448 8391
+upper_plaid          10.86    10.08    90.90   72.79   55.37   50.10   52.60   505  407  503 8585
+upper_splice          4.40     2.52    98.35   80.79   69.16   62.30   65.55   157   70   95 9678
+lower_stripe          0.51     0.21    99.77   59.49   40.00   19.05   25.81     4    6   17 9973
+lower_pattern         1.78     0.99    99.13   68.06   60.00   36.36   45.28    36   24   63 9877
+long_coat             2.82     6.61    95.25   71.59   73.25   44.33   55.23   293  107  368 9232
+trousers             70.90    73.35    92.41   90.75   95.30   94.30   94.80  6917  341  418 2324
+shorts               17.39    17.00    93.91   89.06   82.34   81.71   82.02  1389  298  311 8002
+skirt_dress          11.71     9.65    93.46   82.08   65.53   67.98   66.73   656  345  309 8690
+backpack             14.76    26.02    89.95   84.16   87.05   72.10   78.87  1876  279  726 7119
+shoulder_bag         19.11    20.56    83.99   70.22   65.47   46.84   54.61   963  508 1093 7436
+handbag              18.35    19.70    84.60   71.85   63.68   50.81   56.52  1001  571  969 7459
+boots                 0.62     0.45    99.50   53.29   27.27    6.67   10.71     3    8   42 9947
+holding               0.96     0.86    99.14   51.73   50.00    3.49    6.52     3    3   83 9911
+
+=== 各组验证集汇总 ===
+gender       原E0组AttrAcc= 86.03% 组内平均mA= 86.02% 组内平均F1= 86.35%
+age          原E0组AttrAcc= 92.47% 组内平均mA= 70.73% 组内平均F1= 59.43%
+orientation  原E0组AttrAcc= 86.26% 组内平均mA= 89.68% 组内平均F1= 86.33%
+accessory    原E0组AttrAcc= 92.77% 组内平均mA= 71.76% 组内平均F1= 55.42%
+upper        原E0组AttrAcc= 93.21% 组内平均mA= 82.61% 组内平均F1= 71.79%
+lower        原E0组AttrAcc= 95.65% 组内平均mA= 76.84% 组内平均F1= 61.65%
+bag          原E0组AttrAcc= 86.18% 组内平均mA= 75.41% 组内平均F1= 63.33%
+boots        原E0组AttrAcc= 99.50% 组内平均mA= 53.29% 组内平均F1= 10.71%
+holding      原E0组AttrAcc= 99.14% 组内平均mA= 51.73% 组内平均F1=  6.52%
+
+=== 年龄/朝向标签检查 ===
+age 非 one-hot 样本数: 0
+orientation 非 one-hot 样本数: 0
+
+=== 细粒度属性错误图片候选：每类最多 2 个 FP、2 个 FN ===
+glasses           FP data/088736.jpg 预测概率=0.9999
+glasses           FP data/085654.jpg 预测概率=0.9999
+glasses           FN data/082092.jpg 预测概率=0.0000
+glasses           FN data/085396.jpg 预测概率=0.0000
+short_sleeve      FP data/089717.jpg 预测概率=1.0000
+short_sleeve      FP data/082889.jpg 预测概率=1.0000
+short_sleeve      FN data/083138.jpg 预测概率=0.0000
+short_sleeve      FN data/083025.jpg 预测概率=0.0000
+long_sleeve       FP data/083138.jpg 预测概率=1.0000
+long_sleeve       FP data/083025.jpg 预测概率=1.0000
+long_sleeve       FN data/089717.jpg 预测概率=0.0000
+long_sleeve       FN data/082889.jpg 预测概率=0.0000
+upper_logo        FP data/084203.jpg 预测概率=0.9997
+upper_logo        FP data/080349.jpg 预测概率=0.9996
+upper_logo        FN data/089867.jpg 预测概率=0.0000
+upper_logo        FN data/085663.jpg 预测概率=0.0000
+upper_plaid       FP data/089867.jpg 预测概率=0.9999
+upper_plaid       FP data/084643.jpg 预测概率=0.9998
+upper_plaid       FN data/084203.jpg 预测概率=0.0000
+upper_plaid       FN data/080349.jpg 预测概率=0.0000
+backpack          FP data/082186.jpg 预测概率=1.0000
+backpack          FP data/087438.jpg 预测概率=1.0000
+backpack          FN data/086557.jpg 预测概率=0.0000
+backpack          FN data/082813.jpg 预测概率=0.0000
+shoulder_bag      FP data/082934.jpg 预测概率=1.0000
+shoulder_bag      FP data/084218.jpg 预测概率=1.0000
+shoulder_bag      FN data/088596.jpg 预测概率=0.0000
+shoulder_bag      FN data/083574.jpg 预测概率=0.0000
+handbag           FP data/088386.jpg 预测概率=1.0000
+handbag           FP data/081063.jpg 预测概率=1.0000
+handbag           FN data/082030.jpg 预测概率=0.0000
+handbag           FN data/086452.jpg 预测概率=0.0000
+
+=== 完整训练日志 ===
+train: 80000  val: 10000
+model=none parameters=12,365,146 trainable=12,365,146 device=cuda
+epoch 1/15 (train=87.3s val=5.4s) train: accessory=0.2361 age=0.1483 bag=0.3402 boots=0.0728 gender=0.3320 holding=0.0736 lower=0.1981 orientation=0.4656 upper=0.2677
+  val: mean=90.46 | gender=76.93 age=92.86 orientation=84.35 accessory=90.54 upper=91.20 lower=95.17 bag=84.59 boots=99.55 holding=98.98
+epoch 2/15 (train=82.4s val=5.7s) train: accessory=0.1471 age=0.0514 bag=0.1980 boots=0.0241 gender=0.1846 holding=0.0213 lower=0.0889 orientation=0.3192 upper=0.1457
+  val: mean=92.08 | gender=85.31 age=93.49 orientation=85.12 accessory=91.91 upper=92.62 lower=95.63 bag=85.94 boots=99.54 holding=99.14
+epoch 3/15 (train=58.6s val=5.6s) train: accessory=0.1218 age=0.0312 bag=0.1527 boots=0.0188 gender=0.1361 holding=0.0131 lower=0.0707 orientation=0.2800 upper=0.1199
+  val: mean=91.85 | gender=85.58 age=91.23 orientation=86.60 accessory=91.21 upper=92.66 lower=95.53 bag=85.26 boots=99.53 holding=99.06
+epoch 4/15 (train=74.0s val=5.5s) train: accessory=0.1070 age=0.0227 bag=0.1226 boots=0.0143 gender=0.1025 holding=0.0090 lower=0.0580 orientation=0.2496 upper=0.1041
+  val: mean=92.06 | gender=85.67 age=90.52 orientation=86.80 accessory=92.73 upper=92.72 lower=96.02 bag=85.47 boots=99.51 holding=99.10
+epoch 5/15 (train=84.7s val=5.6s) train: accessory=0.0942 age=0.0150 bag=0.0986 boots=0.0105 gender=0.0776 holding=0.0061 lower=0.0490 orientation=0.2246 upper=0.0919
+  val: mean=92.09 | gender=84.26 age=92.20 orientation=86.62 accessory=92.94 upper=92.45 lower=96.04 bag=85.66 boots=99.54 holding=99.11
+epoch 6/15 (train=68.1s val=5.5s) train: accessory=0.0834 age=0.0097 bag=0.0778 boots=0.0073 gender=0.0561 holding=0.0041 lower=0.0418 orientation=0.1953 upper=0.0810
+  val: mean=92.20 | gender=84.85 age=92.38 orientation=86.73 accessory=93.10 upper=92.69 lower=95.65 bag=86.23 boots=99.38 holding=98.82
+epoch 7/15 (train=58.3s val=5.4s) train: accessory=0.0707 age=0.0067 bag=0.0608 boots=0.0045 gender=0.0401 holding=0.0021 lower=0.0346 orientation=0.1631 upper=0.0717
+  val: mean=92.12 | gender=84.24 age=92.03 orientation=86.87 accessory=92.61 upper=92.77 lower=95.99 bag=85.97 boots=99.46 holding=99.12
+epoch 8/15 (train=84.1s val=5.6s) train: accessory=0.0578 age=0.0046 bag=0.0458 boots=0.0025 gender=0.0292 holding=0.0013 lower=0.0282 orientation=0.1298 upper=0.0631
+  val: mean=92.12 | gender=85.77 age=91.13 orientation=86.12 accessory=92.73 upper=93.07 lower=95.46 bag=86.16 boots=99.55 holding=99.07
+epoch 9/15 (train=84.9s val=5.8s) train: accessory=0.0448 age=0.0023 bag=0.0329 boots=0.0017 gender=0.0196 holding=0.0009 lower=0.0230 orientation=0.0992 upper=0.0540
+  val: mean=92.12 | gender=85.52 age=91.51 orientation=86.13 accessory=92.64 upper=92.94 lower=95.71 bag=85.96 boots=99.51 holding=99.17
+epoch 10/15 (train=59.0s val=5.7s) train: accessory=0.0327 age=0.0017 bag=0.0228 boots=0.0009 gender=0.0121 holding=0.0005 lower=0.0182 orientation=0.0709 upper=0.0453
+  val: mean=92.36 | gender=86.03 age=92.47 orientation=86.26 accessory=92.77 upper=93.21 lower=95.65 bag=86.18 boots=99.50 holding=99.14
+epoch 11/15 (train=72.9s val=5.4s) train: accessory=0.0233 age=0.0012 bag=0.0156 boots=0.0004 gender=0.0070 holding=0.0004 lower=0.0141 orientation=0.0480 upper=0.0380
+  val: mean=92.30 | gender=85.14 age=92.69 orientation=86.46 accessory=92.88 upper=93.00 lower=95.77 bag=86.08 boots=99.55 holding=99.09
+epoch 12/15 (train=85.6s val=5.6s) train: accessory=0.0163 age=0.0006 bag=0.0094 boots=0.0003 gender=0.0044 holding=0.0002 lower=0.0114 orientation=0.0312 upper=0.0311
+  val: mean=92.22 | gender=85.67 age=91.88 orientation=86.55 accessory=92.67 upper=92.87 lower=95.73 bag=86.04 boots=99.47 holding=99.10
+epoch 13/15 (train=69.3s val=5.4s) train: accessory=0.0102 age=0.0002 bag=0.0066 boots=0.0002 gender=0.0029 holding=0.0001 lower=0.0095 orientation=0.0207 upper=0.0262
+  val: mean=92.23 | gender=86.24 age=91.65 orientation=86.19 accessory=92.73 upper=92.65 lower=95.74 bag=86.23 boots=99.52 holding=99.09
+epoch 14/15 (train=57.4s val=5.6s) train: accessory=0.0072 age=0.0002 bag=0.0048 boots=0.0001 gender=0.0019 holding=0.0000 lower=0.0083 orientation=0.0142 upper=0.0234
+  val: mean=92.31 | gender=86.31 age=91.93 orientation=86.37 accessory=92.80 upper=92.68 lower=95.70 bag=86.35 boots=99.53 holding=99.09
+epoch 15/15 (train=85.0s val=5.7s) train: accessory=0.0058 age=0.0001 bag=0.0044 boots=0.0001 gender=0.0017 holding=0.0001 lower=0.0076 orientation=0.0120 upper=0.0214
+  val: mean=92.23 | gender=86.19 age=91.57 orientation=86.43 accessory=92.76 upper=92.72 lower=95.67 bag=86.11 boots=99.53 holding=99.08
+done. best val mean acc = 92.36, checkpoints in ./runs/E0_baseline
+
+
+已保存：e0_diagnostic.txt、e0_val_predictions.pt、e0_error_candidates.zip

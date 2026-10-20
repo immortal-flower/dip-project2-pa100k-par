@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+  <title id="title">E0 baseline 与 E2 SE 模型结构对比</title>
+  <desc id="desc">两种模型共用 ResNet18 和九个分组分类头。E2 只在 512 维特征与分类头之间增加 SE 特征门控。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#546579"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="430" fill="#f8fafc"/>
+  <text x="40" y="48" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#182a3a">PA100K 模型结构对比</text>
+  <text x="40" y="77" font-family="Arial, sans-serif" font-size="17" fill="#526579">输入、ResNet18、分类头与训练配置相同；E2 仅增加 SE</text>
+
+  <text x="40" y="152" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#22466e">E0 Baseline</text>
+  <rect x="225" y="113" width="160" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="305" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">行人图片</text>
+  <rect x="450" y="113" width="185" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="542" y="146" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">ResNet18</text>
+  <text x="542" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#395f86">512 维特征</text>
+  <rect x="770" y="113" width="250" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="895" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">9 个分组分类头</text>
+  <text x="895" y="171" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#395f86">26 个属性</text>
+  <path d="M385 150 H441 M635 150 H761" fill="none" stroke="#546579" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <line x1="40" y1="219" x2="1080" y2="219" stroke="#d7e0e9" stroke-width="2"/>
+  <text x="40" y="306" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#8b4b14">E2 + SE</text>
+  <rect x="225" y="269" width="160" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="305" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">行人图片</text>
+  <rect x="450" y="269" width="185" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="542" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">ResNet18</text>
+  <text x="542" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#395f86">512 维特征</text>
+  <rect x="680" y="269" width="145" height="74" rx="12" fill="#fff0d9" stroke="#e8ac5c" stroke-width="2"/>
+  <text x="752" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8b4b14">SE 门控</text>
+  <text x="752" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8b4b14">512 → 32 → 512</text>
+  <rect x="870" y="269" width="165" height="74" rx="12" fill="#e1ecf7" stroke="#92afd0"/>
+  <text x="952" y="301" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#173554">9 个分类头</text>
+  <text x="952" y="327" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#395f86">26 个属性</text>
+  <path d="M385 306 H441 M635 306 H671 M825 306 H861" fill="none" stroke="#546579" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="40" y="394" font-family="Arial, sans-serif" font-size="16" fill="#526579">SE 在全局池化后的特征向量上计算通道权重，并与原特征逐元素相乘。</text>
+</svg>

@@ -1,0 +1,30 @@
+epoch 1/15 (train=87.3s val=5.4s) train: accessory=0.2361 age=0.1483 bag=0.3402 boots=0.0728 gender=0.3320 holding=0.0736 lower=0.1981 orientation=0.4656 upper=0.2677
+  val: mean=90.46 | gender=76.93 age=92.86 orientation=84.35 accessory=90.54 upper=91.20 lower=95.17 bag=84.59 boots=99.55 holding=98.98
+epoch 2/15 (train=82.4s val=5.7s) train: accessory=0.1471 age=0.0514 bag=0.1980 boots=0.0241 gender=0.1846 holding=0.0213 lower=0.0889 orientation=0.3192 upper=0.1457
+  val: mean=92.08 | gender=85.31 age=93.49 orientation=85.12 accessory=91.91 upper=92.62 lower=95.63 bag=85.94 boots=99.54 holding=99.14
+epoch 3/15 (train=58.6s val=5.6s) train: accessory=0.1218 age=0.0312 bag=0.1527 boots=0.0188 gender=0.1361 holding=0.0131 lower=0.0707 orientation=0.2800 upper=0.1199
+  val: mean=91.85 | gender=85.58 age=91.23 orientation=86.60 accessory=91.21 upper=92.66 lower=95.53 bag=85.26 boots=99.53 holding=99.06
+epoch 4/15 (train=74.0s val=5.5s) train: accessory=0.1070 age=0.0227 bag=0.1226 boots=0.0143 gender=0.1025 holding=0.0090 lower=0.0580 orientation=0.2496 upper=0.1041
+  val: mean=92.06 | gender=85.67 age=90.52 orientation=86.80 accessory=92.73 upper=92.72 lower=96.02 bag=85.47 boots=99.51 holding=99.10
+epoch 5/15 (train=84.7s val=5.6s) train: accessory=0.0942 age=0.0150 bag=0.0986 boots=0.0105 gender=0.0776 holding=0.0061 lower=0.0490 orientation=0.2246 upper=0.0919
+  val: mean=92.09 | gender=84.26 age=92.20 orientation=86.62 accessory=92.94 upper=92.45 lower=96.04 bag=85.66 boots=99.54 holding=99.11
+epoch 6/15 (train=68.1s val=5.5s) train: accessory=0.0834 age=0.0097 bag=0.0778 boots=0.0073 gender=0.0561 holding=0.0041 lower=0.0418 orientation=0.1953 upper=0.0810
+  val: mean=92.20 | gender=84.85 age=92.38 orientation=86.73 accessory=93.10 upper=92.69 lower=95.65 bag=86.23 boots=99.38 holding=98.82
+epoch 7/15 (train=58.3s val=5.4s) train: accessory=0.0707 age=0.0067 bag=0.0608 boots=0.0045 gender=0.0401 holding=0.0021 lower=0.0346 orientation=0.1631 upper=0.0717
+  val: mean=92.12 | gender=84.24 age=92.03 orientation=86.87 accessory=92.61 upper=92.77 lower=95.99 bag=85.97 boots=99.46 holding=99.12
+epoch 8/15 (train=84.1s val=5.6s) train: accessory=0.0578 age=0.0046 bag=0.0458 boots=0.0025 gender=0.0292 holding=0.0013 lower=0.0282 orientation=0.1298 upper=0.0631
+  val: mean=92.12 | gender=85.77 age=91.13 orientation=86.12 accessory=92.73 upper=93.07 lower=95.46 bag=86.16 boots=99.55 holding=99.07
+epoch 9/15 (train=84.9s val=5.8s) train: accessory=0.0448 age=0.0023 bag=0.0329 boots=0.0017 gender=0.0196 holding=0.0009 lower=0.0230 orientation=0.0992 upper=0.0540
+  val: mean=92.12 | gender=85.52 age=91.51 orientation=86.13 accessory=92.64 upper=92.94 lower=95.71 bag=85.96 boots=99.51 holding=99.17
+epoch 10/15 (train=59.0s val=5.7s) train: accessory=0.0327 age=0.0017 bag=0.0228 boots=0.0009 gender=0.0121 holding=0.0005 lower=0.0182 orientation=0.0709 upper=0.0453
+  val: mean=92.36 | gender=86.03 age=92.47 orientation=86.26 accessory=92.77 upper=93.21 lower=95.65 bag=86.18 boots=99.50 holding=99.14
+epoch 11/15 (train=72.9s val=5.4s) train: accessory=0.0233 age=0.0012 bag=0.0156 boots=0.0004 gender=0.0070 holding=0.0004 lower=0.0141 orientation=0.0480 upper=0.0380
+  val: mean=92.30 | gender=85.14 age=92.69 orientation=86.46 accessory=92.88 upper=93.00 lower=95.77 bag=86.08 boots=99.55 holding=99.09
+epoch 12/15 (train=85.6s val=5.6s) train: accessory=0.0163 age=0.0006 bag=0.0094 boots=0.0003 gender=0.0044 holding=0.0002 lower=0.0114 orientation=0.0312 upper=0.0311
+  val: mean=92.22 | gender=85.67 age=91.88 orientation=86.55 accessory=92.67 upper=92.87 lower=95.73 bag=86.04 boots=99.47 holding=99.10
+epoch 13/15 (train=69.3s val=5.4s) train: accessory=0.0102 age=0.0002 bag=0.0066 boots=0.0002 gender=0.0029 holding=0.0001 lower=0.0095 orientation=0.0207 upper=0.0262
+  val: mean=92.23 | gender=86.24 age=91.65 orientation=86.19 accessory=92.73 upper=92.65 lower=95.74 bag=86.23 boots=99.52 holding=99.09
+epoch 14/15 (train=57.4s val=5.6s) train: accessory=0.0072 age=0.0002 bag=0.0048 boots=0.0001 gender=0.0019 holding=0.0000 lower=0.0083 orientation=0.0142 upper=0.0234
+  val: mean=92.31 | gender=86.31 age=91.93 orientation=86.37 accessory=92.80 upper=92.68 lower=95.70 bag=86.35 boots=99.53 holding=99.09
+epoch 15/15 (train=85.0s val=5.7s) train: accessory=0.0058 age=0.0001 bag=0.0044 boots=0.0001 gender=0.0017 holding=0.0001 lower=0.0076 orientation=0.0120 upper=0.0214
+  val: mean=92.23 | gender=86.19 age=91.57 orientation=86.43 accessory=92.76 upper=92.72 lower=95.67 bag=86.11 boots=99.53 holding=99.08
