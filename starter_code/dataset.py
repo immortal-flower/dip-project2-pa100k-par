@@ -82,7 +82,9 @@ def load_spec(path="attributes.yaml"):
       num_attrs: 属性总数（26）
       loss_weights: {组名: 权重}
     """
-    with open(path) as f:
+    # attributes.yaml contains Chinese comments.  Specify UTF-8 explicitly so
+    # Windows does not try to decode it with the system ANSI code page (GBK).
+    with open(path, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     groups, offset = [], 0
     for name, g in cfg["groups"].items():

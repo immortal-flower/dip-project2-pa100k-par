@@ -1,5 +1,7 @@
 # 数据放置说明
 
+数据集下载地址：[Kaggle PA-100K](https://www.kaggle.com/datasets/yuulind/pa-100k)。
+
 推荐直接使用完整的原始 PA-100K 数据集，不必复制或重排图片：
 
 ```

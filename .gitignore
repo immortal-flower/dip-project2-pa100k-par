@@ -13,6 +13,8 @@ Thumbs.db
 
 # PA100K data must not be committed
 data/pa100k/
+data/downloads/
+data/torch-cache/
 
 # Training outputs and model checkpoints
 runs/
