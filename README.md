@@ -38,7 +38,7 @@
 
 PA100K 图片、原始标签、完整训练目录和模型权重不进入普通 Git 历史；仅保留选定的小型实验记录。代码支持直接读取原始数据集的 `data/*.jpg` 与 `train.csv`、`val.csv`、`test.csv`，无须复制或重排图片；详见 `data/README.md`。
 
-E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
+E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
 
 ## 项目说明
 
