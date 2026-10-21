@@ -46,6 +46,8 @@ E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc �
 
 E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了 `age_lt18`、`lower_stripe`、`boots`、`holding` 的 Recall/F1，但整体 AttrAcc 与实例级 F1 略降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。权重上限从 10 降到 5 的 [E3b 消融实验](experiments/E3b/README.md) 将 AttrAcc 恢复到 92.32%，但极端稀有属性收益减弱。
 
+C 部分可直接用于最终报告的章节草稿见 [加权采样、错误分析与 Demo](docs/C_加权采样与错误分析.md)。采样器单元测试可通过 `python -m unittest discover -s tests -v` 运行。
+
 ## 项目说明
 
 - [项目二说明（简版）](docs/项目二_多标签非均衡样本的行人属性分类_简版.pdf)
