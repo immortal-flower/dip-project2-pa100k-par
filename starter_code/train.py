@@ -12,9 +12,10 @@ import os
 import time
 
 import torch
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, WeightedRandomSampler
 
-from dataset import PA100KDataset, build_transform, compute_pos_weight, load_spec
+from dataset import (PA100KDataset, build_transform, compute_pos_weight,
+                     compute_sample_weights, load_spec)
 from evaluate import evaluate, format_metrics
 from losses import group_losses, total_loss
 from model import PAResNet
@@ -36,6 +37,12 @@ def parse_args():
     p.add_argument("--attention", choices=("none", "se"), default="none")
     p.add_argument("--se-reduction", type=int, default=16)
     p.add_argument("--pos-weight", action="store_true", help="选做：启用类别不平衡加权")
+    p.add_argument("--sampler", choices=("shuffle", "weighted"), default="shuffle",
+                   help="E3：weighted 只改变训练集采样策略")
+    p.add_argument("--sampler-power", type=float, default=0.5,
+                   help="稀有属性权重指数；0.5 表示平方根逆频率")
+    p.add_argument("--sampler-max-weight", type=float, default=10.0,
+                   help="单个属性的最大稀有度权重")
     p.add_argument("--out", default=None)
     p.add_argument("--seed", type=int, default=42)
     return p.parse_args()
@@ -60,7 +67,29 @@ def main():
                            build_transform(False, args.image_size))
     print(f"train: {len(train_ds)}  val: {len(val_ds)}")
 
-    train_loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True,
+    sampler = None
+    sampler_summary = None
+    if args.sampler == "weighted":
+        sample_weights, positive_rate, rarity = compute_sample_weights(
+            train_ds, power=args.sampler_power, max_weight=args.sampler_max_weight)
+        sampler_generator = torch.Generator().manual_seed(args.seed)
+        sampler = WeightedRandomSampler(
+            sample_weights, num_samples=len(train_ds), replacement=True,
+            generator=sampler_generator)
+        sampler_summary = {
+            "formula": "max_positive(clamp(((1-p)/p)^power, 1, max_weight))",
+            "weight_min": sample_weights.min().item(),
+            "weight_mean": sample_weights.mean().item(),
+            "weight_max": sample_weights.max().item(),
+            "positive_rate": positive_rate.tolist(),
+            "attribute_rarity": rarity.tolist(),
+        }
+        print("weighted sampler: "
+              f"min={sample_weights.min():.3f} mean={sample_weights.mean():.3f} "
+              f"max={sample_weights.max():.3f}")
+
+    train_loader = DataLoader(train_ds, batch_size=args.batch_size,
+                              shuffle=sampler is None, sampler=sampler,
                               num_workers=args.workers, pin_memory=True, drop_last=True)
     val_loader = DataLoader(val_ds, batch_size=args.batch_size, shuffle=False,
                             num_workers=args.workers, pin_memory=True)
@@ -93,7 +122,8 @@ def main():
     with open(os.path.join(out, "config.json"), "w") as f:
         json.dump({"args": vars(args), "data_format": "csv" if csv_data else "list",
                    "parameters": parameters, "trainable_parameters": trainable_parameters,
-                   "selection_metric": "mean_group_AttrAcc"},
+                   "selection_metric": "mean_group_AttrAcc",
+                   "sampler_summary": sampler_summary},
                   f, indent=2, ensure_ascii=False)
 
     best = -1.0

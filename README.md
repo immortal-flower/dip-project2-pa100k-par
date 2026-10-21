@@ -11,7 +11,8 @@
 - [x] 收录简版与详细版项目说明
 - [x] 补齐并核验 PA100K 数据（数据不进入仓库）
 - [x] 跑通 baseline，保存统一对照结果 E0
-- [ ] 完成三条单因素改进实验 E1–E3
+- [x] 完成 E3 加权采样、分布图、错误案例和测试 Demo
+- [ ] 完成 E1 损失函数与 E2 注意力实验
 - [ ] 汇总结果、错误案例、Demo 和项目报告
 
 > 数据完整性提醒：课程资源包中的训练、验证图片为零字节，不能用于训练。已另行核验一份原始 PA-100K：100,000 张图片均能解码，CSV 分别包含 80,000/10,000/10,000 条记录。使用时通过 `--data-root` 指向完整数据集目录；图片不进入 Git 仓库。
@@ -30,7 +31,9 @@
 │   └── infer.py
 ├── data/
 │   └── README.md                 # PA100K 本地放置说明
-├── experiments/E0/               # E0 配置、逐轮指标、汇总与诊断
+├── experiments/
+│   ├── E0/                       # E0 配置、逐轮指标、汇总与诊断
+│   └── E3/                       # 加权采样结果、图表、案例和 Demo
 ├── docs/                         # 两份项目说明 PDF
 ├── requirements.txt
 └── README.md
@@ -39,6 +42,8 @@
 PA100K 图片、原始标签、完整训练目录和模型权重不进入普通 Git 历史；仅保留选定的小型实验记录。代码支持直接读取原始数据集的 `data/*.jpg` 与 `train.csv`、`val.csv`、`test.csv`，无须复制或重排图片；详见 `data/README.md`。
 
 E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
+
+E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了 `age_lt18`、`lower_stripe`、`boots`、`holding` 的 Recall/F1，但整体 AttrAcc 与实例级 F1 略降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。
 
 ## 项目说明
 
@@ -54,6 +59,8 @@ pip install -r requirements.txt
 python starter_code/dataset.py --data-root "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K"
 python starter_code/train.py --data-root "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K" --attention none --epochs 15 --batch-size 64 --out runs/E0_baseline
 python starter_code/train.py --data-root "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K" --attention se --epochs 15 --batch-size 64 --out runs/E2_se
+python starter_code/analyze_sampling.py --data-root "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K" --out experiments/E3
+python starter_code/train.py --data-root "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K" --attention none --sampler weighted --epochs 15 --batch-size 64 --out runs/E3_weighted_sampler
 python starter_code/infer.py --ckpt runs/E2_se/best.pt --img "D:\ShuZiTuXiangChuLi_Lab\挑战项目2\PA-100K\data\090001.jpg"
 python starter_code/compare_se.py runs/E0_baseline runs/E2_se --out runs/E0_E2_comparison.md
 ```
