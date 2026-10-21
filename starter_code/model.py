@@ -65,8 +65,12 @@ class PAResNet(nn.Module):
             for g in self.groups
         })
         # 先构建分类头，再构建 SE，确保固定种子时 E0/E2 的分类头初值相同。
-        self.attention = (SEBlock(self.feat_dim, se_reduction) if attention == "se"
-                          else nn.Identity())
+        # SE 初始化使用独立的临时随机流，不改变后续 DataLoader 的打乱顺序。
+        if attention == "se":
+            with torch.random.fork_rng(devices=[]):
+                self.attention = SEBlock(self.feat_dim, se_reduction)
+        else:
+            self.attention = nn.Identity()
 
     def forward(self, x):
         feats = self.attention(self.backbone(x))
