@@ -33,7 +33,8 @@
 │   └── README.md                 # PA100K 本地放置说明
 ├── experiments/
 │   ├── E0/                       # E0 配置、逐轮指标、汇总与诊断
-│   └── E3/                       # 加权采样结果、图表、案例和 Demo
+│   ├── E3/                       # 加权采样结果、图表、案例和 Demo
+│   └── E3b/                      # 温和采样强度消融实验
 ├── docs/                         # 两份项目说明 PDF
 ├── requirements.txt
 └── README.md
@@ -43,7 +44,7 @@ PA100K 图片、原始标签、完整训练目录和模型权重不进入普通 
 
 E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
 
-E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了 `age_lt18`、`lower_stripe`、`boots`、`holding` 的 Recall/F1，但整体 AttrAcc 与实例级 F1 略降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。
+E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了 `age_lt18`、`lower_stripe`、`boots`、`holding` 的 Recall/F1，但整体 AttrAcc 与实例级 F1 略降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。权重上限从 10 降到 5 的 [E3b 消融实验](experiments/E3b/README.md) 将 AttrAcc 恢复到 92.32%，但极端稀有属性收益减弱。
 
 ## 项目说明
 
