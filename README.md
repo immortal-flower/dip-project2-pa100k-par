@@ -48,6 +48,8 @@ E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了
 
 C 部分可直接用于最终报告的章节草稿见 [加权采样、错误分析与 Demo](docs/C_加权采样与错误分析.md)。采样器单元测试可通过 `python -m unittest discover -s tests -v` 运行。
 
+官方 E0、E3、E3b 使用 A 的统一评估脚本得到的复评结果见 [E0–E3 统一复评交接](experiments/unified_eval/README.md)。最终五模型总表还需取得 A 的 E1a/E1b 权重后，在同一推理环境中一次性生成。
+
 ## 项目说明
 
 - [项目二说明（简版）](docs/项目二_多标签非均衡样本的行人属性分类_简版.pdf)

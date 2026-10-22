@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "samples": 10000,
+  "macro": {
+    "AttrAcc": 0.9287038461538462,
+    "mA": 0.7654893025895182,
+    "precision": 0.7121641461153474,
+    "recall": 0.5933271783817476,
+    "f1": 0.6274646526732834
+  },
+  "attributes": {
+    "male": {
+      "AttrAcc": 0.8696,
+      "mA": 0.8693404278606773,
+      "precision": 0.8543872919818457,
+      "recall": 0.8942992874109263,
+      "f1": 0.8738878143133463,
+      "TP": 4518,
+      "FP": 770,
+      "FN": 534,
+      "TN": 4178,
+      "positive_support": 5052
+    },
+    "age_lt18": {
+      "AttrAcc": 0.9293,
+      "mA": 0.777781678623095,
+      "precision": 0.9116331096196868,
+      "recall": 0.5647955647955648,
+      "f1": 0.6974753958065897,
+      "TP": 815,
+      "FP": 79,
+      "FN": 628,
+      "TN": 8478,
+      "positive_support": 1443
+    },
+    "age_18_60": {
+      "AttrAcc": 0.9205,
+      "mA": 0.763575789995433,
+      "precision": 0.9223322332233224,
+      "recall": 0.9894960462646052,
+      "f1": 0.9547343847861982,
+      "TP": 8384,
+      "FP": 706,
+      "FN": 89,
+      "TN": 821,
+      "positive_support": 8473
+    },
+    "age_gt60": {
+      "AttrAcc": 0.9912,
+      "mA": 0.5352100501354233,
+      "precision": 0.375,
+      "recall": 0.07142857142857142,
+      "f1": 0.12,
+      "TP": 6,
+      "FP": 10,
+      "FN": 78,
+      "TN": 9906,
+      "positive_support": 84
+    },
+    "front": {
+      "AttrAcc": 0.9068,
+      "mA": 0.8920406746816458,
+      "precision": 0.8397269180754227,
+      "recall": 0.8547319655857049,
+      "f1": 0.8471630042636931,
+      "TP": 2583,
+      "FP": 493,
+      "FN": 439,
+      "TN": 6485,
+      "positive_support": 3022
+    },
+    "back": {
+      "AttrAcc": 0.9277,
+      "mA": 0.9157692262200459,
+      "precision": 0.8879720723579816,
+      "recall": 0.8832070707070707,
+      "f1": 0.8855831618927046,
+      "TP": 2798,
+      "FP": 353,
+      "FN": 370,
+      "TN": 6479,
+      "positive_support": 3168
+    },
+    "side": {
+      "AttrAcc": 0.8823,
+      "mA": 0.8742992041180636,
+      "precision": 0.8489265836204611,
+      "recall": 0.8406824146981627,
+      "f1": 0.8447843861268627,
+      "TP": 3203,
+      "FP": 570,
+      "FN": 607,
+      "TN": 5620,
+      "positive_support": 3810
+    },
+    "hat": {
+      "AttrAcc": 0.9675,
+      "mA": 0.6466951908823865,
+      "precision": 0.7407407407407407,
+      "recall": 0.2977667493796526,
+      "f1": 0.4247787610619469,
+      "TP": 120,
+      "FP": 42,
+      "FN": 283,
+      "TN": 9555,
+      "positive_support": 403
+    },
+    "glasses": {
+      "AttrAcc": 0.8795,
+      "mA": 0.7750908487056146,
+      "precision": 0.7055900621118012,
+      "recall": 0.6084627745045528,
+      "f1": 0.6534368708656888,
+      "TP": 1136,
+      "FP": 474,
+      "FN": 731,
+      "TN": 7659,
+      "positive_support": 1867
+    },
+    "short_sleeve": {
+      "AttrAcc": 0.9024,
+      "mA": 0.9020352101731572,
+      "precision": 0.9203108059269968,
+      "recall": 0.9049395877754086,
+      "f1": 0.9125604730335065,
+      "TP": 5093,
+      "FP": 441,
+      "FN": 535,
+      "TN": 3931,
+      "positive_support": 5628
+    },
+    "long_sleeve": {
+      "AttrAcc": 0.9025,
+      "mA": 0.9021240516799092,
+      "precision": 0.8804031354983203,
+      "recall": 0.8991308325709058,
+      "f1": 0.8896684395156728,
+      "TP": 3931,
+      "FP": 534,
+      "FN": 441,
+      "TN": 5094,
+      "positive_support": 4372
+    },
+    "upper_stripe": {
+      "AttrAcc": 0.9767,
+      "mA": 0.8230542880387683,
+      "precision": 0.7037037037037037,
+      "recall": 0.6569148936170213,
+      "f1": 0.6795048143053645,
+      "TP": 247,
+      "FP": 104,
+      "FN": 129,
+      "TN": 9520,
+      "positive_support": 376
+    },
+    "upper_logo": {
+      "AttrAcc": 0.9105,
+      "mA": 0.797820400071783,
+      "precision": 0.6482649842271293,
+      "recall": 0.6467348544453186,
+      "f1": 0.6474990153603781,
+      "TP": 822,
+      "FP": 446,
+      "FN": 449,
+      "TN": 8283,
+      "positive_support": 1271
+    },
+    "upper_plaid": {
+      "AttrAcc": 0.9011,
+      "mA": 0.7164251821725132,
+      "precision": 0.5099061522419187,
+      "recall": 0.4851190476190476,
+      "f1": 0.49720386375190645,
+      "TP": 489,
+      "FP": 470,
+      "FN": 519,
+      "TN": 8522,
+      "positive_support": 1008
+    },
+    "upper_splice": {
+      "AttrAcc": 0.9836,
+      "mA": 0.8137672522161647,
+      "precision": 0.6896551724137931,
+      "recall": 0.6349206349206349,
+      "f1": 0.6611570247933884,
+      "TP": 160,
+      "FP": 72,
+      "FN": 92,
+      "TN": 9676,
+      "positive_support": 252
+    },
+    "lower_stripe": {
+      "AttrAcc": 0.9972,
+      "mA": 0.5709275192189311,
+      "precision": 0.23076923076923078,
+      "recall": 0.14285714285714285,
+      "f1": 0.17647058823529413,
+      "TP": 3,
+      "FP": 10,
+      "FN": 18,
+      "TN": 9969,
+      "positive_support": 21
+    },
+    "lower_pattern": {
+      "AttrAcc": 0.9909,
+      "mA": 0.6954041985351954,
+      "precision": 0.5571428571428572,
+      "recall": 0.3939393939393939,
+      "f1": 0.46153846153846156,
+      "TP": 39,
+      "FP": 31,
+      "FN": 60,
+      "TN": 9870,
+      "positive_support": 99
+    },
+    "long_coat": {
+      "AttrAcc": 0.9568,
+      "mA": 0.7428085725130037,
+      "precision": 0.7681498829039812,
+      "recall": 0.4962178517397882,
+      "f1": 0.6029411764705882,
+      "TP": 328,
+      "FP": 99,
+      "FN": 333,
+      "TN": 9240,
+      "positive_support": 661
+    },
+    "trousers": {
+      "AttrAcc": 0.9192,
+      "mA": 0.9001275081179316,
+      "precision": 0.9484677751820805,
+      "recall": 0.9409679618268575,
+      "f1": 0.9447029838488913,
+      "TP": 6902,
+      "FP": 375,
+      "FN": 433,
+      "TN": 2290,
+      "positive_support": 7335
+    },
+    "shorts": {
+      "AttrAcc": 0.9388,
+      "mA": 0.8889936215450035,
+      "precision": 0.8241954707985697,
+      "recall": 0.8135294117647058,
+      "f1": 0.8188277087033747,
+      "TP": 1383,
+      "FP": 295,
+      "FN": 317,
+      "TN": 8005,
+      "positive_support": 1700
+    },
+    "skirt_dress": {
+      "AttrAcc": 0.9328,
+      "mA": 0.8114775298135346,
+      "precision": 0.6490335707019329,
+      "recall": 0.661139896373057,
+      "f1": 0.6550308008213552,
+      "TP": 638,
+      "FP": 345,
+      "FN": 327,
+      "TN": 8690,
+      "positive_support": 965
+    },
+    "backpack": {
+      "AttrAcc": 0.8945,
+      "mA": 0.8330240800897848,
+      "precision": 0.8646864686468647,
+      "recall": 0.7048424289008455,
+      "f1": 0.7766250264662291,
+      "TP": 1834,
+      "FP": 287,
+      "FN": 768,
+      "TN": 7111,
+      "positive_support": 2602
+    },
+    "shoulder_bag": {
+      "AttrAcc": 0.8322,
+      "mA": 0.6889006116747192,
+      "precision": 0.6299862448418156,
+      "recall": 0.4455252918287938,
+      "f1": 0.5219373219373219,
+      "TP": 916,
+      "FP": 538,
+      "FN": 1140,
+      "TN": 7406,
+      "positive_support": 2056
+    },
+    "handbag": {
+      "AttrAcc": 0.8459,
+      "mA": 0.7040789299011954,
+      "precision": 0.6507378777231202,
+      "recall": 0.4700507614213198,
+      "f1": 0.5458296492779251,
+      "TP": 926,
+      "FP": 497,
+      "FN": 1044,
+      "TN": 7533,
+      "positive_support": 1970
+    },
+    "boots": {
+      "AttrAcc": 0.9955,
+      "mA": 0.5331826552821028,
+      "precision": 0.5,
+      "recall": 0.06666666666666667,
+      "f1": 0.11764705882352941,
+      "TP": 3,
+      "FP": 3,
+      "FN": 42,
+      "TN": 9952,
+      "positive_support": 45
+    },
+    "holding": {
+      "AttrAcc": 0.9913,
+      "mA": 0.5287671650613884,
+      "precision": 0.45454545454545453,
+      "recall": 0.05813953488372093,
+      "f1": 0.10309278350515463,
+      "TP": 5,
+      "FP": 6,
+      "FN": 81,
+      "TN": 9908,
+      "positive_support": 86
+    }
+  },
+  "groups": {
+    "gender": {
+      "AttrAcc": 0.8696,
+      "mA": 0.8693404278606773,
+      "precision": 0.8543872919818457,
+      "recall": 0.8942992874109263,
+      "f1": 0.8738878143133463
+    },
+    "age": {
+      "AttrAcc": 0.9470000000000001,
+      "mA": 0.6921891729179839,
+      "precision": 0.7363217809476698,
+      "recall": 0.5419067274962471,
+      "f1": 0.5907365935309293
+    },
+    "orientation": {
+      "AttrAcc": 0.9056000000000001,
+      "mA": 0.8940363683399184,
+      "precision": 0.8588751913512885,
+      "recall": 0.8595404836636461,
+      "f1": 0.8591768507610867
+    },
+    "accessory": {
+      "AttrAcc": 0.9235,
+      "mA": 0.7108930197940005,
+      "precision": 0.723165401426271,
+      "recall": 0.45311476194210265,
+      "f1": 0.5391078159638178
+    },
+    "upper": {
+      "AttrAcc": 0.9294666666666666,
+      "mA": 0.8258710640587159,
+      "precision": 0.7253739923353102,
+      "recall": 0.7046266418247228,
+      "f1": 0.7145989384600361
+    },
+    "lower": {
+      "AttrAcc": 0.9559500000000001,
+      "mA": 0.7682898249572667,
+      "precision": 0.6629597979164421,
+      "recall": 0.5747752764168242,
+      "f1": 0.6099186199363276
+    },
+    "bag": {
+      "AttrAcc": 0.8575333333333334,
+      "mA": 0.7420012072218998,
+      "precision": 0.7151368637372668,
+      "recall": 0.5401394940503197,
+      "f1": 0.614797332560492
+    },
+    "boots": {
+      "AttrAcc": 0.9955,
+      "mA": 0.5331826552821028,
+      "precision": 0.5,
+      "recall": 0.06666666666666667,
+      "f1": 0.11764705882352941
+    },
+    "holding": {
+      "AttrAcc": 0.9913,
+      "mA": 0.5287671650613884,
+      "precision": 0.45454545454545453,
+      "recall": 0.05813953488372093,
+      "f1": 0.10309278350515463
+    }
+  },
+  "instance": {
+    "precision": 0.8545836111111117,
+    "recall": 0.8201997222222224,
+    "f1": 0.8328415054879764
+  },
+  "definitions": {
+    "threshold": "binary/multilabel logits > 0; softmax argmax then one-hot",
+    "macro": "equal weight per attribute, not per group",
+    "mA": "mean of positive recall and negative recall",
+    "undefined": "P/R/F1=0; mA=null when either class is absent",
+    "instance": "mean of per-image P, R and F1 over all 26 attributes"
+  },
+  "legacy_group_AttrAcc": {
+    "gender": 0.8695999979972839,
+    "age": 0.9204999804496765,
+    "orientation": 0.8584000468254089,
+    "accessory": 0.9234999418258667,
+    "upper": 0.9294666647911072,
+    "lower": 0.9559499621391296,
+    "bag": 0.8575333952903748,
+    "boots": 0.9955000281333923,
+    "holding": 0.9912999868392944
+  },
+  "legacy_mean_group_AttrAcc": 0.9224166671435038,
+  "checkpoint_sha256": "6b55bb798d471e74613d9417d1ce6dbf42ec8eab9ad4fbc7d82361336a6ebc5e",
+  "checkpoint_args": {
+    "attributes": "attributes.yaml",
+    "data_root": "data\\pa100k",
+    "image_size": [
+      256,
+      128
+    ],
+    "epochs": 15,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 1,
+    "workers": 4,
+    "hidden": 256,
+    "drop": 0.3,
+    "attention": "none",
+    "se_reduction": 16,
+    "pos_weight": false,
+    "sampler": "weighted",
+    "sampler_power": 0.5,
+    "sampler_max_weight": 10.0,
+    "out": "runs\\E3_weighted_sampler",
+    "seed": 42
+  },
+  "training_provenance": null,
+  "training_data_hashes": null,
+  "best_epoch": 13,
+  "split": "val",
+  "evaluation_environment": {
+    "torch": "2.5.1",
+    "python": "3.9.21",
+    "device": "cuda",
+    "torchvision": "0.20.1",
+    "Pillow": "11.1.0",
+    "batch_size": 64,
+    "workers": 4
+  },
+  "label_file_sha256": "c99e7cc03fab148b932d4c5e66292c5e3008b648a714a451c98ecf4d4595a88c"
+}
