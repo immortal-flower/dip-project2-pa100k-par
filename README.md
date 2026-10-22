@@ -44,11 +44,11 @@ PA100K 图片、原始标签、完整训练目录和模型权重不进入普通 
 
 E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
 
-E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。它提高了 `age_lt18`、`lower_stripe`、`boots`、`holding` 的 Recall/F1，但整体 AttrAcc 与实例级 F1 略降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。权重上限从 10 降到 5 的 [E3b 消融实验](experiments/E3b/README.md) 将 AttrAcc 恢复到 92.32%，但极端稀有属性收益减弱。
+E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。相对官方 E0，它小幅提高了 `upper_splice`、`long_coat`、`boots`、`holding` 的 F1，但 `age_lt18`、`lower_stripe` 和总体实例 F1下降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。权重上限从 10 降到 5 的 [E3b 消融实验](experiments/E3b/README.md) 将 AttrAcc 恢复到 92.32%，并改善 `age_lt18`、`upper_splice`、`long_coat`，但极端稀有属性收益减弱。
 
 C 部分可直接用于最终报告的章节草稿见 [加权采样、错误分析与 Demo](docs/C_加权采样与错误分析.md)。采样器单元测试可通过 `python -m unittest discover -s tests -v` 运行。
 
-官方 E0、E3、E3b 使用 A 的统一评估脚本得到的复评结果见 [E0–E3 统一复评交接](experiments/unified_eval/README.md)。最终五模型总表还需取得 A 的 E1a/E1b 权重后，在同一推理环境中一次性生成。
+官方 E0、E1a、E1b、E3、E3b 使用同一验证集、评估脚本和推理环境得到的最终结果见 [五模型统一复评](experiments/unified_eval/README.md)。
 
 ## 项目说明
 

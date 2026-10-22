@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "evaluation_date": "2026-10-23",
+  "split": "val",
+  "samples": 10000,
+  "evaluator_source": {
+    "branch": "feature/focal-loss",
+    "commit": "66f2720b5eeebd97c3ec042420a4cc08162f2e14"
+  },
+  "data_hashes": {
+    "train.csv": "d231656a0ca3d138272d2456d97b672f848a39665c0c0a983cc182d56db74adb",
+    "val.csv": "c99e7cc03fab148b932d4c5e66292c5e3008b648a714a451c98ecf4d4595a88c"
+  },
+  "environment": {
+    "python": "3.9.21",
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "Pillow": "11.1.0",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "batch_size": 64,
+    "workers": 4
+  },
+  "models": {
+    "E0": {
+      "method": "BCE baseline",
+      "checkpoint_sha256": "991891f5b367a2a51cefaffd1d647e5e9861b225884ac78122f89d1da778c806",
+      "best_epoch": 10,
+      "legacy_mean_group_AttrAcc": 0.9236018392774794,
+      "macro_AttrAcc": 0.9305884615384616,
+      "macro_mA": 0.7691071634064609,
+      "macro_precision": 0.7130464309135949,
+      "macro_recall": 0.596700002879049,
+      "macro_f1": 0.6320389719028321,
+      "instance_f1": 0.8370571819193879
+    },
+    "E1a": {
+      "method": "BCE with pos_weight",
+      "checkpoint_sha256": "19affea68f877b29a5ebccf810e145012548a6dfccca98020ab0dea91e67565b",
+      "best_epoch": 14,
+      "legacy_mean_group_AttrAcc": 0.9078111118740506,
+      "macro_AttrAcc": 0.9125384615384615,
+      "macro_mA": 0.7844812964218429,
+      "macro_precision": 0.6106469231643499,
+      "macro_recall": 0.6554300019360185,
+      "macro_f1": 0.610548721029968,
+      "instance_f1": 0.8081705249815544
+    },
+    "E1b": {
+      "method": "Focal Loss gamma=2",
+      "checkpoint_sha256": "d2fa32ee72fd83164422bdeece6a0096de12b4dfd951405cab87f152fc7ec7e5",
+      "best_epoch": 6,
+      "legacy_mean_group_AttrAcc": 0.9215703672832913,
+      "macro_AttrAcc": 0.9294807692307692,
+      "macro_mA": 0.758295875175601,
+      "macro_precision": 0.6998759120572425,
+      "macro_recall": 0.568722915315901,
+      "macro_f1": 0.6133454066158633,
+      "instance_f1": 0.8310922494662196
+    },
+    "E3": {
+      "method": "WeightedRandomSampler max_weight=10",
+      "checkpoint_sha256": "6b55bb798d471e74613d9417d1ce6dbf42ec8eab9ad4fbc7d82361336a6ebc5e",
+      "best_epoch": 13,
+      "legacy_mean_group_AttrAcc": 0.9224166671435038,
+      "macro_AttrAcc": 0.9287038461538462,
+      "macro_mA": 0.7654893025895182,
+      "macro_precision": 0.7121641461153474,
+      "macro_recall": 0.5933271783817476,
+      "macro_f1": 0.6274646526732834,
+      "instance_f1": 0.8328415054879764
+    },
+    "E3b": {
+      "method": "WeightedRandomSampler max_weight=5",
+      "checkpoint_sha256": "056460041a52e73973130daddb142e750d310adf7fd419a7d84463b78e59139f",
+      "best_epoch": 7,
+      "legacy_mean_group_AttrAcc": 0.9232407410939535,
+      "macro_AttrAcc": 0.9296769230769228,
+      "macro_mA": 0.7693605167595536,
+      "macro_precision": 0.7033168720759518,
+      "macro_recall": 0.5944673802982812,
+      "macro_f1": 0.6243166982886078,
+      "instance_f1": 0.8340870562770558
+    }
+  }
+}
