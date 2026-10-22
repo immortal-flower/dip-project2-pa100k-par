@@ -1,0 +1,20 @@
+{
+  "verified_date": "2026-10-22",
+  "method": "Local SHA-256 of checkpoint bytes compared with archived server evaluation metadata",
+  "status": "passed",
+  "models": {
+    "E1a": {
+      "local_path": "D:/2026DIP/pro2/runs/best.pt",
+      "bytes": 49552154,
+      "sha256": "19affea68f877b29a5ebccf810e145012548a6dfccca98020ab0dea91e67565b",
+      "best_epoch": 14
+    },
+    "E1b": {
+      "local_path": "D:/2026DIP/pro2/runs/focal/best.pt",
+      "bytes": 49552154,
+      "sha256": "d2fa32ee72fd83164422bdeece6a0096de12b4dfd951405cab87f152fc7ec7e5",
+      "best_epoch": 6
+    }
+  },
+  "scope": "Hash verification only; no new local forward pass. Model files remain outside ordinary Git history."
+}
