@@ -192,6 +192,39 @@ def compute_pos_weight(dataset, spec):
     return neg / pos.clamp(min=1)
 
 
+def label_matrix(dataset):
+    """Return all labels as an ``N x num_attrs`` float tensor."""
+    source = torch.tensor([values for _, values in dataset.samples], dtype=torch.float32)
+    labels = torch.zeros((len(dataset), dataset.spec["num_attrs"]), dtype=torch.float32)
+    labels[:, dataset.col2global] = source
+    return labels
+
+
+def compute_sample_weights(dataset, power=0.5, max_weight=10.0):
+    """Compute conservative rare-positive sampling weights for E3.
+
+    For attribute ``j`` with positive rate ``p_j``, its rarity factor is
+    ``sqrt((1-p_j)/p_j)`` by default.  Each image receives the maximum factor
+    among its positive attributes.  A floor of 1 avoids down-weighting common
+    positives, while ``max_weight`` prevents a handful of rare examples from
+    dominating an epoch.  Returned image weights are normalized to mean 1.
+    """
+    if power <= 0:
+        raise ValueError("power must be positive")
+    if max_weight < 1:
+        raise ValueError("max_weight must be at least 1")
+
+    labels = label_matrix(dataset)
+    positive_rate = labels.mean(dim=0)
+    eps = 1.0 / max(len(dataset), 1)
+    rarity = ((1.0 - positive_rate) / positive_rate.clamp(min=eps)).pow(power)
+    rarity = rarity.clamp(min=1.0, max=max_weight)
+    active_factors = torch.where(labels > 0, rarity.unsqueeze(0), torch.ones_like(labels))
+    sample_weights = active_factors.max(dim=1).values
+    sample_weights = sample_weights / sample_weights.mean().clamp(min=eps)
+    return sample_weights.to(torch.double), positive_rate, rarity
+
+
 def attribute_stats(dataset):
     """打印每个属性的正例比例，帮助理解数据集分布。"""
     num_attrs = dataset.spec["num_attrs"]

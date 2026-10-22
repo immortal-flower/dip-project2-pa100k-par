@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "num_samples": 80000,
+  "formula": "max_positive(clamp(((1-p)/p)^power, 1, max_weight))",
+  "sampler_power": 0.5,
+  "sampler_max_weight": 5.0,
+  "normalized_weight": {
+    "min": 0.45250943303108215,
+    "mean": 0.9999999178931117,
+    "max": 1.693137526512146
+  },
+  "epoch_sampling": {
+    "unique_images": 49081,
+    "unseen_images": 30919,
+    "repeated_images": 20915,
+    "maximum_repetitions": 9
+  }
+}
