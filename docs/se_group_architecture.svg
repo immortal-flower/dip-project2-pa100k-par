@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="540" viewBox="0 0 1180 540" role="img" aria-labelledby="title desc">
+  <title id="title">E0、原始 E2 与改进 E2 的结构对比</title>
+  <desc id="desc">三个实验共用输入、ResNet18 和九个分类头。原始 E2 在 512 维特征后加入一个共享 SE；改进 E2 则为九个属性组各加入一个独立 SE。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#586b7b"/></marker>
+    <style>
+      text { font-family: Arial, "Microsoft YaHei", sans-serif; fill: #183043; }
+      .title { font-size: 29px; font-weight: 700; }
+      .subtitle { font-size: 16px; fill: #506779; }
+      .label { font-size: 20px; font-weight: 700; }
+      .boxtext { font-size: 17px; font-weight: 600; text-anchor: middle; }
+      .small { font-size: 14px; fill: #435d70; text-anchor: middle; }
+      .base { fill: #e8f2f9; stroke: #a2c3da; stroke-width: 2; }
+      .attn { fill: #fff0db; stroke: #e3a449; stroke-width: 2; }
+      .arrow { fill: none; stroke: #586b7b; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1180" height="540" fill="#f8fafc"/>
+  <text class="title" x="42" y="48">PA-100K：仅改变注意力模块的三个实验</text>
+  <text class="subtitle" x="42" y="78">相同输入、ResNet18、九组分类头、损失和训练配置；输出均为 26 个属性</text>
+
+  <text class="label" x="42" y="157">E0 baseline</text>
+  <rect class="base" x="245" y="113" width="145" height="72" rx="12"/>
+  <text class="boxtext" x="317" y="146">行人图片</text>
+  <text class="small" x="317" y="169">3 × 256 × 128</text>
+  <rect class="base" x="448" y="113" width="190" height="72" rx="12"/>
+  <text class="boxtext" x="543" y="146">ResNet18</text>
+  <text class="small" x="543" y="169">池化后 512 维</text>
+  <rect class="base" x="925" y="113" width="205" height="72" rx="12"/>
+  <text class="boxtext" x="1027" y="146">9 个分类头</text>
+  <text class="small" x="1027" y="169">年龄等 9 组</text>
+  <path class="arrow" d="M390 149 H440 M638 149 H916"/>
+
+  <line x1="42" y1="218" x2="1137" y2="218" stroke="#dbe4eb" stroke-width="2"/>
+  <text class="label" x="42" y="300">原始 E2</text>
+  <rect class="base" x="245" y="255" width="145" height="72" rx="12"/>
+  <text class="boxtext" x="317" y="297">行人图片</text>
+  <rect class="base" x="448" y="255" width="190" height="72" rx="12"/>
+  <text class="boxtext" x="543" y="285">ResNet18</text>
+  <text class="small" x="543" y="309">512 维特征</text>
+  <rect class="attn" x="690" y="255" width="178" height="72" rx="12"/>
+  <text class="boxtext" x="779" y="285">共享 SE × 1</text>
+  <text class="small" x="779" y="309">512 → 32 → 512</text>
+  <rect class="base" x="925" y="255" width="205" height="72" rx="12"/>
+  <text class="boxtext" x="1027" y="285">9 个分类头</text>
+  <text class="small" x="1027" y="309">共用门控后的特征</text>
+  <path class="arrow" d="M390 291 H440 M638 291 H682 M868 291 H916"/>
+
+  <line x1="42" y1="360" x2="1137" y2="360" stroke="#dbe4eb" stroke-width="2"/>
+  <text class="label" x="42" y="442">改进 E2</text>
+  <rect class="base" x="245" y="397" width="145" height="72" rx="12"/>
+  <text class="boxtext" x="317" y="439">行人图片</text>
+  <rect class="base" x="448" y="397" width="190" height="72" rx="12"/>
+  <text class="boxtext" x="543" y="427">ResNet18</text>
+  <text class="small" x="543" y="451">512 维特征</text>
+  <rect class="attn" x="690" y="397" width="178" height="72" rx="12"/>
+  <text class="boxtext" x="779" y="427">分组 SE × 9</text>
+  <text class="small" x="779" y="451">每组独立 512 → 32 → 512</text>
+  <rect class="base" x="925" y="397" width="205" height="72" rx="12"/>
+  <text class="boxtext" x="1027" y="427">9 个分类头</text>
+  <text class="small" x="1027" y="451">各接对应组特征</text>
+  <path class="arrow" d="M390 433 H440 M638 433 H682 M868 433 H916"/>
+  <text class="subtitle" x="42" y="516">改进动机：不同属性组需要不同的通道权重；是否改善包、服装、配饰，需由同一验证集指标检验。</text>
+</svg>

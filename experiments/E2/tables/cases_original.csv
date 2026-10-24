@@ -1,0 +1,7 @@
+﻿code,status,image,attribute,truth,e0_prob,e0_pred,se_prob,se_pred,card
+E2_group,fixed,data/082666.jpg,short_sleeve,0,0.998448,1,0.001709,0,cases\E2_group_1_fixed_short_sleeve_082666.png
+E2_group,new,data/088601.jpg,backpack,1,0.999928,1,0.000517,0,cases\E2_group_2_new_backpack_088601.png
+E2_center,fixed,data/080427.jpg,short_sleeve,1,0.002289,0,0.996581,1,cases\E2_center_1_fixed_short_sleeve_080427.png
+E2_center,new,data/089079.jpg,shoulder_bag,1,0.999357,1,0.000711,0,cases\E2_center_2_new_shoulder_bag_089079.png
+E3_residual,fixed,data/080979.jpg,short_sleeve,0,0.999681,1,0.00105,0,cases\E3_residual_1_fixed_short_sleeve_080979.png
+E3_residual,new,data/087768.jpg,long_sleeve,0,0.000144,0,0.999474,1,cases\E3_residual_2_new_long_sleeve_087768.png

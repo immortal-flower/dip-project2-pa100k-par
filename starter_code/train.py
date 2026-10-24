@@ -1,9 +1,14 @@
-"""PA100K 训练入口：E0 baseline 与 E2 SE 使用同一套训练配置。
+"""PA100K 训练入口：E0 baseline 与 SE 实验使用同一套训练配置。
 
 用法:
   python train.py                       # 默认训练
   python train.py --epochs 20 --batch-size 64
   python train.py --attention se        # E2：只启用 SE
+  python train.py --attention se_group  # 改进 E2：每组独立 SE
+  python train.py --attention se_group_center  # 新实验：分组 SE，门控以 1 为中心
+  python train.py --attention se_group_residual025  # 温和门控独立实验
+  python train.py --attention se_group_adaptive025  # 九组各自学习门控强度
+  python train.py --attention se_attr_residual025   # 26 属性独立门控
 """
 import argparse
 import json
@@ -33,7 +38,12 @@ def parse_args():
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--hidden", type=int, default=256)
     p.add_argument("--drop", type=float, default=0.3)
-    p.add_argument("--attention", choices=("none", "se"), default="none")
+    p.add_argument("--attention", choices=("none", "se", "se_group",
+                                           "se_group_center",
+                                           "se_group_residual025",
+                                           "se_group_adaptive025",
+                                           "se_attr_residual025"),
+                   default="none")
     p.add_argument("--se-reduction", type=int, default=16)
     p.add_argument("--pos-weight", action="store_true", help="选做：启用类别不平衡加权")
     p.add_argument("--out", default=None)

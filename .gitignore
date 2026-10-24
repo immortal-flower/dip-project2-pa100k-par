@@ -13,6 +13,8 @@ Thumbs.db
 
 # PA100K data must not be committed
 data/pa100k/
+experiments/E2/cases/
+experiments/E2/cases_extra/
 
 # Training outputs and model checkpoints
 runs/

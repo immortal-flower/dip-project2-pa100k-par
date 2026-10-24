@@ -1,0 +1,30 @@
+{
+  "E0": {
+    "source": "pa100k_b_E0_E2_complete.tar.gz:runs/E0_baseline",
+    "attention": "none"
+  },
+  "E2_shared": {
+    "source": "pa100k_b_E0_E2_complete.tar.gz:runs/E2_se",
+    "attention": "se"
+  },
+  "E2_group": {
+    "source": "pa100k_e2_group_record.tar.gz:runs/E2_se_group",
+    "attention": "se_group"
+  },
+  "E2_center": {
+    "source": "pa100k_e2_group_center_record.tar.gz:runs/E2_se_group_center",
+    "attention": "se_group_center"
+  },
+  "E3_residual": {
+    "source": "pa100k_e2_group_residual025_record.tar.gz:runs/E2_se_group_residual025",
+    "attention": "se_group_residual025"
+  },
+  "E4_adaptive": {
+    "source": "pa100k_e2_dual_se_complete.tar.gz:runs/E4_se_group_adaptive025",
+    "attention": "se_group_adaptive025"
+  },
+  "E5_attribute": {
+    "source": "pa100k_e2_dual_se_complete.tar.gz:runs/E5_se_attr_residual025",
+    "attention": "se_attr_residual025"
+  }
+}

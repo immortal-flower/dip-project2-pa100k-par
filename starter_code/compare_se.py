@@ -1,4 +1,4 @@
-"""核对 E0/E2 是否只有 SE 开关不同，并汇总结构实验结果。
+"""核对两个实验是否只有注意力模式不同，并汇总结构实验结果。
 
 用法：python starter_code/compare_se.py runs/E0_baseline runs/E2_se
 """
@@ -30,8 +30,13 @@ def compare_config(base, se):
                    for k in left.keys() | right.keys() if left.get(k) != right.get(k)}
     if differences:
         raise ValueError(f"E0/E2 training configurations differ: {differences}")
-    if base["args"]["attention"] != "none" or se["args"]["attention"] != "se":
-        raise ValueError("Expected E0 attention=none and E2 attention=se")
+    allowed = ("none", "se", "se_group", "se_group_center",
+               "se_group_residual025", "se_group_adaptive025",
+               "se_attr_residual025")
+    if (base["args"]["attention"] not in allowed or
+            se["args"]["attention"] not in allowed or
+            base["args"]["attention"] == se["args"]["attention"]):
+        raise ValueError("Expected two different supported attention modes")
     if base.get("data_format") != se.get("data_format"):
         raise ValueError("E0/E2 use different data formats")
     if base.get("selection_metric") != se.get("selection_metric"):
@@ -42,19 +47,28 @@ def percentage(value):
     return f"{value * 100:.2f}%"
 
 
-def render_report(base, se, base_epochs, se_epochs):
-    lines = ["# E0 与 E2（SE）对比", "",
-             "E0/E2 的训练配置已核对：仅 `attention` 和输出目录不同。",
+def render_report(base, se, base_epochs, se_epochs,
+                  base_attention="none", attention="se"):
+    labels = {"none": "E0", "se": "E2-共享SE",
+              "se_group": "E2-分组SE",
+              "se_group_center": "E2-分组中心门控SE",
+              "se_group_residual025": "E3-温和残差门控SE",
+              "se_group_adaptive025": "E4-自适应分组SE",
+              "se_attr_residual025": "E5-逐属性SE"}
+    base_label, label = labels[base_attention], labels[attention]
+    lines = [f"# {base_label} 与 {label} 对比", "",
+             "训练配置已核对：仅 `attention` 和输出目录不同。",
              "最佳模型按验证集组均 AttrAcc 选择。", "",
              "| 实验 | 参数量 | 平均训练秒/轮 | 最佳 epoch | 最佳组均 AttrAcc |",
              "|---|---:|---:|---:|---:|"]
-    for label, summary, epochs in (("E0", base, base_epochs), ("E2", se, se_epochs)):
+    for run_label, summary, epochs in ((base_label, base, base_epochs),
+                                       (label, se, se_epochs)):
         avg_time = sum(e["train_seconds"] for e in epochs) / len(epochs)
-        lines.append(f"| {label} | {summary['parameters']:,} | {avg_time:.1f} | "
+        lines.append(f"| {run_label} | {summary['parameters']:,} | {avg_time:.1f} | "
                      f"{summary['best_epoch']} | {percentage(summary['best_score'])} |")
 
     lines += ["", "## 各属性组", "",
-              "| 属性组 | E0 | E2 | E2 - E0（百分点） |",
+              f"| 属性组 | {base_label} | {label} | {label} - {base_label}（百分点） |",
               "|---|---:|---:|---:|"]
     for name, base_value in base["best_group_metrics"].items():
         se_value = se["best_group_metrics"][name]
@@ -63,7 +77,7 @@ def render_report(base, se, base_epochs, se_epochs):
 
     focus = ("accessory", "upper", "lower", "bag")
     lines += ["", "## 重点属性", "",
-              "| 属性组 | 属性 | E0 | E2 | E2 - E0（百分点） |",
+              f"| 属性组 | 属性 | {base_label} | {label} | {label} - {base_label}（百分点） |",
               "|---|---|---:|---:|---:|"]
     # 属性与组的对应关系按 attributes.yaml 固定词表记录。
     groups = {
@@ -81,7 +95,7 @@ def render_report(base, se, base_epochs, se_epochs):
             lines.append(f"| {group} | {name} | {percentage(base_value)} | "
                          f"{percentage(se_value)} | {(se_value - base_value) * 100:+.2f} |")
     lines += ["", "注：此表使用 starter_code/evaluate.py 当前返回的 AttrAcc；"
-              "A 的 mA、Precision、Recall、F1 完成后，需对两个 checkpoint 统一复评。", ""]
+              "mA、Precision、Recall、F1 和混淆计数另见统一逐属性评估文件。", ""]
     return "\n".join(lines)
 
 
@@ -94,7 +108,9 @@ def main():
     base_config, base_summary, base_epochs = read_run(args.baseline)
     se_config, se_summary, se_epochs = read_run(args.se)
     compare_config(base_config, se_config)
-    report = render_report(base_summary, se_summary, base_epochs, se_epochs)
+    report = render_report(base_summary, se_summary, base_epochs, se_epochs,
+                           base_config["args"]["attention"],
+                           se_config["args"]["attention"])
     if args.out:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(report, encoding="utf-8")
