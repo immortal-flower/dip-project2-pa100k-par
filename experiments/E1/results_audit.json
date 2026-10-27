@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "samples_per_model": 10000,
+  "models": {
+    "E0": {
+      "confusion_rows_verified": 26,
+      "metric_tolerance": 1e-10,
+      "legacy_float32_tolerance": 1e-07,
+      "best_epoch": 10,
+      "checkpoint_sha256_reported_by_server": "991891f5b367a2a51cefaffd1d647e5e9861b225884ac78122f89d1da778c806"
+    },
+    "E1a": {
+      "confusion_rows_verified": 26,
+      "metric_tolerance": 1e-10,
+      "legacy_float32_tolerance": 1e-07,
+      "best_epoch": 14,
+      "checkpoint_sha256_reported_by_server": "19affea68f877b29a5ebccf810e145012548a6dfccca98020ab0dea91e67565b",
+      "epochs_verified": 15,
+      "total_seconds": 937.2425040400121,
+      "source_manifest_sha256": "fb6a6953fb9cf189ee2ee47b6d24a734475e564172f406967c04ea0b4329b8c3"
+    },
+    "E1b": {
+      "confusion_rows_verified": 26,
+      "metric_tolerance": 1e-10,
+      "legacy_float32_tolerance": 1e-07,
+      "best_epoch": 6,
+      "checkpoint_sha256_reported_by_server": "d2fa32ee72fd83164422bdeece6a0096de12b4dfd951405cab87f152fc7ec7e5",
+      "epochs_verified": 15,
+      "total_seconds": 980.213745691115,
+      "source_manifest_sha256": "fb6a6953fb9cf189ee2ee47b6d24a734475e564172f406967c04ea0b4329b8c3"
+    }
+  },
+  "deltas_percentage_points": {
+    "E1a": {
+      "AttrAcc": -1.8096153846153928,
+      "mA": 1.506693061060671,
+      "precision": -10.283240927214198,
+      "recall": 5.8030713859926975,
+      "f1": -2.1646972218636873
+    },
+    "E1b": {
+      "AttrAcc": -0.10038461538464105,
+      "mA": -1.0236600356673842,
+      "precision": -0.9522028199560273,
+      "recall": -2.7072462041015766,
+      "f1": -1.6965722265943617
+    }
+  },
+  "scope": "Audits returned predictions and metadata, not E1 checkpoint bytes or a fresh model forward pass."
+}

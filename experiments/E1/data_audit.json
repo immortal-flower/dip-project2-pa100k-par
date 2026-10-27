@@ -1,0 +1,301 @@
+{
+  "splits": {
+    "train": {
+      "samples": 80000,
+      "csv_sha256": "d231656a0ca3d138272d2456d97b672f848a39665c0c0a983cc182d56db74adb"
+    },
+    "val": {
+      "samples": 10000,
+      "csv_sha256": "c99e7cc03fab148b932d4c5e66292c5e3008b648a714a451c98ecf4d4595a88c"
+    }
+  },
+  "attributes": {
+    "male": {
+      "train": {
+        "positives": 43508,
+        "positive_rate": 0.54385
+      },
+      "pos_weight": 0.8387423002666177,
+      "val": {
+        "positives": 5052,
+        "positive_rate": 0.5052
+      }
+    },
+    "age_lt18": {
+      "train": {
+        "positives": 4152,
+        "positive_rate": 0.0519
+      },
+      "pos_weight": 18.26782273603083,
+      "val": {
+        "positives": 1443,
+        "positive_rate": 0.1443
+      }
+    },
+    "age_18_60": {
+      "train": {
+        "positives": 74721,
+        "positive_rate": 0.9340125
+      },
+      "pos_weight": 0.07064948274246866,
+      "val": {
+        "positives": 8473,
+        "positive_rate": 0.8473
+      }
+    },
+    "age_gt60": {
+      "train": {
+        "positives": 1127,
+        "positive_rate": 0.0140875
+      },
+      "pos_weight": 69.9849157054126,
+      "val": {
+        "positives": 84,
+        "positive_rate": 0.0084
+      }
+    },
+    "front": {
+      "train": {
+        "positives": 28718,
+        "positive_rate": 0.358975
+      },
+      "pos_weight": 1.7857093112333728,
+      "val": {
+        "positives": 3022,
+        "positive_rate": 0.3022
+      }
+    },
+    "back": {
+      "train": {
+        "positives": 28576,
+        "positive_rate": 0.3572
+      },
+      "pos_weight": 1.799552071668533,
+      "val": {
+        "positives": 3168,
+        "positive_rate": 0.3168
+      }
+    },
+    "side": {
+      "train": {
+        "positives": 22706,
+        "positive_rate": 0.283825
+      },
+      "pos_weight": 2.5232978067471152,
+      "val": {
+        "positives": 3810,
+        "positive_rate": 0.381
+      }
+    },
+    "hat": {
+      "train": {
+        "positives": 3516,
+        "positive_rate": 0.04395
+      },
+      "pos_weight": 21.753128555176335,
+      "val": {
+        "positives": 403,
+        "positive_rate": 0.0403
+      }
+    },
+    "glasses": {
+      "train": {
+        "positives": 14331,
+        "positive_rate": 0.1791375
+      },
+      "pos_weight": 4.582304096015631,
+      "val": {
+        "positives": 1867,
+        "positive_rate": 0.1867
+      }
+    },
+    "short_sleeve": {
+      "train": {
+        "positives": 46878,
+        "positive_rate": 0.585975
+      },
+      "pos_weight": 0.7065574469900593,
+      "val": {
+        "positives": 5628,
+        "positive_rate": 0.5628
+      }
+    },
+    "long_sleeve": {
+      "train": {
+        "positives": 33122,
+        "positive_rate": 0.414025
+      },
+      "pos_weight": 1.4153130849586377,
+      "val": {
+        "positives": 4372,
+        "positive_rate": 0.4372
+      }
+    },
+    "upper_stripe": {
+      "train": {
+        "positives": 4077,
+        "positive_rate": 0.0509625
+      },
+      "pos_weight": 18.622271277900417,
+      "val": {
+        "positives": 376,
+        "positive_rate": 0.0376
+      }
+    },
+    "upper_logo": {
+      "train": {
+        "positives": 12323,
+        "positive_rate": 0.1540375
+      },
+      "pos_weight": 5.491925667451108,
+      "val": {
+        "positives": 1271,
+        "positive_rate": 0.1271
+      }
+    },
+    "upper_plaid": {
+      "train": {
+        "positives": 8690,
+        "positive_rate": 0.108625
+      },
+      "pos_weight": 8.205983889528193,
+      "val": {
+        "positives": 1008,
+        "positive_rate": 0.1008
+      }
+    },
+    "upper_splice": {
+      "train": {
+        "positives": 3520,
+        "positive_rate": 0.044
+      },
+      "pos_weight": 21.727272727272727,
+      "val": {
+        "positives": 252,
+        "positive_rate": 0.0252
+      }
+    },
+    "lower_stripe": {
+      "train": {
+        "positives": 404,
+        "positive_rate": 0.00505
+      },
+      "pos_weight": 197.01980198019803,
+      "val": {
+        "positives": 21,
+        "positive_rate": 0.0021
+      }
+    },
+    "lower_pattern": {
+      "train": {
+        "positives": 1421,
+        "positive_rate": 0.0177625
+      },
+      "pos_weight": 55.29838142153413,
+      "val": {
+        "positives": 99,
+        "positive_rate": 0.0099
+      }
+    },
+    "long_coat": {
+      "train": {
+        "positives": 2256,
+        "positive_rate": 0.0282
+      },
+      "pos_weight": 34.46099290780142,
+      "val": {
+        "positives": 661,
+        "positive_rate": 0.0661
+      }
+    },
+    "trousers": {
+      "train": {
+        "positives": 56719,
+        "positive_rate": 0.7089875
+      },
+      "pos_weight": 0.4104621026463795,
+      "val": {
+        "positives": 7335,
+        "positive_rate": 0.7335
+      }
+    },
+    "shorts": {
+      "train": {
+        "positives": 13910,
+        "positive_rate": 0.173875
+      },
+      "pos_weight": 4.7512580877066855,
+      "val": {
+        "positives": 1700,
+        "positive_rate": 0.17
+      }
+    },
+    "skirt_dress": {
+      "train": {
+        "positives": 9371,
+        "positive_rate": 0.1171375
+      },
+      "pos_weight": 7.536975776331235,
+      "val": {
+        "positives": 965,
+        "positive_rate": 0.0965
+      }
+    },
+    "backpack": {
+      "train": {
+        "positives": 11807,
+        "positive_rate": 0.1475875
+      },
+      "pos_weight": 5.775641568561023,
+      "val": {
+        "positives": 2602,
+        "positive_rate": 0.2602
+      }
+    },
+    "shoulder_bag": {
+      "train": {
+        "positives": 15290,
+        "positive_rate": 0.191125
+      },
+      "pos_weight": 4.232177894048398,
+      "val": {
+        "positives": 2056,
+        "positive_rate": 0.2056
+      }
+    },
+    "handbag": {
+      "train": {
+        "positives": 14680,
+        "positive_rate": 0.1835
+      },
+      "pos_weight": 4.449591280653951,
+      "val": {
+        "positives": 1970,
+        "positive_rate": 0.197
+      }
+    },
+    "boots": {
+      "train": {
+        "positives": 495,
+        "positive_rate": 0.0061875
+      },
+      "pos_weight": 160.6161616161616,
+      "val": {
+        "positives": 45,
+        "positive_rate": 0.0045
+      }
+    },
+    "holding": {
+      "train": {
+        "positives": 771,
+        "positive_rate": 0.0096375
+      },
+      "pos_weight": 102.76134889753567,
+      "val": {
+        "positives": 86,
+        "positive_rate": 0.0086
+      }
+    }
+  },
+  "source": "raw CSV through PA100KDataset mapping"
+}

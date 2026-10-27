@@ -1,0 +1,116 @@
+[
+  {
+    "path": "data/081407.jpg",
+    "attribute": "boots",
+    "models": {
+      "E0": {
+        "prediction": 0,
+        "probability": 1.4654089682153426e-05
+      },
+      "E1a": {
+        "prediction": 1,
+        "probability": 0.9364590048789978
+      },
+      "E1b": {
+        "prediction": 0,
+        "probability": 0.4479457437992096
+      }
+    },
+    "target": 1
+  },
+  {
+    "path": "data/080188.jpg",
+    "attribute": "boots",
+    "models": {
+      "E0": {
+        "prediction": 0,
+        "probability": 1.2068102250850643e-07
+      },
+      "E1a": {
+        "prediction": 1,
+        "probability": 0.5902551412582397
+      },
+      "E1b": {
+        "prediction": 0,
+        "probability": 0.2649780809879303
+      }
+    },
+    "target": 0
+  },
+  {
+    "path": "data/080790.jpg",
+    "attribute": "holding",
+    "models": {
+      "E0": {
+        "prediction": 0,
+        "probability": 4.9546801164979115e-05
+      },
+      "E1a": {
+        "prediction": 1,
+        "probability": 0.9963715076446533
+      },
+      "E1b": {
+        "prediction": 0,
+        "probability": 0.17519240081310272
+      }
+    },
+    "target": 1
+  },
+  {
+    "path": "data/085565.jpg",
+    "attribute": "lower_stripe",
+    "models": {
+      "E0": {
+        "prediction": 0,
+        "probability": 0.0912671908736229
+      },
+      "E1a": {
+        "prediction": 1,
+        "probability": 0.5578789114952087
+      },
+      "E1b": {
+        "prediction": 0,
+        "probability": 0.2154538780450821
+      }
+    },
+    "target": 1
+  },
+  {
+    "path": "data/087064.jpg",
+    "attribute": "lower_stripe",
+    "models": {
+      "E0": {
+        "prediction": 1,
+        "probability": 0.6016940474510193
+      },
+      "E1a": {
+        "prediction": 1,
+        "probability": 0.6651636958122253
+      },
+      "E1b": {
+        "prediction": 0,
+        "probability": 0.39689522981643677
+      }
+    },
+    "target": 1
+  },
+  {
+    "path": "data/080051.jpg",
+    "attribute": "boots",
+    "models": {
+      "E0": {
+        "prediction": 0,
+        "probability": 2.4160235057024693e-07
+      },
+      "E1a": {
+        "prediction": 0,
+        "probability": 1.0146417480427772e-05
+      },
+      "E1b": {
+        "prediction": 1,
+        "probability": 0.677193284034729
+      }
+    },
+    "target": 0
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "args": {
+    "attributes": "/project/IDIP/ZZS/pro2/code/attributes.yaml",
+    "data_root": "/project/IDIP/ZZS/pro2/PA-100K",
+    "image_size": [
+      256,
+      128
+    ],
+    "epochs": 15,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 1.0,
+    "workers": 4,
+    "hidden": 256,
+    "drop": 0.3,
+    "attention": "none",
+    "se_reduction": 16,
+    "pos_weight": false,
+    "loss": "focal",
+    "focal_gamma": 2.0,
+    "focal_alpha": null,
+    "out": "/project/IDIP/ZZS/pro2/runs/E1_suite/E1b_focal",
+    "seed": 42
+  },
+  "data_format": "csv",
+  "parameters": 12365146,
+  "trainable_parameters": 12365146,
+  "selection_metric": "mean_group_AttrAcc",
+  "provenance": {
+    "git_commit": null,
+    "git_dirty": null,
+    "python": "3.10.22",
+    "torch": "2.1.2+cu118",
+    "device": "cuda",
+    "cuda": "11.8",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "source_manifest_sha256": "fb6a6953fb9cf189ee2ee47b6d24a734475e564172f406967c04ea0b4329b8c3"
+  },
+  "data_hashes": {
+    "train.csv": "d231656a0ca3d138272d2456d97b672f848a39665c0c0a983cc182d56db74adb",
+    "val.csv": "c99e7cc03fab148b932d4c5e66292c5e3008b648a714a451c98ecf4d4595a88c"
+  },
+  "pos_weight_values": null
+}
