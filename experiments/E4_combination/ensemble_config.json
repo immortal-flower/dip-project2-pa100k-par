@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "method": "probability_soft_voting",
+  "selection_split": "val",
+  "test_split_used_for_selection": false,
+  "threshold": 0.5,
+  "score": {
+    "name": "equal_mean_relative_to_baseline",
+    "keys": [
+      "legacy_mean_group_AttrAcc",
+      "macro.mA",
+      "macro.f1",
+      "instance.f1"
+    ],
+    "baseline": "E0"
+  },
+  "models": [
+    "E1a",
+    "E2_center"
+  ],
+  "weights": {
+    "E1a": 0.45,
+    "E2_center": 0.55
+  },
+  "prediction_sources": {
+    "E0": {
+      "path": "runs\\metric-combination\\predictions\\E0_val.npz",
+      "sha256": "4bc5d530e1925b31d63ad15777c8162dd7f4c417118b27b9a820e8c6e740d8eb"
+    },
+    "E1a": {
+      "path": "runs\\metric-combination\\predictions\\E1a_val.npz",
+      "sha256": "6232c1be58b1e89d6b1ddc8fc676c812d5cd974a5a3219cd766b73e1de764d2a"
+    },
+    "E1b": {
+      "path": "runs\\metric-combination\\predictions\\E1b_val.npz",
+      "sha256": "8af23d7cb6c24384e3423f31fb233c967a8eceda0b474649d0c9c71a02281c2a"
+    },
+    "E2_center": {
+      "path": "runs\\metric-combination\\predictions\\E2_center_val.npz",
+      "sha256": "ed9f7328421c17822a7613c3ff4ef50ae321fcee5bb881d4310d417bf82834a3"
+    },
+    "E3": {
+      "path": "runs\\metric-combination\\predictions\\E3_val.npz",
+      "sha256": "53a486a7d698c3897f4a826117454af8afd801cf9b64721c2a073bdd0a1a5c74"
+    },
+    "E3b": {
+      "path": "runs\\metric-combination\\predictions\\E3b_val.npz",
+      "sha256": "ee376daf42c7469414f813fb9f44adb59406ed974c4f40fa3924885f5b19927a"
+    }
+  }
+}

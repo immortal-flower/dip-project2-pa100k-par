@@ -1,0 +1,4730 @@
+{
+  "step": 0.05,
+  "rows": [
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.0,
+        "E1a": 1.0
+      },
+      "composite_score": 0.9835887337571243,
+      "legacy_mean_group_AttrAcc": 0.9078037037037038,
+      "macro.mA": 0.7844747422240981,
+      "macro.f1": 0.6105244945713211,
+      "instance.f1": 0.8081518303428599
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.05,
+        "E1a": 0.95
+      },
+      "composite_score": 0.9856997669164747,
+      "legacy_mean_group_AttrAcc": 0.908911111111111,
+      "macro.mA": 0.784943173651071,
+      "macro.f1": 0.6130612935395732,
+      "instance.f1": 0.810346787640464
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.1,
+        "E1a": 0.9
+      },
+      "composite_score": 0.9880274055831212,
+      "legacy_mean_group_AttrAcc": 0.9103296296296297,
+      "macro.mA": 0.7853684478919108,
+      "macro.f1": 0.6154512193479211,
+      "instance.f1": 0.8132265145475439
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.15000000000000002,
+        "E1a": 0.85
+      },
+      "composite_score": 0.9897828010539338,
+      "legacy_mean_group_AttrAcc": 0.9114629629629629,
+      "macro.mA": 0.7852309959434736,
+      "macro.f1": 0.6175507378767274,
+      "instance.f1": 0.8154457768701886
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.2,
+        "E1a": 0.8
+      },
+      "composite_score": 0.9913894419135312,
+      "legacy_mean_group_AttrAcc": 0.9130055555555556,
+      "macro.mA": 0.7847261537451532,
+      "macro.f1": 0.6185981082072884,
+      "instance.f1": 0.8185893879160056
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.25,
+        "E1a": 0.75
+      },
+      "composite_score": 0.9937054842767146,
+      "legacy_mean_group_AttrAcc": 0.9142222222222222,
+      "macro.mA": 0.7848215261154077,
+      "macro.f1": 0.6214628955471789,
+      "instance.f1": 0.821343363711452
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.30000000000000004,
+        "E1a": 0.7
+      },
+      "composite_score": 0.9967468950693119,
+      "legacy_mean_group_AttrAcc": 0.9157814814814815,
+      "macro.mA": 0.784976697735709,
+      "macro.f1": 0.6253216828534794,
+      "instance.f1": 0.8248339868301633
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.35000000000000003,
+        "E1a": 0.6499999999999999
+      },
+      "composite_score": 1.0009409140885253,
+      "legacy_mean_group_AttrAcc": 0.9178,
+      "macro.mA": 0.786001146963276,
+      "macro.f1": 0.6304664529076696,
+      "instance.f1": 0.8291183106436049
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.4,
+        "E1a": 0.6
+      },
+      "composite_score": 1.0050928938239059,
+      "legacy_mean_group_AttrAcc": 0.9200351851851853,
+      "macro.mA": 0.7864114886590412,
+      "macro.f1": 0.6356782145803878,
+      "instance.f1": 0.8336451524292701
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.45,
+        "E1a": 0.55
+      },
+      "composite_score": 1.0093491845377391,
+      "legacy_mean_group_AttrAcc": 0.9221166666666666,
+      "macro.mA": 0.786354267144352,
+      "macro.f1": 0.6417292900309808,
+      "instance.f1": 0.8380578282012106
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.5,
+        "E1a": 0.5
+      },
+      "composite_score": 1.012599583211168,
+      "legacy_mean_group_AttrAcc": 0.9256703703703705,
+      "macro.mA": 0.784307617797267,
+      "macro.f1": 0.6449625411566153,
+      "instance.f1": 0.8436654378301438
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.55,
+        "E1a": 0.44999999999999996
+      },
+      "composite_score": 1.012804306608376,
+      "legacy_mean_group_AttrAcc": 0.9262148148148148,
+      "macro.mA": 0.7820039639349263,
+      "macro.f1": 0.6465291494827083,
+      "instance.f1": 0.8442898148420208
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.6000000000000001,
+        "E1a": 0.3999999999999999
+      },
+      "composite_score": 1.0106418674410178,
+      "legacy_mean_group_AttrAcc": 0.9259814814814814,
+      "macro.mA": 0.7794232893591221,
+      "macro.f1": 0.6438304503526647,
+      "instance.f1": 0.8436438449622273
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.65,
+        "E1a": 0.35
+      },
+      "composite_score": 1.0089253369620037,
+      "legacy_mean_group_AttrAcc": 0.9255648148148149,
+      "macro.mA": 0.7774901122728757,
+      "macro.f1": 0.6422176581158585,
+      "instance.f1": 0.8425141381167852
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.7000000000000001,
+        "E1a": 0.29999999999999993
+      },
+      "composite_score": 1.00773215731373,
+      "legacy_mean_group_AttrAcc": 0.9253481481481481,
+      "macro.mA": 0.7760552277283478,
+      "macro.f1": 0.6410989988368297,
+      "instance.f1": 0.841758708170914
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.75,
+        "E1a": 0.25
+      },
+      "composite_score": 1.0069114515547746,
+      "legacy_mean_group_AttrAcc": 0.9251962962962962,
+      "macro.mA": 0.7747646467666682,
+      "macro.f1": 0.640564317384344,
+      "instance.f1": 0.841261178200884
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.8,
+        "E1a": 0.19999999999999996
+      },
+      "composite_score": 1.0056749445931397,
+      "legacy_mean_group_AttrAcc": 0.9249018518518519,
+      "macro.mA": 0.7734393593779927,
+      "macro.f1": 0.6393111641843547,
+      "instance.f1": 0.84049001408722
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.8500000000000001,
+        "E1a": 0.1499999999999999
+      },
+      "composite_score": 1.0046114347007808,
+      "legacy_mean_group_AttrAcc": 0.9245222222222222,
+      "macro.mA": 0.7727158149934777,
+      "macro.f1": 0.6383300192801821,
+      "instance.f1": 0.8393601275848336
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.9,
+        "E1a": 0.09999999999999998
+      },
+      "composite_score": 1.0028847065006994,
+      "legacy_mean_group_AttrAcc": 0.9242648148148148,
+      "macro.mA": 0.7712154684319691,
+      "macro.f1": 0.6359166718705682,
+      "instance.f1": 0.8386411307483366
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 0.9500000000000001,
+        "E1a": 0.04999999999999993
+      },
+      "composite_score": 1.0017176647703048,
+      "legacy_mean_group_AttrAcc": 0.9240314814814816,
+      "macro.mA": 0.7702606158873974,
+      "macro.f1": 0.6343564600519527,
+      "instance.f1": 0.8380506739828799
+    },
+    {
+      "models": [
+        "E0",
+        "E1a"
+      ],
+      "weights": {
+        "E0": 1.0,
+        "E1a": 0.0
+      },
+      "composite_score": 1.0,
+      "legacy_mean_group_AttrAcc": 0.9235962962962962,
+      "macro.mA": 0.7691024354765718,
+      "macro.f1": 0.6320194796762636,
+      "instance.f1": 0.837049606161812
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.0,
+        "E1b": 1.0
+      },
+      "composite_score": 0.9867729615280886,
+      "legacy_mean_group_AttrAcc": 0.9215703703703704,
+      "macro.mA": 0.7582958751756009,
+      "macro.f1": 0.6133454066158633,
+      "instance.f1": 0.83109224946622
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.05,
+        "E1b": 0.95
+      },
+      "composite_score": 0.9904609725483551,
+      "legacy_mean_group_AttrAcc": 0.9234203703703704,
+      "macro.mA": 0.7597453298600876,
+      "macro.f1": 0.6174220601018311,
+      "instance.f1": 0.8347871510352391
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.1,
+        "E1b": 0.9
+      },
+      "composite_score": 0.9966931571407656,
+      "legacy_mean_group_AttrAcc": 0.9250833333333333,
+      "macro.mA": 0.7628812566189439,
+      "macro.f1": 0.6267612073324653,
+      "instance.f1": 0.838364824064824
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.15000000000000002,
+        "E1b": 0.85
+      },
+      "composite_score": 1.0014061088639086,
+      "legacy_mean_group_AttrAcc": 0.926637037037037,
+      "macro.mA": 0.765507288413278,
+      "macro.f1": 0.6329241632428786,
+      "instance.f1": 0.8417163300588302
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.2,
+        "E1b": 0.8
+      },
+      "composite_score": 1.0039157728947,
+      "legacy_mean_group_AttrAcc": 0.9278722222222222,
+      "macro.mA": 0.7669948843180235,
+      "macro.f1": 0.6351675840115595,
+      "instance.f1": 0.8444095262417323
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.25,
+        "E1b": 0.75
+      },
+      "composite_score": 1.006063397997733,
+      "legacy_mean_group_AttrAcc": 0.9286333333333333,
+      "macro.mA": 0.7682987095628762,
+      "macro.f1": 0.6377488560862006,
+      "instance.f1": 0.8460727488524546
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.30000000000000004,
+        "E1b": 0.7
+      },
+      "composite_score": 1.0077977413332682,
+      "legacy_mean_group_AttrAcc": 0.9290111111111111,
+      "macro.mA": 0.7697213430692782,
+      "macro.f1": 0.6401024985497364,
+      "instance.f1": 0.8468718039640099
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.35000000000000003,
+        "E1b": 0.6499999999999999
+      },
+      "composite_score": 1.0081249198021336,
+      "legacy_mean_group_AttrAcc": 0.9290759259259259,
+      "macro.mA": 0.770546972155073,
+      "macro.f1": 0.6401680944322574,
+      "instance.f1": 0.8469230754702815
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.4,
+        "E1b": 0.6
+      },
+      "composite_score": 1.0103404740978015,
+      "legacy_mean_group_AttrAcc": 0.9291240740740742,
+      "macro.mA": 0.7725122187555444,
+      "macro.f1": 0.6440375429106593,
+      "instance.f1": 0.8470339701311761
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.45,
+        "E1b": 0.55
+      },
+      "composite_score": 1.0106894558272166,
+      "legacy_mean_group_AttrAcc": 0.9289037037037038,
+      "macro.mA": 0.7731309888490678,
+      "macro.f1": 0.6448053063274217,
+      "instance.f1": 0.8467118849940909
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.5,
+        "E1b": 0.5
+      },
+      "composite_score": 1.0098630112846418,
+      "legacy_mean_group_AttrAcc": 0.9281185185185186,
+      "macro.mA": 0.7724736614380975,
+      "macro.f1": 0.644898617440483,
+      "instance.f1": 0.845248211167917
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.55,
+        "E1b": 0.44999999999999996
+      },
+      "composite_score": 1.0084285147244745,
+      "legacy_mean_group_AttrAcc": 0.9270574074074074,
+      "macro.mA": 0.7718981454447869,
+      "macro.f1": 0.6438628171722248,
+      "instance.f1": 0.8434050898447957
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.6000000000000001,
+        "E1b": 0.3999999999999999
+      },
+      "composite_score": 1.007555431523698,
+      "legacy_mean_group_AttrAcc": 0.9264555555555556,
+      "macro.mA": 0.7717665783337073,
+      "macro.f1": 0.6429536535728375,
+      "instance.f1": 0.8423745797992856
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.65,
+        "E1b": 0.35
+      },
+      "composite_score": 1.0064467881394121,
+      "legacy_mean_group_AttrAcc": 0.9259166666666666,
+      "macro.mA": 0.7715141362439166,
+      "macro.f1": 0.6414403940916092,
+      "instance.f1": 0.8414299258421317
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.7000000000000001,
+        "E1b": 0.29999999999999993
+      },
+      "composite_score": 1.0058214047888443,
+      "legacy_mean_group_AttrAcc": 0.9254574074074073,
+      "macro.mA": 0.7713420011175184,
+      "macro.f1": 0.64083127660696,
+      "instance.f1": 0.8407463027985086
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.75,
+        "E1b": 0.25
+      },
+      "composite_score": 1.0048691790916169,
+      "legacy_mean_group_AttrAcc": 0.9250129629629629,
+      "macro.mA": 0.7710424287823566,
+      "macro.f1": 0.6396820495615445,
+      "instance.f1": 0.8398089396061456
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.8,
+        "E1b": 0.19999999999999996
+      },
+      "composite_score": 1.0042124531704877,
+      "legacy_mean_group_AttrAcc": 0.9246777777777778,
+      "macro.mA": 0.7709444635222857,
+      "macro.f1": 0.6387627274206374,
+      "instance.f1": 0.8392380418927478
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.8500000000000001,
+        "E1b": 0.1499999999999999
+      },
+      "composite_score": 1.0023196463834696,
+      "legacy_mean_group_AttrAcc": 0.9243518518518518,
+      "macro.mA": 0.769929783422369,
+      "macro.f1": 0.6355034594208484,
+      "instance.f1": 0.8386168469765529
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.9,
+        "E1b": 0.09999999999999998
+      },
+      "composite_score": 1.0016495202509774,
+      "legacy_mean_group_AttrAcc": 0.9241814814814815,
+      "macro.mA": 0.7697693881628986,
+      "macro.f1": 0.6344103037980757,
+      "instance.f1": 0.8381498833845893
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 0.9500000000000001,
+        "E1b": 0.04999999999999993
+      },
+      "composite_score": 1.0005805473515532,
+      "legacy_mean_group_AttrAcc": 0.923937037037037,
+      "macro.mA": 0.7693193246793126,
+      "macro.f1": 0.6326010006884688,
+      "instance.f1": 0.8376783629605689
+    },
+    {
+      "models": [
+        "E0",
+        "E1b"
+      ],
+      "weights": {
+        "E0": 1.0,
+        "E1b": 0.0
+      },
+      "composite_score": 1.0,
+      "legacy_mean_group_AttrAcc": 0.9235962962962962,
+      "macro.mA": 0.7691024354765718,
+      "macro.f1": 0.6320194796762636,
+      "instance.f1": 0.837049606161812
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.0,
+        "E2_center": 1.0
+      },
+      "composite_score": 1.0010558388818573,
+      "legacy_mean_group_AttrAcc": 0.923712962962963,
+      "macro.mA": 0.7701971816667968,
+      "macro.f1": 0.6364349991106439,
+      "instance.f1": 0.8334396323121324
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.05,
+        "E2_center": 0.95
+      },
+      "composite_score": 1.0028289723901986,
+      "legacy_mean_group_AttrAcc": 0.9245462962962964,
+      "macro.mA": 0.7709611966595978,
+      "macro.f1": 0.6384712368543054,
+      "instance.f1": 0.8350928746253746
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.1,
+        "E2_center": 0.9
+      },
+      "composite_score": 1.0042139462563762,
+      "legacy_mean_group_AttrAcc": 0.9249148148148149,
+      "macro.mA": 0.7715316344323941,
+      "macro.f1": 0.6404454509816654,
+      "instance.f1": 0.8361605636030636
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.15000000000000002,
+        "E2_center": 0.85
+      },
+      "composite_score": 1.0056482679533523,
+      "legacy_mean_group_AttrAcc": 0.9254666666666667,
+      "macro.mA": 0.7721276389054116,
+      "macro.f1": 0.6423065373975541,
+      "instance.f1": 0.8373493265068266
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.2,
+        "E2_center": 0.8
+      },
+      "composite_score": 1.0067700280131908,
+      "legacy_mean_group_AttrAcc": 0.9260777777777778,
+      "macro.mA": 0.7725008836795553,
+      "macro.f1": 0.6434526082444398,
+      "instance.f1": 0.8386272743922744
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.25,
+        "E2_center": 0.75
+      },
+      "composite_score": 1.0074292500346858,
+      "legacy_mean_group_AttrAcc": 0.9266870370370369,
+      "macro.mA": 0.772517604465927,
+      "macro.f1": 0.6436029145179496,
+      "instance.f1": 0.8400650482850482
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.30000000000000004,
+        "E2_center": 0.7
+      },
+      "composite_score": 1.0076558113878462,
+      "legacy_mean_group_AttrAcc": 0.9271018518518519,
+      "macro.mA": 0.7722931507909524,
+      "macro.f1": 0.6431190300002867,
+      "instance.f1": 0.8413328187825247
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.35000000000000003,
+        "E2_center": 0.6499999999999999
+      },
+      "composite_score": 1.0093764004381045,
+      "legacy_mean_group_AttrAcc": 0.9277944444444444,
+      "macro.mA": 0.7730421557177434,
+      "macro.f1": 0.6451984224577262,
+      "instance.f1": 0.842896866124072
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.4,
+        "E2_center": 0.6
+      },
+      "composite_score": 1.008487110480281,
+      "legacy_mean_group_AttrAcc": 0.9279833333333334,
+      "macro.mA": 0.7721427808673395,
+      "macro.f1": 0.6429453079234727,
+      "instance.f1": 0.8437110247432306
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.45,
+        "E2_center": 0.55
+      },
+      "composite_score": 1.0098560818076345,
+      "legacy_mean_group_AttrAcc": 0.9287666666666667,
+      "macro.mA": 0.7724019764298178,
+      "macro.f1": 0.6441760408051179,
+      "instance.f1": 0.845672599279805
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.5,
+        "E2_center": 0.5
+      },
+      "composite_score": 1.0093391545600674,
+      "legacy_mean_group_AttrAcc": 0.9291537037037038,
+      "macro.mA": 0.7714159812672396,
+      "macro.f1": 0.642441326356798,
+      "instance.f1": 0.8469616230338289
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.55,
+        "E2_center": 0.44999999999999996
+      },
+      "composite_score": 1.0080992081698739,
+      "legacy_mean_group_AttrAcc": 0.9278981481481482,
+      "macro.mA": 0.7709643185962345,
+      "macro.f1": 0.6416028542036158,
+      "instance.f1": 0.8455499805096864
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.6000000000000001,
+        "E2_center": 0.3999999999999999
+      },
+      "composite_score": 1.0084841850387678,
+      "legacy_mean_group_AttrAcc": 0.9273777777777779,
+      "macro.mA": 0.7714612807900267,
+      "macro.f1": 0.6432004655765289,
+      "instance.f1": 0.8446538169510228
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.65,
+        "E2_center": 0.35
+      },
+      "composite_score": 1.007718273225041,
+      "legacy_mean_group_AttrAcc": 0.9266555555555556,
+      "macro.mA": 0.7714940559347,
+      "macro.f1": 0.6427260604807701,
+      "instance.f1": 0.8433365714187772
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.7000000000000001,
+        "E2_center": 0.29999999999999993
+      },
+      "composite_score": 1.007251897482634,
+      "legacy_mean_group_AttrAcc": 0.9261351851851851,
+      "macro.mA": 0.7718067355487823,
+      "macro.f1": 0.6423562375596436,
+      "instance.f1": 0.8423961529483588
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.75,
+        "E2_center": 0.25
+      },
+      "composite_score": 1.0059127769008014,
+      "legacy_mean_group_AttrAcc": 0.9256555555555556,
+      "macro.mA": 0.7714491525705796,
+      "macro.f1": 0.6403087484820428,
+      "instance.f1": 0.8414480751927811
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.8,
+        "E2_center": 0.19999999999999996
+      },
+      "composite_score": 1.0052013047163215,
+      "legacy_mean_group_AttrAcc": 0.9251111111111112,
+      "macro.mA": 0.7711895489098368,
+      "macro.f1": 0.6399285957285042,
+      "instance.f1": 0.8403453665125724
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.8500000000000001,
+        "E2_center": 0.1499999999999999
+      },
+      "composite_score": 1.0044277037576284,
+      "legacy_mean_group_AttrAcc": 0.9247722222222223,
+      "macro.mA": 0.770895494882751,
+      "macro.f1": 0.6389068009155933,
+      "instance.f1": 0.8397356323578382
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.9,
+        "E2_center": 0.09999999999999998
+      },
+      "composite_score": 1.0030045153113756,
+      "legacy_mean_group_AttrAcc": 0.9245481481481481,
+      "macro.mA": 0.770205238572443,
+      "macro.f1": 0.6365672174804102,
+      "instance.f1": 0.8390233851605909
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 0.9500000000000001,
+        "E2_center": 0.04999999999999993
+      },
+      "composite_score": 1.0013915751909341,
+      "legacy_mean_group_AttrAcc": 0.9242055555555555,
+      "macro.mA": 0.7696694405799456,
+      "macro.f1": 0.633748020498891,
+      "instance.f1": 0.8382503226675286
+    },
+    {
+      "models": [
+        "E0",
+        "E2_center"
+      ],
+      "weights": {
+        "E0": 1.0,
+        "E2_center": 0.0
+      },
+      "composite_score": 1.0,
+      "legacy_mean_group_AttrAcc": 0.9235962962962962,
+      "macro.mA": 0.7691024354765718,
+      "macro.f1": 0.6320194796762636,
+      "instance.f1": 0.837049606161812
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.0,
+        "E3": 1.0
+      },
+      "composite_score": 0.995486578066646,
+      "legacy_mean_group_AttrAcc": 0.9224203703703705,
+      "macro.mA": 0.7655210178194365,
+      "macro.f1": 0.6275167718507555,
+      "instance.f1": 0.8328647378112084
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.05,
+        "E3": 0.95
+      },
+      "composite_score": 0.9961786355830126,
+      "legacy_mean_group_AttrAcc": 0.9226962962962963,
+      "macro.mA": 0.7657985400545688,
+      "macro.f1": 0.6284544912645085,
+      "instance.f1": 0.8333878534537358
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.1,
+        "E3": 0.9
+      },
+      "composite_score": 0.9974314222748026,
+      "legacy_mean_group_AttrAcc": 0.9232296296296296,
+      "macro.mA": 0.7663864213982428,
+      "macro.f1": 0.6299319805405834,
+      "instance.f1": 0.8345024630108453
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.15000000000000002,
+        "E3": 0.85
+      },
+      "composite_score": 0.9982446925832504,
+      "legacy_mean_group_AttrAcc": 0.9235222222222222,
+      "macro.mA": 0.7667047578435271,
+      "macro.f1": 0.6309221231356504,
+      "instance.f1": 0.83530246874041
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.2,
+        "E3": 0.8
+      },
+      "composite_score": 0.999188927046985,
+      "legacy_mean_group_AttrAcc": 0.9238962962962963,
+      "macro.mA": 0.7670468540816161,
+      "macro.f1": 0.632050710395924,
+      "instance.f1": 0.8362579066358478
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.25,
+        "E3": 0.75
+      },
+      "composite_score": 1.0002089725251047,
+      "legacy_mean_group_AttrAcc": 0.9242481481481482,
+      "macro.mA": 0.7676356741116707,
+      "macro.f1": 0.6333081644939796,
+      "instance.f1": 0.8370481219923865
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.30000000000000004,
+        "E3": 0.7
+      },
+      "composite_score": 1.0012707695207748,
+      "legacy_mean_group_AttrAcc": 0.924687037037037,
+      "macro.mA": 0.7680144927931155,
+      "macro.f1": 0.6346914907266589,
+      "instance.f1": 0.8379610970728618
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.35000000000000003,
+        "E3": 0.6499999999999999
+      },
+      "composite_score": 1.0033945335226349,
+      "legacy_mean_group_AttrAcc": 0.9253851851851853,
+      "macro.mA": 0.7689528602308345,
+      "macro.f1": 0.6376878041395089,
+      "instance.f1": 0.8394495527674939
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.4,
+        "E3": 0.6
+      },
+      "composite_score": 1.0043121218574047,
+      "legacy_mean_group_AttrAcc": 0.9260203703703704,
+      "macro.mA": 0.7690128812869156,
+      "macro.f1": 0.638558764599749,
+      "instance.f1": 0.8407273283252696
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.45,
+        "E3": 0.55
+      },
+      "composite_score": 1.0060831731608757,
+      "legacy_mean_group_AttrAcc": 0.926735185185185,
+      "macro.mA": 0.7695512913805889,
+      "macro.f1": 0.6407960171570701,
+      "instance.f1": 0.842460322830764
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.5,
+        "E3": 0.5
+      },
+      "composite_score": 1.008727784063937,
+      "legacy_mean_group_AttrAcc": 0.9283518518518519,
+      "macro.mA": 0.7705856079737523,
+      "macro.f1": 0.6429467285043258,
+      "instance.f1": 0.8458757231657231
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.55,
+        "E3": 0.44999999999999996
+      },
+      "composite_score": 1.0079133324187153,
+      "legacy_mean_group_AttrAcc": 0.9278574074074074,
+      "macro.mA": 0.7705569437380025,
+      "macro.f1": 0.6417148927577436,
+      "instance.f1": 0.8452595351217411
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.6000000000000001,
+        "E3": 0.3999999999999999
+      },
+      "composite_score": 1.009657451041492,
+      "legacy_mean_group_AttrAcc": 0.9274296296296297,
+      "macro.mA": 0.7724048440957064,
+      "macro.f1": 0.645231906423424,
+      "instance.f1": 0.8448177779899839
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.65,
+        "E3": 0.35
+      },
+      "composite_score": 1.0086068447632965,
+      "legacy_mean_group_AttrAcc": 0.9268648148148149,
+      "macro.mA": 0.7720689305735269,
+      "macro.f1": 0.6439340378448724,
+      "instance.f1": 0.8438965213544627
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.7000000000000001,
+        "E3": 0.29999999999999993
+      },
+      "composite_score": 1.0081184056456451,
+      "legacy_mean_group_AttrAcc": 0.9266740740740741,
+      "macro.mA": 0.7718225429192688,
+      "macro.f1": 0.6434780976827456,
+      "instance.f1": 0.8433060017760017
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.75,
+        "E3": 0.25
+      },
+      "composite_score": 1.0070069745874792,
+      "legacy_mean_group_AttrAcc": 0.926038888888889,
+      "macro.mA": 0.7716367672605524,
+      "macro.f1": 0.6419932388896685,
+      "instance.f1": 0.8423291167166168
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.8,
+        "E3": 0.19999999999999996
+      },
+      "composite_score": 1.0050554887295475,
+      "legacy_mean_group_AttrAcc": 0.9254,
+      "macro.mA": 0.7709313417473422,
+      "macro.f1": 0.6389586553129086,
+      "instance.f1": 0.8411609398934399
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.8500000000000001,
+        "E3": 0.1499999999999999
+      },
+      "composite_score": 1.004336870355472,
+      "legacy_mean_group_AttrAcc": 0.9249333333333334,
+      "macro.mA": 0.7708807047341022,
+      "macro.f1": 0.6382863680403366,
+      "instance.f1": 0.8401232911532912
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.9,
+        "E3": 0.09999999999999998
+      },
+      "composite_score": 1.0025395212241748,
+      "legacy_mean_group_AttrAcc": 0.9245166666666668,
+      "macro.mA": 0.769897697292238,
+      "macro.f1": 0.6356457130350635,
+      "instance.f1": 0.8390501803751804
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 0.9500000000000001,
+        "E3": 0.04999999999999993
+      },
+      "composite_score": 1.0013201436337733,
+      "legacy_mean_group_AttrAcc": 0.924101851851852,
+      "macro.mA": 0.7695567710805975,
+      "macro.f1": 0.6338121250975959,
+      "instance.f1": 0.8381428646353647
+    },
+    {
+      "models": [
+        "E0",
+        "E3"
+      ],
+      "weights": {
+        "E0": 1.0,
+        "E3": 0.0
+      },
+      "composite_score": 1.0,
+      "legacy_mean_group_AttrAcc": 0.9235962962962962,
+      "macro.mA": 0.7691024354765718,
+      "macro.f1": 0.6320194796762636,
+      "instance.f1": 0.837049606161812
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.0,
+        "E3b": 1.0
+      },
+      "composite_score": 0.9960519400210759,
+      "legacy_mean_group_AttrAcc": 0.9232425925925926,
+      "macro.mA": 0.7693653525120072,
+      "macro.f1": 0.6242905942425545,
+      "instance.f1": 0.8341013053613054
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.05,
+        "E3b": 0.95
+      },
+      "composite_score": 0.9965925363558086,
+      "legacy_mean_group_AttrAcc": 0.9237240740740741,
+      "macro.mA": 0.7693200746022354,
+      "macro.f1": 0.624721818967831,
+      "instance.f1": 0.8349531274281274
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.1,
+        "E3b": 0.9
+      },
+      "composite_score": 0.9980875542982519,
+      "legacy_mean_group_AttrAcc": 0.9245148148148148,
+      "macro.mA": 0.769853093576304,
+      "macro.f1": 0.6263271546020944,
+      "instance.f1": 0.8365358774558774
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.15000000000000002,
+        "E3b": 0.85
+      },
+      "composite_score": 0.998735463229875,
+      "legacy_mean_group_AttrAcc": 0.9249555555555555,
+      "macro.mA": 0.76970647259271,
+      "macro.f1": 0.6268746340736583,
+      "instance.f1": 0.8377402544677545
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.2,
+        "E3b": 0.8
+      },
+      "composite_score": 0.9999881244521864,
+      "legacy_mean_group_AttrAcc": 0.925637037037037,
+      "macro.mA": 0.7701858700051593,
+      "macro.f1": 0.628293550778628,
+      "instance.f1": 0.8389158200296435
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.25,
+        "E3b": 0.75
+      },
+      "composite_score": 1.0011859577737212,
+      "legacy_mean_group_AttrAcc": 0.9263851851851851,
+      "macro.mA": 0.7702994278897654,
+      "macro.f1": 0.6296141992860529,
+      "instance.f1": 0.8403756981906981
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.30000000000000004,
+        "E3b": 0.7
+      },
+      "composite_score": 1.0030725559301032,
+      "legacy_mean_group_AttrAcc": 0.9272314814814815,
+      "macro.mA": 0.7707890761738623,
+      "macro.f1": 0.6321273336490092,
+      "instance.f1": 0.8420640961815962
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.35000000000000003,
+        "E3b": 0.6499999999999999
+      },
+      "composite_score": 1.0048891282770627,
+      "legacy_mean_group_AttrAcc": 0.9278685185185185,
+      "macro.mA": 0.771690341722085,
+      "macro.f1": 0.6343551629405759,
+      "instance.f1": 0.8436375616050616
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.4,
+        "E3b": 0.6
+      },
+      "composite_score": 1.0078044127781793,
+      "legacy_mean_group_AttrAcc": 0.9290574074074074,
+      "macro.mA": 0.7730475481313538,
+      "macro.f1": 0.6380482050380331,
+      "instance.f1": 0.8459528371628372
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.45,
+        "E3b": 0.55
+      },
+      "composite_score": 1.0087126450049113,
+      "legacy_mean_group_AttrAcc": 0.9296537037037038,
+      "macro.mA": 0.7730207184648273,
+      "macro.f1": 0.6388692518036775,
+      "instance.f1": 0.8473951609501608
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.5,
+        "E3b": 0.5
+      },
+      "composite_score": 1.011291174249836,
+      "legacy_mean_group_AttrAcc": 0.9298907407407407,
+      "macro.mA": 0.7740939445456679,
+      "macro.f1": 0.6435616346339876,
+      "instance.f1": 0.8484311077811079
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.55,
+        "E3b": 0.44999999999999996
+      },
+      "composite_score": 1.009453948730101,
+      "legacy_mean_group_AttrAcc": 0.9286555555555557,
+      "macro.mA": 0.7728039797956008,
+      "macro.f1": 0.6421950197059256,
+      "instance.f1": 0.8466130322455323
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.6000000000000001,
+        "E3b": 0.3999999999999999
+      },
+      "composite_score": 1.0087472296175082,
+      "legacy_mean_group_AttrAcc": 0.9279777777777779,
+      "macro.mA": 0.7727631843467431,
+      "macro.f1": 0.6417123388172926,
+      "instance.f1": 0.8455447266622267
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.65,
+        "E3b": 0.35
+      },
+      "composite_score": 1.0083233677941132,
+      "legacy_mean_group_AttrAcc": 0.927212962962963,
+      "macro.mA": 0.772772597195389,
+      "macro.f1": 0.6423320250183331,
+      "instance.f1": 0.8439877403152403
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.7000000000000001,
+        "E3b": 0.29999999999999993
+      },
+      "composite_score": 1.0068518474230634,
+      "legacy_mean_group_AttrAcc": 0.9266888888888888,
+      "macro.mA": 0.7719428002242412,
+      "macro.f1": 0.6403639609103315,
+      "instance.f1": 0.8430453829503829
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.75,
+        "E3b": 0.25
+      },
+      "composite_score": 1.0053846102831112,
+      "legacy_mean_group_AttrAcc": 0.926138888888889,
+      "macro.mA": 0.7712311791725176,
+      "macro.f1": 0.6383341500567752,
+      "instance.f1": 0.8420940245865246
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.8,
+        "E3b": 0.19999999999999996
+      },
+      "composite_score": 1.0053973040590996,
+      "legacy_mean_group_AttrAcc": 0.9255537037037038,
+      "macro.mA": 0.7715128990903897,
+      "macro.f1": 0.6393389100178316,
+      "instance.f1": 0.8410295579420579
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.8500000000000001,
+        "E3b": 0.1499999999999999
+      },
+      "composite_score": 1.0042860153485513,
+      "legacy_mean_group_AttrAcc": 0.9250444444444444,
+      "macro.mA": 0.7710230380854595,
+      "macro.f1": 0.6380737498603322,
+      "instance.f1": 0.8399790037740038
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.9,
+        "E3b": 0.09999999999999998
+      },
+      "composite_score": 1.0028870761719426,
+      "legacy_mean_group_AttrAcc": 0.9246037037037037,
+      "macro.mA": 0.7702751552665978,
+      "macro.f1": 0.6361117096803147,
+      "instance.f1": 0.8391070091020092
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 0.9500000000000001,
+        "E3b": 0.04999999999999993
+      },
+      "composite_score": 1.0014019356022104,
+      "legacy_mean_group_AttrAcc": 0.9241166666666667,
+      "macro.mA": 0.7697898741577844,
+      "macro.f1": 0.6338312393017417,
+      "instance.f1": 0.8381242820414878
+    },
+    {
+      "models": [
+        "E0",
+        "E3b"
+      ],
+      "weights": {
+        "E0": 1.0,
+        "E3b": 0.0
+      },
+      "composite_score": 1.0,
+      "legacy_mean_group_AttrAcc": 0.9235962962962962,
+      "macro.mA": 0.7691024354765718,
+      "macro.f1": 0.6320194796762636,
+      "instance.f1": 0.837049606161812
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.0,
+        "E1b": 1.0
+      },
+      "composite_score": 0.9867729615280886,
+      "legacy_mean_group_AttrAcc": 0.9215703703703704,
+      "macro.mA": 0.7582958751756009,
+      "macro.f1": 0.6133454066158633,
+      "instance.f1": 0.83109224946622
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.05,
+        "E1b": 0.95
+      },
+      "composite_score": 0.9924130080352829,
+      "legacy_mean_group_AttrAcc": 0.9228185185185185,
+      "macro.mA": 0.7627522635230471,
+      "macro.f1": 0.6205669077892682,
+      "instance.f1": 0.8344307721363603
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.1,
+        "E1b": 0.9
+      },
+      "composite_score": 1.0017247515131438,
+      "legacy_mean_group_AttrAcc": 0.9240222222222223,
+      "macro.mA": 0.7696696464685095,
+      "macro.f1": 0.6351676693112934,
+      "instance.f1": 0.8376516032496915
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.15000000000000002,
+        "E1b": 0.85
+      },
+      "composite_score": 1.0072471400055223,
+      "legacy_mean_group_AttrAcc": 0.9247740740740742,
+      "macro.mA": 0.7748391540233539,
+      "macro.f1": 0.6426673062290599,
+      "instance.f1": 0.8399014890175184
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.2,
+        "E1b": 0.8
+      },
+      "composite_score": 1.0106062577407622,
+      "legacy_mean_group_AttrAcc": 0.9252222222222222,
+      "macro.mA": 0.7785663826519554,
+      "macro.f1": 0.6462553672294126,
+      "instance.f1": 0.8419337681762681
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.25,
+        "E1b": 0.75
+      },
+      "composite_score": 1.0139701629988815,
+      "legacy_mean_group_AttrAcc": 0.9250907407407407,
+      "macro.mA": 0.7826923904925157,
+      "macro.f1": 0.6511367969962311,
+      "instance.f1": 0.8423604381239674
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.30000000000000004,
+        "E1b": 0.7
+      },
+      "composite_score": 1.0150172559755875,
+      "legacy_mean_group_AttrAcc": 0.9249703703703704,
+      "macro.mA": 0.7864125249533007,
+      "macro.f1": 0.6508101240474963,
+      "instance.f1": 0.8423592576214636
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.35000000000000003,
+        "E1b": 0.6499999999999999
+      },
+      "composite_score": 1.01474158356894,
+      "legacy_mean_group_AttrAcc": 0.9243870370370372,
+      "macro.mA": 0.789123617988089,
+      "macro.f1": 0.6492123126027013,
+      "instance.f1": 0.8411304647476705
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.4,
+        "E1b": 0.6
+      },
+      "composite_score": 1.0142904239853314,
+      "legacy_mean_group_AttrAcc": 0.9230370370370369,
+      "macro.mA": 0.792133271711836,
+      "macro.f1": 0.6484254979500752,
+      "instance.f1": 0.8386099058784352
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.45,
+        "E1b": 0.55
+      },
+      "composite_score": 1.0122794931707666,
+      "legacy_mean_group_AttrAcc": 0.9217407407407406,
+      "macro.mA": 0.7940403929115157,
+      "macro.f1": 0.6449101824380914,
+      "instance.f1": 0.8356318285472697
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.5,
+        "E1b": 0.5
+      },
+      "composite_score": 1.007705352843185,
+      "legacy_mean_group_AttrAcc": 0.9196074074074073,
+      "macro.mA": 0.7920550695818259,
+      "macro.f1": 0.6394334653871085,
+      "instance.f1": 0.8316642348501171
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.55,
+        "E1b": 0.44999999999999996
+      },
+      "composite_score": 1.0016062563939911,
+      "legacy_mean_group_AttrAcc": 0.917112962962963,
+      "macro.mA": 0.7884422692351275,
+      "macro.f1": 0.6322837830833097,
+      "instance.f1": 0.8269049995755878
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.6000000000000001,
+        "E1b": 0.3999999999999999
+      },
+      "composite_score": 0.9973989764550305,
+      "legacy_mean_group_AttrAcc": 0.9154277777777777,
+      "macro.mA": 0.7866894609674696,
+      "macro.f1": 0.6267712404297117,
+      "instance.f1": 0.8235539641077876
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.65,
+        "E1b": 0.35
+      },
+      "composite_score": 0.9948779269933116,
+      "legacy_mean_group_AttrAcc": 0.9140222222222223,
+      "macro.mA": 0.7863698152073751,
+      "macro.f1": 0.6237746511550488,
+      "instance.f1": 0.820703418868713
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.7000000000000001,
+        "E1b": 0.29999999999999993
+      },
+      "composite_score": 0.9932798379721043,
+      "legacy_mean_group_AttrAcc": 0.9128537037037037,
+      "macro.mA": 0.7863604745614646,
+      "macro.f1": 0.6223393736024498,
+      "instance.f1": 0.8183227751007164
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.75,
+        "E1b": 0.25
+      },
+      "composite_score": 0.9918790662662537,
+      "legacy_mean_group_AttrAcc": 0.9119074074074073,
+      "macro.mA": 0.7866488871380782,
+      "macro.f1": 0.620655135335688,
+      "instance.f1": 0.8164070564402917
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.8,
+        "E1b": 0.19999999999999996
+      },
+      "composite_score": 0.9897680298842061,
+      "legacy_mean_group_AttrAcc": 0.9110111111111111,
+      "macro.mA": 0.7861767854343539,
+      "macro.f1": 0.617611618061911,
+      "instance.f1": 0.8146958543254131
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.8500000000000001,
+        "E1b": 0.1499999999999999
+      },
+      "composite_score": 0.987634488375032,
+      "legacy_mean_group_AttrAcc": 0.9099462962962962,
+      "macro.mA": 0.7853794222083488,
+      "macro.f1": 0.6152088896843462,
+      "instance.f1": 0.8125673611029494
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.9,
+        "E1b": 0.09999999999999998
+      },
+      "composite_score": 0.9864949876807709,
+      "legacy_mean_group_AttrAcc": 0.909312962962963,
+      "macro.mA": 0.785315813810995,
+      "macro.f1": 0.613845014619247,
+      "instance.f1": 0.8112016233276527
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 0.9500000000000001,
+        "E1b": 0.04999999999999993
+      },
+      "composite_score": 0.9849777619231688,
+      "legacy_mean_group_AttrAcc": 0.9085462962962964,
+      "macro.mA": 0.784852598640279,
+      "macro.f1": 0.6121045697342036,
+      "instance.f1": 0.80962566758405
+    },
+    {
+      "models": [
+        "E1a",
+        "E1b"
+      ],
+      "weights": {
+        "E1a": 1.0,
+        "E1b": 0.0
+      },
+      "composite_score": 0.9835887337571243,
+      "legacy_mean_group_AttrAcc": 0.9078037037037038,
+      "macro.mA": 0.7844747422240981,
+      "macro.f1": 0.6105244945713211,
+      "instance.f1": 0.8081518303428599
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.0,
+        "E2_center": 1.0
+      },
+      "composite_score": 1.0010558388818573,
+      "legacy_mean_group_AttrAcc": 0.923712962962963,
+      "macro.mA": 0.7701971816667968,
+      "macro.f1": 0.6364349991106439,
+      "instance.f1": 0.8334396323121324
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.05,
+        "E2_center": 0.95
+      },
+      "composite_score": 1.003528359961921,
+      "legacy_mean_group_AttrAcc": 0.924212962962963,
+      "macro.mA": 0.7721025653548766,
+      "macro.f1": 0.6398341988632151,
+      "instance.f1": 0.8346893434343434
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.1,
+        "E2_center": 0.9
+      },
+      "composite_score": 1.0047147060681518,
+      "legacy_mean_group_AttrAcc": 0.9244629629629628,
+      "macro.mA": 0.7730612979011114,
+      "macro.f1": 0.6412812356517936,
+      "instance.f1": 0.8354749969474969
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.15000000000000002,
+        "E2_center": 0.85
+      },
+      "composite_score": 1.0066505342620498,
+      "legacy_mean_group_AttrAcc": 0.9247388888888888,
+      "macro.mA": 0.7744520822400264,
+      "macro.f1": 0.6440466325597837,
+      "instance.f1": 0.8365303044178043
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.2,
+        "E2_center": 0.8
+      },
+      "composite_score": 1.008530045269398,
+      "legacy_mean_group_AttrAcc": 0.9251092592592592,
+      "macro.mA": 0.7759386478534342,
+      "macro.f1": 0.6464617910617562,
+      "instance.f1": 0.8376710705960706
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.25,
+        "E2_center": 0.75
+      },
+      "composite_score": 1.0103864290363245,
+      "legacy_mean_group_AttrAcc": 0.9256722222222221,
+      "macro.mA": 0.7774842351870979,
+      "macro.f1": 0.6485285099903317,
+      "instance.f1": 0.8389570956820956
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.30000000000000004,
+        "E2_center": 0.7
+      },
+      "composite_score": 1.012391947236983,
+      "legacy_mean_group_AttrAcc": 0.9259148148148149,
+      "macro.mA": 0.7793043295920404,
+      "macro.f1": 0.6512304399771647,
+      "instance.f1": 0.8398927668899727
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.35000000000000003,
+        "E2_center": 0.6499999999999999
+      },
+      "composite_score": 1.014576324143634,
+      "legacy_mean_group_AttrAcc": 0.9259907407407408,
+      "macro.mA": 0.7817198704415976,
+      "macro.f1": 0.6540640058850304,
+      "instance.f1": 0.8407559504710974
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.4,
+        "E2_center": 0.6
+      },
+      "composite_score": 1.015216921509365,
+      "legacy_mean_group_AttrAcc": 0.9260518518518519,
+      "macro.mA": 0.7829182718661861,
+      "macro.f1": 0.6540321085265618,
+      "instance.f1": 0.8415833824835296
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.45,
+        "E2_center": 0.55
+      },
+      "composite_score": 1.016380069689307,
+      "legacy_mean_group_AttrAcc": 0.9259851851851852,
+      "macro.mA": 0.7845174152129353,
+      "macro.f1": 0.6553311910853657,
+      "instance.f1": 0.8420773204899675
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.5,
+        "E2_center": 0.5
+      },
+      "composite_score": 1.0139723788554256,
+      "legacy_mean_group_AttrAcc": 0.9246092592592592,
+      "macro.mA": 0.7847818740383717,
+      "macro.f1": 0.6513173922766099,
+      "instance.f1": 0.8402909585022821
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.55,
+        "E2_center": 0.44999999999999996
+      },
+      "composite_score": 1.0100919324874584,
+      "legacy_mean_group_AttrAcc": 0.9216592592592592,
+      "macro.mA": 0.7868022563399099,
+      "macro.f1": 0.6454071063581696,
+      "instance.f1": 0.8356007564984035
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.6000000000000001,
+        "E2_center": 0.3999999999999999
+      },
+      "composite_score": 1.0054052134888578,
+      "legacy_mean_group_AttrAcc": 0.9195222222222222,
+      "macro.mA": 0.7866634188066961,
+      "macro.f1": 0.6382883735198651,
+      "instance.f1": 0.8314246616945146
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.65,
+        "E2_center": 0.35
+      },
+      "composite_score": 1.0002877324053387,
+      "legacy_mean_group_AttrAcc": 0.9172796296296296,
+      "macro.mA": 0.7856046367355007,
+      "macro.f1": 0.6308945115971011,
+      "instance.f1": 0.8272675545859369
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.7000000000000001,
+        "E2_center": 0.29999999999999993
+      },
+      "composite_score": 0.9967040482273575,
+      "legacy_mean_group_AttrAcc": 0.9155740740740741,
+      "macro.mA": 0.7851045297234117,
+      "macro.f1": 0.6262657027460191,
+      "instance.f1": 0.8234891092730798
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.75,
+        "E2_center": 0.25
+      },
+      "composite_score": 0.9944295466695605,
+      "legacy_mean_group_AttrAcc": 0.9139962962962963,
+      "macro.mA": 0.7854347039190076,
+      "macro.f1": 0.6235994488671383,
+      "instance.f1": 0.8204754125123241
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.8,
+        "E2_center": 0.19999999999999996
+      },
+      "composite_score": 0.9921329510928689,
+      "legacy_mean_group_AttrAcc": 0.9127740740740742,
+      "macro.mA": 0.7851333597361271,
+      "macro.f1": 0.6208503568551091,
+      "instance.f1": 0.8178625245506128
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.8500000000000001,
+        "E2_center": 0.1499999999999999
+      },
+      "composite_score": 0.990181815044691,
+      "legacy_mean_group_AttrAcc": 0.9114666666666665,
+      "macro.mA": 0.7855617206657447,
+      "macro.f1": 0.6183622426143963,
+      "instance.f1": 0.8153436945570769
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.9,
+        "E2_center": 0.09999999999999998
+      },
+      "composite_score": 0.9877449762984477,
+      "legacy_mean_group_AttrAcc": 0.9101981481481481,
+      "macro.mA": 0.7852152176190297,
+      "macro.f1": 0.6152668575179702,
+      "instance.f1": 0.8128109833630422
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 0.9500000000000001,
+        "E2_center": 0.04999999999999993
+      },
+      "composite_score": 0.9857594117067088,
+      "legacy_mean_group_AttrAcc": 0.9090296296296295,
+      "macro.mA": 0.7849862206817121,
+      "macro.f1": 0.613025805490347,
+      "instance.f1": 0.8104392281084929
+    },
+    {
+      "models": [
+        "E1a",
+        "E2_center"
+      ],
+      "weights": {
+        "E1a": 1.0,
+        "E2_center": 0.0
+      },
+      "composite_score": 0.9835887337571243,
+      "legacy_mean_group_AttrAcc": 0.9078037037037038,
+      "macro.mA": 0.7844747422240981,
+      "macro.f1": 0.6105244945713211,
+      "instance.f1": 0.8081518303428599
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.0,
+        "E3": 1.0
+      },
+      "composite_score": 0.995486578066646,
+      "legacy_mean_group_AttrAcc": 0.9224203703703705,
+      "macro.mA": 0.7655210178194365,
+      "macro.f1": 0.6275167718507555,
+      "instance.f1": 0.8328647378112084
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.05,
+        "E3": 0.95
+      },
+      "composite_score": 0.9963065367218666,
+      "legacy_mean_group_AttrAcc": 0.9226277777777779,
+      "macro.mA": 0.7661288132783236,
+      "macro.f1": 0.6286378610550909,
+      "instance.f1": 0.8332758823692648
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.1,
+        "E3": 0.9
+      },
+      "composite_score": 0.997253072590519,
+      "legacy_mean_group_AttrAcc": 0.9229388888888891,
+      "macro.mA": 0.7667331268190587,
+      "macro.f1": 0.6297988638089833,
+      "instance.f1": 0.8339677743661567
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.15000000000000002,
+        "E3": 0.85
+      },
+      "composite_score": 0.9981998407936683,
+      "legacy_mean_group_AttrAcc": 0.923125925925926,
+      "macro.mA": 0.7675253256009699,
+      "macro.f1": 0.630942125627221,
+      "instance.f1": 0.8345919038477863
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.2,
+        "E3": 0.8
+      },
+      "composite_score": 0.9988610321485145,
+      "legacy_mean_group_AttrAcc": 0.9232962962962963,
+      "macro.mA": 0.7680268495113108,
+      "macro.f1": 0.6317355702819026,
+      "instance.f1": 0.8350546246400657
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.25,
+        "E3": 0.75
+      },
+      "composite_score": 1.0002346399183906,
+      "legacy_mean_group_AttrAcc": 0.9236462962962962,
+      "macro.mA": 0.7690461047461081,
+      "macro.f1": 0.6335061435026859,
+      "instance.f1": 0.8358822751594809
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.30000000000000004,
+        "E3": 0.7
+      },
+      "composite_score": 1.0010007890769208,
+      "legacy_mean_group_AttrAcc": 0.9237685185185186,
+      "macro.mA": 0.769770382359767,
+      "macro.f1": 0.6343974320466396,
+      "instance.f1": 0.8363680338452395
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.35000000000000003,
+        "E3": 0.6499999999999999
+      },
+      "composite_score": 1.0023793027432482,
+      "legacy_mean_group_AttrAcc": 0.924061111111111,
+      "macro.mA": 0.77078318310367,
+      "macro.f1": 0.6362118006924347,
+      "instance.f1": 0.837213160107866
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.4,
+        "E3": 0.6
+      },
+      "composite_score": 1.0052921249291153,
+      "legacy_mean_group_AttrAcc": 0.9244944444444445,
+      "macro.mA": 0.7731915861972626,
+      "macro.f1": 0.6404449706327769,
+      "instance.f1": 0.8383455330127388
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.45,
+        "E3": 0.55
+      },
+      "composite_score": 1.0065015594782025,
+      "legacy_mean_group_AttrAcc": 0.9246129629629629,
+      "macro.mA": 0.7747666189535237,
+      "macro.f1": 0.6415123008667604,
+      "instance.f1": 0.8391597893283188
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.5,
+        "E3": 0.5
+      },
+      "composite_score": 1.0093553140013931,
+      "legacy_mean_group_AttrAcc": 0.9245129629629629,
+      "macro.mA": 0.7784044872100976,
+      "macro.f1": 0.6451106420648232,
+      "instance.f1": 0.8400804353163177
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.55,
+        "E3": 0.44999999999999996
+      },
+      "composite_score": 1.0069564623657785,
+      "legacy_mean_group_AttrAcc": 0.9213925925925925,
+      "macro.mA": 0.7830090272448746,
+      "macro.f1": 0.6405351170452998,
+      "instance.f1": 0.8359250904977377
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.6000000000000001,
+        "E3": 0.3999999999999999
+      },
+      "composite_score": 1.0026124774676783,
+      "legacy_mean_group_AttrAcc": 0.9192574074074074,
+      "macro.mA": 0.7836944598640987,
+      "macro.f1": 0.633488576534364,
+      "instance.f1": 0.8319021561118619
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.65,
+        "E3": 0.35
+      },
+      "composite_score": 0.9991807938938829,
+      "legacy_mean_group_AttrAcc": 0.9173407407407406,
+      "macro.mA": 0.7841244703630988,
+      "macro.f1": 0.6289221929919938,
+      "instance.f1": 0.8277290015703251
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.7000000000000001,
+        "E3": 0.29999999999999993
+      },
+      "composite_score": 0.9959750933998097,
+      "legacy_mean_group_AttrAcc": 0.9154907407407408,
+      "macro.mA": 0.7840148222590902,
+      "macro.f1": 0.6248475019290788,
+      "instance.f1": 0.8241881990884933
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.75,
+        "E3": 0.25
+      },
+      "composite_score": 0.9937218114458333,
+      "legacy_mean_group_AttrAcc": 0.9141481481481483,
+      "macro.mA": 0.7845515801638948,
+      "macro.f1": 0.6218647655594154,
+      "instance.f1": 0.8212267192448075
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.8,
+        "E3": 0.19999999999999996
+      },
+      "composite_score": 0.9920058310250414,
+      "legacy_mean_group_AttrAcc": 0.9129333333333334,
+      "macro.mA": 0.7848529798962586,
+      "macro.f1": 0.6199076982101887,
+      "instance.f1": 0.8188461775479422
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.8500000000000001,
+        "E3": 0.1499999999999999
+      },
+      "composite_score": 0.9905694035071508,
+      "legacy_mean_group_AttrAcc": 0.9115629629629629,
+      "macro.mA": 0.7856800906295257,
+      "macro.f1": 0.6188362964275167,
+      "instance.f1": 0.8157974782896842
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.9,
+        "E3": 0.09999999999999998
+      },
+      "composite_score": 0.9881092789632977,
+      "legacy_mean_group_AttrAcc": 0.9102722222222224,
+      "macro.mA": 0.7852664955063925,
+      "macro.f1": 0.6157323720018468,
+      "instance.f1": 0.813291270412594
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 0.9500000000000001,
+        "E3": 0.04999999999999993
+      },
+      "composite_score": 0.9858986503566987,
+      "legacy_mean_group_AttrAcc": 0.9090129629629629,
+      "macro.mA": 0.7850328156305497,
+      "macro.f1": 0.6132580614795182,
+      "instance.f1": 0.8105622192676605
+    },
+    {
+      "models": [
+        "E1a",
+        "E3"
+      ],
+      "weights": {
+        "E1a": 1.0,
+        "E3": 0.0
+      },
+      "composite_score": 0.9835887337571243,
+      "legacy_mean_group_AttrAcc": 0.9078037037037038,
+      "macro.mA": 0.7844747422240981,
+      "macro.f1": 0.6105244945713211,
+      "instance.f1": 0.8081518303428599
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.0,
+        "E3b": 1.0
+      },
+      "composite_score": 0.9960519400210759,
+      "legacy_mean_group_AttrAcc": 0.9232425925925926,
+      "macro.mA": 0.7693653525120072,
+      "macro.f1": 0.6242905942425545,
+      "instance.f1": 0.8341013053613054
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.05,
+        "E3b": 0.95
+      },
+      "composite_score": 0.996937729809177,
+      "legacy_mean_group_AttrAcc": 0.923575925925926,
+      "macro.mA": 0.7699937588490986,
+      "macro.f1": 0.6251839231178832,
+      "instance.f1": 0.8348979548229548
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.1,
+        "E3b": 0.9
+      },
+      "composite_score": 0.9982789759654482,
+      "legacy_mean_group_AttrAcc": 0.9240962962962962,
+      "macro.mA": 0.7708458293635706,
+      "macro.f1": 0.626625654146224,
+      "instance.f1": 0.8360803216228216
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.15000000000000002,
+        "E3b": 0.85
+      },
+      "composite_score": 0.9987345992544818,
+      "legacy_mean_group_AttrAcc": 0.9242648148148148,
+      "macro.mA": 0.771383422780603,
+      "macro.f1": 0.6267804590361888,
+      "instance.f1": 0.8366629995004994
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.2,
+        "E3b": 0.8
+      },
+      "composite_score": 1.0003920304192375,
+      "legacy_mean_group_AttrAcc": 0.9245777777777779,
+      "macro.mA": 0.7726571149198747,
+      "macro.f1": 0.629073006121152,
+      "instance.f1": 0.8375062934287932
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.25,
+        "E3b": 0.75
+      },
+      "composite_score": 1.0018959377834378,
+      "legacy_mean_group_AttrAcc": 0.9251185185185187,
+      "macro.mA": 0.7737856638536237,
+      "macro.f1": 0.6306588813898669,
+      "instance.f1": 0.8387230111718347
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.30000000000000004,
+        "E3b": 0.7
+      },
+      "composite_score": 1.0034900860393656,
+      "legacy_mean_group_AttrAcc": 0.9256407407407408,
+      "macro.mA": 0.7750238678868531,
+      "macro.f1": 0.6323732989871703,
+      "instance.f1": 0.8399690717778955
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.35000000000000003,
+        "E3b": 0.6499999999999999
+      },
+      "composite_score": 1.0048771236735683,
+      "legacy_mean_group_AttrAcc": 0.92615,
+      "macro.mA": 0.7764013383983959,
+      "macro.f1": 0.6334188026396428,
+      "instance.f1": 0.8412677758679229
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.4,
+        "E3b": 0.6
+      },
+      "composite_score": 1.0059345995164644,
+      "legacy_mean_group_AttrAcc": 0.9264703703703704,
+      "macro.mA": 0.7778754729172215,
+      "macro.f1": 0.6341709334061826,
+      "instance.f1": 0.841917571072718
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.45,
+        "E3b": 0.55
+      },
+      "composite_score": 1.006783181191699,
+      "legacy_mean_group_AttrAcc": 0.9265888888888889,
+      "macro.mA": 0.7794299207862294,
+      "macro.f1": 0.6345504219184304,
+      "instance.f1": 0.8424570046946517
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.5,
+        "E3b": 0.5
+      },
+      "composite_score": 1.0063581103014667,
+      "legacy_mean_group_AttrAcc": 0.9250777777777777,
+      "macro.mA": 0.780859276386434,
+      "macro.f1": 0.6347911192051865,
+      "instance.f1": 0.8405288794865264
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.55,
+        "E3b": 0.44999999999999996
+      },
+      "composite_score": 1.0041690471977849,
+      "legacy_mean_group_AttrAcc": 0.9213185185185186,
+      "macro.mA": 0.7832813533042663,
+      "macro.f1": 0.6340440780557969,
+      "instance.f1": 0.8349597822275762
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.6000000000000001,
+        "E3b": 0.3999999999999999
+      },
+      "composite_score": 1.0009674232606574,
+      "legacy_mean_group_AttrAcc": 0.9192018518518519,
+      "macro.mA": 0.7837516189148552,
+      "macro.f1": 0.6298809200216415,
+      "instance.f1": 0.8311603264872381
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.65,
+        "E3b": 0.35
+      },
+      "composite_score": 0.9976324844563883,
+      "legacy_mean_group_AttrAcc": 0.917024074074074,
+      "macro.mA": 0.7839397143880797,
+      "macro.f1": 0.6258517506645218,
+      "instance.f1": 0.8270995342565931
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.7000000000000001,
+        "E3b": 0.29999999999999993
+      },
+      "composite_score": 0.9955770596718393,
+      "legacy_mean_group_AttrAcc": 0.9154944444444444,
+      "macro.mA": 0.7844007992179534,
+      "macro.f1": 0.6237944239609031,
+      "instance.f1": 0.8238267715128011
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.75,
+        "E3b": 0.25
+      },
+      "composite_score": 0.9935533655634949,
+      "legacy_mean_group_AttrAcc": 0.9142648148148148,
+      "macro.mA": 0.7847577146392785,
+      "macro.f1": 0.6213313613437902,
+      "instance.f1": 0.821039092166004
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.8,
+        "E3b": 0.19999999999999996
+      },
+      "composite_score": 0.9910605009091231,
+      "legacy_mean_group_AttrAcc": 0.9127703703703703,
+      "macro.mA": 0.7842001753775226,
+      "macro.f1": 0.6186468896615587,
+      "instance.f1": 0.8182090151351916
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.8500000000000001,
+        "E3b": 0.1499999999999999
+      },
+      "composite_score": 0.9893794396786932,
+      "legacy_mean_group_AttrAcc": 0.9113092592592592,
+      "macro.mA": 0.7847186969492483,
+      "macro.f1": 0.6171537248835389,
+      "instance.f1": 0.8153179081539376
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.9,
+        "E3b": 0.09999999999999998
+      },
+      "composite_score": 0.9868764718750809,
+      "legacy_mean_group_AttrAcc": 0.9099888888888888,
+      "macro.mA": 0.7844032042960298,
+      "macro.f1": 0.6140342183065423,
+      "instance.f1": 0.8126089733305909
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 0.9500000000000001,
+        "E3b": 0.04999999999999993
+      },
+      "composite_score": 0.9854328705317749,
+      "legacy_mean_group_AttrAcc": 0.908912962962963,
+      "macro.mA": 0.7846965036249938,
+      "macro.f1": 0.6126961275734346,
+      "instance.f1": 0.8102035771581361
+    },
+    {
+      "models": [
+        "E1a",
+        "E3b"
+      ],
+      "weights": {
+        "E1a": 1.0,
+        "E3b": 0.0
+      },
+      "composite_score": 0.9835887337571243,
+      "legacy_mean_group_AttrAcc": 0.9078037037037038,
+      "macro.mA": 0.7844747422240981,
+      "macro.f1": 0.6105244945713211,
+      "instance.f1": 0.8081518303428599
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.0,
+        "E2_center": 1.0
+      },
+      "composite_score": 1.0010558388818573,
+      "legacy_mean_group_AttrAcc": 0.923712962962963,
+      "macro.mA": 0.7701971816667968,
+      "macro.f1": 0.6364349991106439,
+      "instance.f1": 0.8334396323121324
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.05,
+        "E2_center": 0.95
+      },
+      "composite_score": 1.0016379253347765,
+      "legacy_mean_group_AttrAcc": 0.9240425925925925,
+      "macro.mA": 0.7702778270095797,
+      "macro.f1": 0.637096921280281,
+      "instance.f1": 0.8341254090517325
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.1,
+        "E2_center": 0.9
+      },
+      "composite_score": 1.001921004765502,
+      "legacy_mean_group_AttrAcc": 0.9243148148148149,
+      "macro.mA": 0.77009047539067,
+      "macro.f1": 0.6374107107184375,
+      "instance.f1": 0.8346148210123211
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.15000000000000002,
+        "E2_center": 0.85
+      },
+      "composite_score": 1.0026221692695358,
+      "legacy_mean_group_AttrAcc": 0.9246407407407408,
+      "macro.mA": 0.7702326268090852,
+      "macro.f1": 0.6383642968596421,
+      "instance.f1": 0.8352494302919303
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.2,
+        "E2_center": 0.8
+      },
+      "composite_score": 1.0026677087646454,
+      "legacy_mean_group_AttrAcc": 0.9249462962962964,
+      "macro.mA": 0.7698584865488626,
+      "macro.f1": 0.6381147432767811,
+      "instance.f1": 0.8358626864801865
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.25,
+        "E2_center": 0.75
+      },
+      "composite_score": 1.0032047247722617,
+      "legacy_mean_group_AttrAcc": 0.9251518518518519,
+      "macro.mA": 0.7700034338715868,
+      "macro.f1": 0.6388318486105157,
+      "instance.f1": 0.8363669383394383
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.30000000000000004,
+        "E2_center": 0.7
+      },
+      "composite_score": 1.0042372441653695,
+      "legacy_mean_group_AttrAcc": 0.925637037037037,
+      "macro.mA": 0.7704677476161759,
+      "macro.f1": 0.6398971501775562,
+      "instance.f1": 0.8374680733155732
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.35000000000000003,
+        "E2_center": 0.6499999999999999
+      },
+      "composite_score": 1.0045700899912942,
+      "legacy_mean_group_AttrAcc": 0.9259333333333335,
+      "macro.mA": 0.7704031890571629,
+      "macro.f1": 0.6400610252193222,
+      "instance.f1": 0.838167200854701
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.4,
+        "E2_center": 0.6
+      },
+      "composite_score": 1.0054344543790412,
+      "legacy_mean_group_AttrAcc": 0.9263222222222223,
+      "macro.mA": 0.7707359387102398,
+      "macro.f1": 0.640987880548008,
+      "instance.f1": 0.8391191383616384
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.45,
+        "E2_center": 0.55
+      },
+      "composite_score": 1.0057824361262853,
+      "legacy_mean_group_AttrAcc": 0.9265777777777777,
+      "macro.mA": 0.7705769572270651,
+      "macro.f1": 0.6413449387541666,
+      "instance.f1": 0.839752779165279
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.5,
+        "E2_center": 0.5
+      },
+      "composite_score": 1.0053221888100101,
+      "legacy_mean_group_AttrAcc": 0.9272407407407408,
+      "macro.mA": 0.7695304935977612,
+      "macro.f1": 0.6395693316302856,
+      "instance.f1": 0.8411014776889777
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.55,
+        "E2_center": 0.44999999999999996
+      },
+      "composite_score": 1.0056044616000013,
+      "legacy_mean_group_AttrAcc": 0.9276462962962962,
+      "macro.mA": 0.7693279110081365,
+      "macro.f1": 0.6394882322230822,
+      "instance.f1": 0.8420069189144189
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.6000000000000001,
+        "E2_center": 0.3999999999999999
+      },
+      "composite_score": 1.0053676570956218,
+      "legacy_mean_group_AttrAcc": 0.9279407407407407,
+      "macro.mA": 0.7685759812697585,
+      "macro.f1": 0.6390619733685825,
+      "instance.f1": 0.8423300962925964
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.65,
+        "E2_center": 0.35
+      },
+      "composite_score": 1.0046217072058332,
+      "legacy_mean_group_AttrAcc": 0.9278018518518518,
+      "macro.mA": 0.7677875669261952,
+      "macro.f1": 0.6380310286791908,
+      "instance.f1": 0.8421818378843378
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.7000000000000001,
+        "E2_center": 0.29999999999999993
+      },
+      "composite_score": 1.0021799209172135,
+      "legacy_mean_group_AttrAcc": 0.9275962962962961,
+      "macro.mA": 0.7659715224598551,
+      "macro.f1": 0.6335167944093683,
+      "instance.f1": 0.8421477047952048
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.75,
+        "E2_center": 0.25
+      },
+      "composite_score": 1.0007039786676875,
+      "legacy_mean_group_AttrAcc": 0.927112962962963,
+      "macro.mA": 0.7648873621988037,
+      "macro.f1": 0.6314107228400425,
+      "instance.f1": 0.841613232045732
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.8,
+        "E2_center": 0.19999999999999996
+      },
+      "composite_score": 0.9993186375836878,
+      "legacy_mean_group_AttrAcc": 0.9263388888888888,
+      "macro.mA": 0.7639359765023321,
+      "macro.f1": 0.6301237978796028,
+      "instance.f1": 0.8404162201687201
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.8500000000000001,
+        "E2_center": 0.1499999999999999
+      },
+      "composite_score": 0.9986377009844789,
+      "legacy_mean_group_AttrAcc": 0.9254407407407407,
+      "macro.mA": 0.7638430067531965,
+      "macro.f1": 0.6303840696589377,
+      "instance.f1": 0.8387067735042734
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.9,
+        "E2_center": 0.09999999999999998
+      },
+      "composite_score": 0.993984080372561,
+      "legacy_mean_group_AttrAcc": 0.9243962962962963,
+      "macro.mA": 0.7612538656483271,
+      "macro.f1": 0.6231675710800568,
+      "instance.f1": 0.8364475484156366
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 0.9500000000000001,
+        "E2_center": 0.04999999999999993
+      },
+      "composite_score": 0.9907674119745019,
+      "legacy_mean_group_AttrAcc": 0.9231425925925927,
+      "macro.mA": 0.7600689299435619,
+      "macro.f1": 0.6187276852592516,
+      "instance.f1": 0.8339835542725248
+    },
+    {
+      "models": [
+        "E1b",
+        "E2_center"
+      ],
+      "weights": {
+        "E1b": 1.0,
+        "E2_center": 0.0
+      },
+      "composite_score": 0.9867729615280886,
+      "legacy_mean_group_AttrAcc": 0.9215703703703704,
+      "macro.mA": 0.7582958751756009,
+      "macro.f1": 0.6133454066158633,
+      "instance.f1": 0.83109224946622
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.0,
+        "E3": 1.0
+      },
+      "composite_score": 0.995486578066646,
+      "legacy_mean_group_AttrAcc": 0.9224203703703705,
+      "macro.mA": 0.7655210178194365,
+      "macro.f1": 0.6275167718507555,
+      "instance.f1": 0.8328647378112084
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.05,
+        "E3": 0.95
+      },
+      "composite_score": 0.995844261769651,
+      "legacy_mean_group_AttrAcc": 0.9225277777777777,
+      "macro.mA": 0.7656595301185537,
+      "macro.f1": 0.6280283005628651,
+      "instance.f1": 0.8331367707782414
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.1,
+        "E3": 0.9
+      },
+      "composite_score": 0.9963196098474026,
+      "legacy_mean_group_AttrAcc": 0.9227777777777777,
+      "macro.mA": 0.7658330261191243,
+      "macro.f1": 0.6285721037782148,
+      "instance.f1": 0.8335927177561003
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.15000000000000002,
+        "E3": 0.85
+      },
+      "composite_score": 0.9969778567276326,
+      "legacy_mean_group_AttrAcc": 0.9230907407407408,
+      "macro.mA": 0.7660781462341977,
+      "macro.f1": 0.6293777266903019,
+      "instance.f1": 0.8341792761976585
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.2,
+        "E3": 0.8
+      },
+      "composite_score": 0.9973422879039207,
+      "legacy_mean_group_AttrAcc": 0.9233666666666667,
+      "macro.mA": 0.7661394713076848,
+      "macro.f1": 0.6296944863897527,
+      "instance.f1": 0.8346631331740154
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.25,
+        "E3": 0.75
+      },
+      "composite_score": 0.9981742366196098,
+      "legacy_mean_group_AttrAcc": 0.9237944444444444,
+      "macro.mA": 0.7665748585858375,
+      "macro.f1": 0.6305025646170997,
+      "instance.f1": 0.8355168955227779
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.30000000000000004,
+        "E3": 0.7
+      },
+      "composite_score": 0.9991505745720954,
+      "legacy_mean_group_AttrAcc": 0.9242277777777778,
+      "macro.mA": 0.7669598809407048,
+      "macro.f1": 0.6316796625232263,
+      "instance.f1": 0.8364151497685322
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.35000000000000003,
+        "E3": 0.6499999999999999
+      },
+      "composite_score": 1.000096727705904,
+      "legacy_mean_group_AttrAcc": 0.9246055555555555,
+      "macro.mA": 0.7671820563286528,
+      "macro.f1": 0.6330931665928716,
+      "instance.f1": 0.8371268253152077
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.4,
+        "E3": 0.6
+      },
+      "composite_score": 1.001408574163957,
+      "legacy_mean_group_AttrAcc": 0.925162962962963,
+      "macro.mA": 0.7677771467841024,
+      "macro.f1": 0.6347153107986115,
+      "instance.f1": 0.8382179328188153
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.45,
+        "E3": 0.55
+      },
+      "composite_score": 1.0025108992257392,
+      "legacy_mean_group_AttrAcc": 0.9259314814814815,
+      "macro.mA": 0.7680481872334158,
+      "macro.f1": 0.6357394228326668,
+      "instance.f1": 0.8395609076217899
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.5,
+        "E3": 0.5
+      },
+      "composite_score": 1.0045124857086982,
+      "legacy_mean_group_AttrAcc": 0.9272740740740741,
+      "macro.mA": 0.7695857707126608,
+      "macro.f1": 0.6368540700492145,
+      "instance.f1": 0.8418961659745484
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.55,
+        "E3": 0.44999999999999996
+      },
+      "composite_score": 1.007687493154445,
+      "legacy_mean_group_AttrAcc": 0.9281444444444445,
+      "macro.mA": 0.7717706662592945,
+      "macro.f1": 0.6411585184581489,
+      "instance.f1": 0.8436591552075376
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.6000000000000001,
+        "E3": 0.3999999999999999
+      },
+      "composite_score": 1.008384313751188,
+      "legacy_mean_group_AttrAcc": 0.9286759259259258,
+      "macro.mA": 0.7715798730700582,
+      "macro.f1": 0.6417435851641671,
+      "instance.f1": 0.8449433543417368
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.65,
+        "E3": 0.35
+      },
+      "composite_score": 1.0086574092740763,
+      "legacy_mean_group_AttrAcc": 0.9290481481481483,
+      "macro.mA": 0.7713313003957047,
+      "macro.f1": 0.6417964846623577,
+      "instance.f1": 0.8457208623892447
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.7000000000000001,
+        "E3": 0.29999999999999993
+      },
+      "composite_score": 1.006171420024826,
+      "legacy_mean_group_AttrAcc": 0.9288925925925926,
+      "macro.mA": 0.7690569333222507,
+      "macro.f1": 0.6374719213221122,
+      "instance.f1": 0.8457410268489679
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.75,
+        "E3": 0.25
+      },
+      "composite_score": 1.0047143043376092,
+      "legacy_mean_group_AttrAcc": 0.9284462962962964,
+      "macro.mA": 0.7677195294037988,
+      "macro.f1": 0.6355531327735441,
+      "instance.f1": 0.8452636009415421
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.8,
+        "E3": 0.19999999999999996
+      },
+      "composite_score": 1.0042997402165035,
+      "legacy_mean_group_AttrAcc": 0.9277129629629629,
+      "macro.mA": 0.7673550568597445,
+      "macro.f1": 0.6363724058689227,
+      "instance.f1": 0.8438517965367967
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.8500000000000001,
+        "E3": 0.1499999999999999
+      },
+      "composite_score": 1.0012498499799225,
+      "legacy_mean_group_AttrAcc": 0.9265555555555556,
+      "macro.mA": 0.7652921013564067,
+      "macro.f1": 0.632938589627972,
+      "instance.f1": 0.841482082084582
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.9,
+        "E3": 0.09999999999999998
+      },
+      "composite_score": 0.9963471854223256,
+      "legacy_mean_group_AttrAcc": 0.9251537037037036,
+      "macro.mA": 0.7624795812191737,
+      "macro.f1": 0.6261619069744155,
+      "instance.f1": 0.838373543956044
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 0.9500000000000001,
+        "E3": 0.04999999999999993
+      },
+      "composite_score": 0.9912748993769187,
+      "legacy_mean_group_AttrAcc": 0.9234685185185185,
+      "macro.mA": 0.7603301847140354,
+      "macro.f1": 0.6187877706356417,
+      "instance.f1": 0.8350234251859252
+    },
+    {
+      "models": [
+        "E1b",
+        "E3"
+      ],
+      "weights": {
+        "E1b": 1.0,
+        "E3": 0.0
+      },
+      "composite_score": 0.9867729615280886,
+      "legacy_mean_group_AttrAcc": 0.9215703703703704,
+      "macro.mA": 0.7582958751756009,
+      "macro.f1": 0.6133454066158633,
+      "instance.f1": 0.83109224946622
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.0,
+        "E3b": 1.0
+      },
+      "composite_score": 0.9960519400210759,
+      "legacy_mean_group_AttrAcc": 0.9232425925925926,
+      "macro.mA": 0.7693653525120072,
+      "macro.f1": 0.6242905942425545,
+      "instance.f1": 0.8341013053613054
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.05,
+        "E3b": 0.95
+      },
+      "composite_score": 0.9962260434837898,
+      "legacy_mean_group_AttrAcc": 0.9235574074074074,
+      "macro.mA": 0.7692199129373016,
+      "macro.f1": 0.6241713589744544,
+      "instance.f1": 0.834715127927628
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.1,
+        "E3b": 0.9
+      },
+      "composite_score": 0.9964176488160992,
+      "legacy_mean_group_AttrAcc": 0.9238055555555555,
+      "macro.mA": 0.7689749095223701,
+      "macro.f1": 0.6243509258975013,
+      "instance.f1": 0.8351605946830947
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.15000000000000002,
+        "E3b": 0.85
+      },
+      "composite_score": 0.9966644193507975,
+      "legacy_mean_group_AttrAcc": 0.9241685185185184,
+      "macro.mA": 0.7688826996238544,
+      "macro.f1": 0.6242693725346266,
+      "instance.f1": 0.8358662462537463
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.2,
+        "E3b": 0.8
+      },
+      "composite_score": 0.9973373629084663,
+      "legacy_mean_group_AttrAcc": 0.9247592592592593,
+      "macro.mA": 0.7689012248847809,
+      "macro.f1": 0.6247666373588613,
+      "instance.f1": 0.8369052683427682
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.25,
+        "E3b": 0.75
+      },
+      "composite_score": 0.998258128394667,
+      "legacy_mean_group_AttrAcc": 0.925211111111111,
+      "macro.mA": 0.7690348476680501,
+      "macro.f1": 0.6260577663627658,
+      "instance.f1": 0.8377232581307582
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.30000000000000004,
+        "E3b": 0.7
+      },
+      "composite_score": 0.9991739079293916,
+      "legacy_mean_group_AttrAcc": 0.9259111111111111,
+      "macro.mA": 0.7691290555488371,
+      "macro.f1": 0.626854354171721,
+      "instance.f1": 0.8389975285988521
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.35000000000000003,
+        "E3b": 0.6499999999999999
+      },
+      "composite_score": 1.00009278925303,
+      "legacy_mean_group_AttrAcc": 0.9265425925925926,
+      "macro.mA": 0.769107146824826,
+      "macro.f1": 0.627862289220154,
+      "instance.f1": 0.8401907481407481
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.4,
+        "E3b": 0.6
+      },
+      "composite_score": 1.0017404728124215,
+      "legacy_mean_group_AttrAcc": 0.9272296296296297,
+      "macro.mA": 0.7696043178973736,
+      "macro.f1": 0.6302787454814371,
+      "instance.f1": 0.8413434018759018
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.45,
+        "E3b": 0.55
+      },
+      "composite_score": 1.002874640645476,
+      "legacy_mean_group_AttrAcc": 0.9278166666666667,
+      "macro.mA": 0.769859554204844,
+      "macro.f1": 0.631620338244086,
+      "instance.f1": 0.8425541955266955
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.5,
+        "E3b": 0.5
+      },
+      "composite_score": 1.0050797245746312,
+      "legacy_mean_group_AttrAcc": 0.9287888888888889,
+      "macro.mA": 0.7707889496352902,
+      "macro.f1": 0.6343188306093988,
+      "instance.f1": 0.8444707350982351
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.55,
+        "E3b": 0.44999999999999996
+      },
+      "composite_score": 1.0068611665996967,
+      "legacy_mean_group_AttrAcc": 0.9291925925925926,
+      "macro.mA": 0.7718010796735475,
+      "macro.f1": 0.63693415154052,
+      "instance.f1": 0.8455041910866912
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.6000000000000001,
+        "E3b": 0.3999999999999999
+      },
+      "composite_score": 1.0063437134025832,
+      "legacy_mean_group_AttrAcc": 0.9292537037037037,
+      "macro.mA": 0.7708785672393526,
+      "macro.f1": 0.6362710476396907,
+      "instance.f1": 0.8455985012210012
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.65,
+        "E3b": 0.35
+      },
+      "composite_score": 1.0037654626022126,
+      "legacy_mean_group_AttrAcc": 0.9290203703703703,
+      "macro.mA": 0.7686041977754672,
+      "macro.f1": 0.6320122045367993,
+      "instance.f1": 0.8452932076257075
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.7000000000000001,
+        "E3b": 0.29999999999999993
+      },
+      "composite_score": 1.0035417430136016,
+      "legacy_mean_group_AttrAcc": 0.9290981481481482,
+      "macro.mA": 0.7679022473398937,
+      "macro.f1": 0.6316565879391558,
+      "instance.f1": 0.845708605838606
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.75,
+        "E3b": 0.25
+      },
+      "composite_score": 1.0026917638713968,
+      "legacy_mean_group_AttrAcc": 0.928501851851852,
+      "macro.mA": 0.7669393943041393,
+      "macro.f1": 0.631340823978418,
+      "instance.f1": 0.8448692432567432
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.8,
+        "E3b": 0.19999999999999996
+      },
+      "composite_score": 1.0025441721417374,
+      "legacy_mean_group_AttrAcc": 0.9276148148148149,
+      "macro.mA": 0.7667495438763723,
+      "macro.f1": 0.6328679284213058,
+      "instance.f1": 0.8433631116106116
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.8500000000000001,
+        "E3b": 0.1499999999999999
+      },
+      "composite_score": 1.0006195074715036,
+      "legacy_mean_group_AttrAcc": 0.9266129629629631,
+      "macro.mA": 0.7653555666780416,
+      "macro.f1": 0.6312058754418832,
+      "instance.f1": 0.8415452849927849
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.9,
+        "E3b": 0.09999999999999998
+      },
+      "composite_score": 0.9951685248515867,
+      "legacy_mean_group_AttrAcc": 0.9249555555555554,
+      "macro.mA": 0.7623731480946462,
+      "macro.f1": 0.6236063504050627,
+      "instance.f1": 0.8381071622821622
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 0.9500000000000001,
+        "E3b": 0.04999999999999993
+      },
+      "composite_score": 0.9907999645601817,
+      "legacy_mean_group_AttrAcc": 0.9233166666666666,
+      "macro.mA": 0.7601170101714307,
+      "macro.f1": 0.6179795807289694,
+      "instance.f1": 0.8348732498057497
+    },
+    {
+      "models": [
+        "E1b",
+        "E3b"
+      ],
+      "weights": {
+        "E1b": 1.0,
+        "E3b": 0.0
+      },
+      "composite_score": 0.9867729615280886,
+      "legacy_mean_group_AttrAcc": 0.9215703703703704,
+      "macro.mA": 0.7582958751756009,
+      "macro.f1": 0.6133454066158633,
+      "instance.f1": 0.83109224946622
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.0,
+        "E3": 1.0
+      },
+      "composite_score": 0.995486578066646,
+      "legacy_mean_group_AttrAcc": 0.9224203703703705,
+      "macro.mA": 0.7655210178194365,
+      "macro.f1": 0.6275167718507555,
+      "instance.f1": 0.8328647378112084
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.05,
+        "E3": 0.95
+      },
+      "composite_score": 0.9961923579453029,
+      "legacy_mean_group_AttrAcc": 0.9226907407407408,
+      "macro.mA": 0.7658151628600235,
+      "macro.f1": 0.6284044422982169,
+      "instance.f1": 0.8334870273354098
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.1,
+        "E3": 0.9
+      },
+      "composite_score": 0.9970532863446975,
+      "legacy_mean_group_AttrAcc": 0.9230962962962964,
+      "macro.mA": 0.7660711631208478,
+      "macro.f1": 0.6295425853750765,
+      "instance.f1": 0.8342160549744374
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.15000000000000002,
+        "E3": 0.85
+      },
+      "composite_score": 0.9978027374363175,
+      "legacy_mean_group_AttrAcc": 0.9234611111111111,
+      "macro.mA": 0.7663561598482947,
+      "macro.f1": 0.6303804476316147,
+      "instance.f1": 0.8349748927053341
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.2,
+        "E3": 0.8
+      },
+      "composite_score": 0.9984658957815216,
+      "legacy_mean_group_AttrAcc": 0.9237870370370369,
+      "macro.mA": 0.7664739712330193,
+      "macro.f1": 0.6312148295284495,
+      "instance.f1": 0.8356666148720561
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.25,
+        "E3": 0.75
+      },
+      "composite_score": 0.9992889451395137,
+      "legacy_mean_group_AttrAcc": 0.9242888888888889,
+      "macro.mA": 0.7665413711066823,
+      "macro.f1": 0.6321660611388364,
+      "instance.f1": 0.8366343521511168
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.30000000000000004,
+        "E3": 0.7
+      },
+      "composite_score": 1.0006776550008427,
+      "legacy_mean_group_AttrAcc": 0.9249037037037038,
+      "macro.mA": 0.7669915646730081,
+      "macro.f1": 0.6340411196112906,
+      "instance.f1": 0.8377535227027875
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.35000000000000003,
+        "E3": 0.6499999999999999
+      },
+      "composite_score": 1.001770794886459,
+      "legacy_mean_group_AttrAcc": 0.9254796296296297,
+      "macro.mA": 0.7672362537252534,
+      "macro.f1": 0.6354837633752051,
+      "instance.f1": 0.8387146632126045
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.4,
+        "E3": 0.6
+      },
+      "composite_score": 1.0033464607917504,
+      "legacy_mean_group_AttrAcc": 0.9260351851851851,
+      "macro.mA": 0.7679180821692004,
+      "macro.f1": 0.6377017931137414,
+      "instance.f1": 0.8398071743126154
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.45,
+        "E3": 0.55
+      },
+      "composite_score": 1.0053136113572634,
+      "legacy_mean_group_AttrAcc": 0.926762962962963,
+      "macro.mA": 0.7686622394283299,
+      "macro.f1": 0.6404572615384047,
+      "instance.f1": 0.8412747481276892
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.5,
+        "E3": 0.5
+      },
+      "composite_score": 1.009586724214231,
+      "legacy_mean_group_AttrAcc": 0.9281351851851851,
+      "macro.mA": 0.7710179719272209,
+      "macro.f1": 0.6464274060410296,
+      "instance.f1": 0.8438676013855425
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.55,
+        "E3": 0.44999999999999996
+      },
+      "composite_score": 1.0124683934004945,
+      "legacy_mean_group_AttrAcc": 0.9286500000000001,
+      "macro.mA": 0.7737228440157952,
+      "macro.f1": 0.6506641677169047,
+      "instance.f1": 0.844494403929404
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.6000000000000001,
+        "E3": 0.3999999999999999
+      },
+      "composite_score": 1.0109282017744903,
+      "legacy_mean_group_AttrAcc": 0.9281814814814814,
+      "macro.mA": 0.7731895762001533,
+      "macro.f1": 0.6484117510056715,
+      "instance.f1": 0.8433256435231434
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.65,
+        "E3": 0.35
+      },
+      "composite_score": 1.0104341445780691,
+      "legacy_mean_group_AttrAcc": 0.9278037037037037,
+      "macro.mA": 0.7734817619249674,
+      "macro.f1": 0.647853646326819,
+      "instance.f1": 0.8424349769674769
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.7000000000000001,
+        "E3": 0.29999999999999993
+      },
+      "composite_score": 1.010263880462985,
+      "legacy_mean_group_AttrAcc": 0.9274629629629629,
+      "macro.mA": 0.7738561711168024,
+      "macro.f1": 0.6480274411622517,
+      "instance.f1": 0.8415360486735488
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.75,
+        "E3": 0.25
+      },
+      "composite_score": 1.0082597657395331,
+      "legacy_mean_group_AttrAcc": 0.926862962962963,
+      "macro.mA": 0.7728409181475714,
+      "macro.f1": 0.6452028707182811,
+      "instance.f1": 0.8402154723054722
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.8,
+        "E3": 0.19999999999999996
+      },
+      "composite_score": 1.0071918723381454,
+      "legacy_mean_group_AttrAcc": 0.9263185185185184,
+      "macro.mA": 0.7725924752231749,
+      "macro.f1": 0.6441092178704592,
+      "instance.f1": 0.8388522108447108
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.8500000000000001,
+        "E3": 0.1499999999999999
+      },
+      "composite_score": 1.005764969385348,
+      "legacy_mean_group_AttrAcc": 0.9256555555555556,
+      "macro.mA": 0.7720626281842216,
+      "macro.f1": 0.6423936596154436,
+      "instance.f1": 0.8375242463092464
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.9,
+        "E3": 0.09999999999999998
+      },
+      "composite_score": 1.004615937782257,
+      "legacy_mean_group_AttrAcc": 0.9249962962962965,
+      "macro.mA": 0.7717551424599551,
+      "macro.f1": 0.6411696848360661,
+      "instance.f1": 0.8362302319902319
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 0.9500000000000001,
+        "E3": 0.04999999999999993
+      },
+      "composite_score": 1.0031624820641238,
+      "legacy_mean_group_AttrAcc": 0.9246222222222222,
+      "macro.mA": 0.7711094010336884,
+      "macro.f1": 0.6390564406609767,
+      "instance.f1": 0.8352043756406993
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3"
+      ],
+      "weights": {
+        "E2_center": 1.0,
+        "E3": 0.0
+      },
+      "composite_score": 1.0010558388818573,
+      "legacy_mean_group_AttrAcc": 0.923712962962963,
+      "macro.mA": 0.7701971816667968,
+      "macro.f1": 0.6364349991106439,
+      "instance.f1": 0.8334396323121324
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.0,
+        "E3b": 1.0
+      },
+      "composite_score": 0.9960519400210759,
+      "legacy_mean_group_AttrAcc": 0.9232425925925926,
+      "macro.mA": 0.7693653525120072,
+      "macro.f1": 0.6242905942425545,
+      "instance.f1": 0.8341013053613054
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.05,
+        "E3b": 0.95
+      },
+      "composite_score": 0.9967072072523618,
+      "legacy_mean_group_AttrAcc": 0.9236129629629628,
+      "macro.mA": 0.7693300570655723,
+      "macro.f1": 0.625194780423901,
+      "instance.f1": 0.8348005108780109
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.1,
+        "E3b": 0.9
+      },
+      "composite_score": 0.998016754103495,
+      "legacy_mean_group_AttrAcc": 0.924325925925926,
+      "macro.mA": 0.7696784513089322,
+      "macro.f1": 0.6266532667906127,
+      "instance.f1": 0.8362281798756798
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.15000000000000002,
+        "E3b": 0.85
+      },
+      "composite_score": 0.9992837342122262,
+      "legacy_mean_group_AttrAcc": 0.9248388888888888,
+      "macro.mA": 0.7701466875557984,
+      "macro.f1": 0.628238872541464,
+      "instance.f1": 0.8373957986457986
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.2,
+        "E3b": 0.8
+      },
+      "composite_score": 1.00055478026743,
+      "legacy_mean_group_AttrAcc": 0.9253962962962962,
+      "macro.mA": 0.7702807723590177,
+      "macro.f1": 0.6302795018548326,
+      "instance.f1": 0.8382977883227882
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.25,
+        "E3b": 0.75
+      },
+      "composite_score": 1.0021760341693642,
+      "legacy_mean_group_AttrAcc": 0.9261629629629629,
+      "macro.mA": 0.77081418272564,
+      "macro.f1": 0.6323024553538443,
+      "instance.f1": 0.8397714985178222
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.30000000000000004,
+        "E3b": 0.7
+      },
+      "composite_score": 1.0030994711263475,
+      "legacy_mean_group_AttrAcc": 0.9267092592592593,
+      "macro.mA": 0.7708585991800596,
+      "macro.f1": 0.6333244020464306,
+      "instance.f1": 0.8409664321952558
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.35000000000000003,
+        "E3b": 0.6499999999999999
+      },
+      "composite_score": 1.0038988688552626,
+      "legacy_mean_group_AttrAcc": 0.927412962962963,
+      "macro.mA": 0.7707668912425993,
+      "macro.f1": 0.634050762603677,
+      "instance.f1": 0.8421430266955268
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.4,
+        "E3b": 0.6
+      },
+      "composite_score": 1.006302254414501,
+      "legacy_mean_group_AttrAcc": 0.9283722222222222,
+      "macro.mA": 0.771891222266765,
+      "macro.f1": 0.637236384678077,
+      "instance.f1": 0.8438779534354534
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.45,
+        "E3b": 0.55
+      },
+      "composite_score": 1.0070462705691707,
+      "legacy_mean_group_AttrAcc": 0.9290796296296295,
+      "macro.mA": 0.7718016974137585,
+      "macro.f1": 0.6380778531312246,
+      "instance.f1": 0.8447109373959374
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.5,
+        "E3b": 0.5
+      },
+      "composite_score": 1.008221886860921,
+      "legacy_mean_group_AttrAcc": 0.9298555555555557,
+      "macro.mA": 0.7718483636057539,
+      "macro.f1": 0.6395042039834586,
+      "instance.f1": 0.8460040623265624
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.55,
+        "E3b": 0.44999999999999996
+      },
+      "composite_score": 1.0077109512595515,
+      "legacy_mean_group_AttrAcc": 0.9289259259259259,
+      "macro.mA": 0.7719953821780791,
+      "macro.f1": 0.6400177470889611,
+      "instance.f1": 0.84429572011322
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.6000000000000001,
+        "E3b": 0.3999999999999999
+      },
+      "composite_score": 1.0091652658451218,
+      "legacy_mean_group_AttrAcc": 0.9283203703703704,
+      "macro.mA": 0.7732491206341192,
+      "macro.f1": 0.6440320056271023,
+      "instance.f1": 0.8430328607503609
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.65,
+        "E3b": 0.35
+      },
+      "composite_score": 1.0091231054373158,
+      "legacy_mean_group_AttrAcc": 0.9277685185185186,
+      "macro.mA": 0.7732534571456333,
+      "macro.f1": 0.6452974539539108,
+      "instance.f1": 0.8417111538461539
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.7000000000000001,
+        "E3b": 0.29999999999999993
+      },
+      "composite_score": 1.009272806465916,
+      "legacy_mean_group_AttrAcc": 0.9272685185185185,
+      "macro.mA": 0.7736627180983717,
+      "macro.f1": 0.6464484244262525,
+      "instance.f1": 0.8406957611832612
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.75,
+        "E3b": 0.25
+      },
+      "composite_score": 1.0077240106933754,
+      "legacy_mean_group_AttrAcc": 0.9266333333333334,
+      "macro.mA": 0.7729967750231312,
+      "macro.f1": 0.6444602467293887,
+      "instance.f1": 0.8394436785436785
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.8,
+        "E3b": 0.19999999999999996
+      },
+      "composite_score": 1.006194892683772,
+      "legacy_mean_group_AttrAcc": 0.9259666666666667,
+      "macro.mA": 0.7722932933689648,
+      "macro.f1": 0.6428158918449525,
+      "instance.f1": 0.8378715068265068
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.8500000000000001,
+        "E3b": 0.1499999999999999
+      },
+      "composite_score": 1.0056078424998778,
+      "legacy_mean_group_AttrAcc": 0.9256407407407408,
+      "macro.mA": 0.7721322770254155,
+      "macro.f1": 0.642200579846535,
+      "instance.f1": 0.8371914946164947
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.9,
+        "E3b": 0.09999999999999998
+      },
+      "composite_score": 1.0037150750083503,
+      "legacy_mean_group_AttrAcc": 0.9248481481481482,
+      "macro.mA": 0.771205933463611,
+      "macro.f1": 0.639926964312479,
+      "instance.f1": 0.8355918248418249
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 0.9500000000000001,
+        "E3b": 0.04999999999999993
+      },
+      "composite_score": 1.002526921951154,
+      "legacy_mean_group_AttrAcc": 0.9243814814814814,
+      "macro.mA": 0.770856737408254,
+      "macro.f1": 0.6382250038909162,
+      "instance.f1": 0.8346707203907204
+    },
+    {
+      "models": [
+        "E2_center",
+        "E3b"
+      ],
+      "weights": {
+        "E2_center": 1.0,
+        "E3b": 0.0
+      },
+      "composite_score": 1.0010558388818573,
+      "legacy_mean_group_AttrAcc": 0.923712962962963,
+      "macro.mA": 0.7701971816667968,
+      "macro.f1": 0.6364349991106439,
+      "instance.f1": 0.8334396323121324
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.0,
+        "E3b": 1.0
+      },
+      "composite_score": 0.9960519400210759,
+      "legacy_mean_group_AttrAcc": 0.9232425925925926,
+      "macro.mA": 0.7693653525120072,
+      "macro.f1": 0.6242905942425545,
+      "instance.f1": 0.8341013053613054
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.05,
+        "E3b": 0.95
+      },
+      "composite_score": 0.9970154110816087,
+      "legacy_mean_group_AttrAcc": 0.9236796296296296,
+      "macro.mA": 0.7694918732500913,
+      "macro.f1": 0.6256790518603347,
+      "instance.f1": 0.8349545354645356
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.1,
+        "E3b": 0.9
+      },
+      "composite_score": 0.9983081637093804,
+      "legacy_mean_group_AttrAcc": 0.9244055555555555,
+      "macro.mA": 0.769870851988535,
+      "macro.f1": 0.6269681750080639,
+      "instance.f1": 0.8365052447552447
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.15000000000000002,
+        "E3b": 0.85
+      },
+      "composite_score": 0.9996109811005857,
+      "legacy_mean_group_AttrAcc": 0.9250648148148147,
+      "macro.mA": 0.7701815965352942,
+      "macro.f1": 0.6284030628339392,
+      "instance.f1": 0.8380312834387834
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.2,
+        "E3b": 0.8
+      },
+      "composite_score": 1.0009522422019854,
+      "legacy_mean_group_AttrAcc": 0.9258074074074075,
+      "macro.mA": 0.7706340969549157,
+      "macro.f1": 0.6299150853084259,
+      "instance.f1": 0.8393540778665778
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.25,
+        "E3b": 0.75
+      },
+      "composite_score": 1.0024131325047356,
+      "legacy_mean_group_AttrAcc": 0.9264925925925925,
+      "macro.mA": 0.7709661019067854,
+      "macro.f1": 0.6316755683554736,
+      "instance.f1": 0.8409315209790209
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.30000000000000004,
+        "E3b": 0.7
+      },
+      "composite_score": 1.0039582000758687,
+      "legacy_mean_group_AttrAcc": 0.9272722222222222,
+      "macro.mA": 0.7712353241750365,
+      "macro.f1": 0.6335858662163374,
+      "instance.f1": 0.8425751257076257
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.35000000000000003,
+        "E3b": 0.6499999999999999
+      },
+      "composite_score": 1.0055008074273364,
+      "legacy_mean_group_AttrAcc": 0.9279111111111111,
+      "macro.mA": 0.7717752073364544,
+      "macro.f1": 0.6356206341254708,
+      "instance.f1": 0.8438786241536241
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.4,
+        "E3b": 0.6
+      },
+      "composite_score": 1.0074350954831355,
+      "legacy_mean_group_AttrAcc": 0.9287222222222223,
+      "macro.mA": 0.7724074936009272,
+      "macro.f1": 0.6382999162011257,
+      "instance.f1": 0.8453832992007992
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.45,
+        "E3b": 0.55
+      },
+      "composite_score": 1.0074123510451147,
+      "legacy_mean_group_AttrAcc": 0.9291462962962963,
+      "macro.mA": 0.7716605792538244,
+      "macro.f1": 0.6378721474901808,
+      "instance.f1": 0.8463022508047506
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.5,
+        "E3b": 0.5
+      },
+      "composite_score": 1.0095486567663958,
+      "legacy_mean_group_AttrAcc": 0.9289240740740742,
+      "macro.mA": 0.7722805738669554,
+      "macro.f1": 0.6430852927292486,
+      "instance.f1": 0.8460773418248418
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.55,
+        "E3b": 0.44999999999999996
+      },
+      "composite_score": 1.0060552563248364,
+      "legacy_mean_group_AttrAcc": 0.9270777777777778,
+      "macro.mA": 0.7699970965212801,
+      "macro.f1": 0.6402151833570748,
+      "instance.f1": 0.842340430957931
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.6000000000000001,
+        "E3b": 0.3999999999999999
+      },
+      "composite_score": 1.004284232331485,
+      "legacy_mean_group_AttrAcc": 0.9261611111111111,
+      "macro.mA": 0.7693966815174283,
+      "macro.f1": 0.6381387673638652,
+      "instance.f1": 0.8406449350649351
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.65,
+        "E3b": 0.35
+      },
+      "composite_score": 1.003619315149896,
+      "legacy_mean_group_AttrAcc": 0.9254703703703703,
+      "macro.mA": 0.7692476954021964,
+      "macro.f1": 0.6381713803810735,
+      "instance.f1": 0.8391636300790714
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.7000000000000001,
+        "E3b": 0.29999999999999993
+      },
+      "composite_score": 1.0023212120442189,
+      "legacy_mean_group_AttrAcc": 0.9247925925925927,
+      "macro.mA": 0.7689169182033522,
+      "macro.f1": 0.6364656005018637,
+      "instance.f1": 0.8380507321599969
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.75,
+        "E3b": 0.25
+      },
+      "composite_score": 1.000687304153034,
+      "legacy_mean_group_AttrAcc": 0.9242166666666667,
+      "macro.mA": 0.7681187050614414,
+      "macro.f1": 0.6342659803294767,
+      "instance.f1": 0.8368839619857267
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.8,
+        "E3b": 0.19999999999999996
+      },
+      "composite_score": 0.9992963410588955,
+      "legacy_mean_group_AttrAcc": 0.9237666666666667,
+      "macro.mA": 0.7673691173889142,
+      "macro.f1": 0.6324159142399413,
+      "instance.f1": 0.8359006208823856
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.8500000000000001,
+        "E3b": 0.1499999999999999
+      },
+      "composite_score": 0.9983815878675344,
+      "legacy_mean_group_AttrAcc": 0.9234888888888888,
+      "macro.mA": 0.7669052709540884,
+      "macro.f1": 0.6313127247822086,
+      "instance.f1": 0.8350554887759299
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.9,
+        "E3b": 0.09999999999999998
+      },
+      "composite_score": 0.9975276346111457,
+      "legacy_mean_group_AttrAcc": 0.923112962962963,
+      "macro.mA": 0.7665393875213005,
+      "macro.f1": 0.6303120953499902,
+      "instance.f1": 0.8342604293418999
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 0.9500000000000001,
+        "E3b": 0.04999999999999993
+      },
+      "composite_score": 0.9964812377918624,
+      "legacy_mean_group_AttrAcc": 0.9226759259259261,
+      "macro.mA": 0.7660703660299155,
+      "macro.f1": 0.6289554540200216,
+      "instance.f1": 0.8334601690466398
+    },
+    {
+      "models": [
+        "E3",
+        "E3b"
+      ],
+      "weights": {
+        "E3": 1.0,
+        "E3b": 0.0
+      },
+      "composite_score": 0.995486578066646,
+      "legacy_mean_group_AttrAcc": 0.9224203703703705,
+      "macro.mA": 0.7655210178194365,
+      "macro.f1": 0.6275167718507555,
+      "instance.f1": 0.8328647378112084
+    }
+  ]
+}
