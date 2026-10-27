@@ -12,8 +12,9 @@
 - [x] 补齐并核验 PA100K 数据（数据不进入仓库）
 - [x] 跑通 baseline，保存统一对照结果 E0
 - [x] 完成 E3 加权采样、分布图、错误案例和测试 Demo
-- [ ] 完成 E1 损失函数与 E2 注意力实验
-- [ ] 汇总结果、错误案例、Demo 和项目报告
+- [x] 完成 E1 损失函数与 E2 注意力实验
+- [x] 完成 E0/E1/E3 五模型统一复评
+- [ ] 完成跨支线组合优化、最终 Demo 和总报告
 
 > 数据完整性提醒：课程资源包中的训练、验证图片为零字节，不能用于训练。已另行核验一份原始 PA-100K：100,000 张图片均能解码，CSV 分别包含 80,000/10,000/10,000 条记录。使用时通过 `--data-root` 指向完整数据集目录；图片不进入 Git 仓库。
 
@@ -33,8 +34,11 @@
 │   └── README.md                 # PA100K 本地放置说明
 ├── experiments/
 │   ├── E0/                       # E0 配置、逐轮指标、汇总与诊断
+│   ├── E1/                       # pos_weight 与 Focal Loss
+│   ├── E2/                       # SE 注意力结构实验
 │   ├── E3/                       # 加权采样结果、图表、案例和 Demo
-│   └── E3b/                      # 温和采样强度消融实验
+│   ├── E3b/                      # 温和采样强度消融实验
+│   └── unified_eval/             # 同环境五模型总表与逐属性结果
 ├── docs/                         # 两份项目说明 PDF
 ├── requirements.txt
 └── README.md
@@ -42,7 +46,9 @@
 
 PA100K 图片、原始标签、完整训练目录和模型权重不进入普通 Git 历史；仅保留选定的小型实验记录。代码支持直接读取原始数据集的 `data/*.jpg` 与 `train.csv`、`val.csv`、`test.csv`，无须复制或重排图片；详见 `data/README.md`。
 
-E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。E2 尚未运行，需先根据 E0 诊断确定假设和评价重点。
+E0 已在服务器上完成：最佳第 10 轮，验证集九组平均 AttrAcc 为 92.36%，总耗时 19.93 分钟。配置、训练曲线和逐属性诊断见 [E0 实验记录](experiments/E0/README.md)；最佳模型 `best.pt` 可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载。
+
+A 负责的 `pos_weight` 与 Focal Loss 已完成，见 [E1 实验记录](experiments/E1/README.md)。B 负责的共享 SE 和五种后续结构对照已完成，代码、配置、结果、结构图及案例分析见 [E2 实验记录](experiments/E2/README.md)。
 
 E3 已完成：最佳第 13 轮，九组平均 AttrAcc 为 92.24%。相对官方 E0，它小幅提高了 `upper_splice`、`long_coat`、`boots`、`holding` 的 F1，但 `age_lt18`、`lower_stripe` 和总体实例 F1下降；完整采样诊断、逐属性对比、错误案例和测试 Demo 见 [E3 实验记录](experiments/E3/README.md)。权重上限从 10 降到 5 的 [E3b 消融实验](experiments/E3b/README.md) 将 AttrAcc 恢复到 92.32%，并改善 `age_lt18`、`upper_splice`、`long_coat`，但极端稀有属性收益减弱。
 
@@ -156,11 +162,11 @@ A 线已完成 E1a/E1b 各15轮训练、E0/E1a/E1b同环境复评和独立指标
 
 **B 的交付清单**
 
-- [ ] 可开关的 SE 模型及 checkpoint 加载支持。
-- [ ] baseline/SE 结构对比图。
-- [ ] E0/E2 指标、参数量和训练时间对比表。
-- [ ] 至少 2 张细粒度属性成功或失败案例图。
-- [ ] 报告中的“网络结构、SE 原理、计算成本与实验结果”章节。
+- [x] 可开关的 SE 模型及 checkpoint 加载支持。
+- [x] baseline/SE 结构对比图。
+- [x] E0/E2 指标、参数量和训练时间对比表。
+- [x] 至少 2 张细粒度属性成功或失败案例图（留在本地交付包；公开仓库只收录案例索引及分析，不上传数据集图片）。
+- [x] 报告中的“网络结构、SE 原理、计算成本与实验结果”章节。
 
 完成标准：关闭 SE 能复现 E0；开启 SE 的差异只有注意力模块，结构图、参数统计和实验配置能够互相对应。
 

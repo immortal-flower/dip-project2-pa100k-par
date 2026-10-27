@@ -1,0 +1,8 @@
+PASS E0: none / 12,365,146 parameters
+PASS E2_shared: se / 12,398,458 parameters
+PASS E2_group: se_group / 12,664,954 parameters
+PASS E2_center: se_group_center / 12,664,954 parameters
+PASS E3_residual: se_group_residual025 / 12,664,954 parameters
+PASS E4_adaptive: se_group_adaptive025 / 12,664,963 parameters
+PASS E5_attribute: se_attr_residual025 / 13,231,258 parameters
+ALL_CHECKPOINTS_REBUILT

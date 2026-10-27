@@ -1,0 +1,27 @@
+{
+  "args": {
+    "attributes": "./attributes.yaml",
+    "data_root": "./PA-100K",
+    "image_size": [
+      256,
+      128
+    ],
+    "epochs": 15,
+    "batch_size": 64,
+    "lr": 0.0003,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 1.0,
+    "workers": 4,
+    "hidden": 256,
+    "drop": 0.3,
+    "attention": "se_group_adaptive025",
+    "se_reduction": 16,
+    "pos_weight": false,
+    "out": "runs/E4_se_group_adaptive025",
+    "seed": 42
+  },
+  "data_format": "csv",
+  "parameters": 12664963,
+  "trainable_parameters": 12664963,
+  "selection_metric": "mean_group_AttrAcc"
+}

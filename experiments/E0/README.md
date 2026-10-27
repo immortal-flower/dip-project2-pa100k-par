@@ -15,4 +15,4 @@ E0 使用 ResNet18 + 9 个分组分类头，关闭 SE（`attention=none`），�
 
 注意：`summary.json` 的最佳模型选择指标是九组平均 **AttrAcc，不是 mA**。其中 age/orientation 的“逐属性 AttrAcc”是组准确率的重复值；这两个互斥组的逐类别指标应以诊断文件中的 one-vs-rest 计算为准。boots/holding 等稀有属性的高 AttrAcc 也不代表高召回率。
 
-模型文件 `best.pt`（47.3 MiB）已作为 [E0 baseline Release 附件](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 发布，不纳入普通 Git 历史。其 SHA-256 为 `991891f5b367a2a51cefaffd1d647e5e9861b225884ac78122f89d1da778c806`。`last.pt`、逐图预测文件、错误图片候选压缩包与 PA-100K 原始数据不提交到仓库。
+模型文件 [`best.pt`](best.pt)（47.3 MiB）通过 Git LFS 存储，也可从 [E0 baseline Release](https://github.com/immortal-flower/dip-project2-pa100k-par/releases/tag/e0-baseline) 下载，不纳入普通 Git 历史。其 SHA-256 为 `991891f5b367a2a51cefaffd1d647e5e9861b225884ac78122f89d1da778c806`。`last.pt`、逐图预测文件、错误图片候选压缩包与 PA-100K 原始数据不提交到仓库。

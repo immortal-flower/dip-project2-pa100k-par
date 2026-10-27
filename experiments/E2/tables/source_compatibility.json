@@ -1,0 +1,4 @@
+{
+  "current_model_matches_E4_E5_training_source_AST": true,
+  "note": "Static source match only; strict checkpoint loading requires PyTorch runtime."
+}

@@ -1,0 +1,7 @@
+﻿image,attribute,truth,e0_prob,e0_pred,se_prob,se_pred,model,status,card
+data/088643.jpg,short_sleeve,1,0.0041173,0,0.9868118,1,E2_shared,fixed,curated/E2_shared_fixed_short_sleeve_088643.png
+data/085455.jpg,backpack,1,0.9996188,1,0.0040455,0,E2_shared,new,curated/E2_shared_new_backpack_085455.png
+data/089550.jpg,glasses,1,0.0067984,0,0.9781834,1,E4_adaptive,fixed,curated/E4_adaptive_fixed_glasses_089550.png
+data/083741.jpg,long_sleeve,1,0.9998815,1,0.0004576,0,E4_adaptive,new,curated/E4_adaptive_new_long_sleeve_083741.png
+data/080317.jpg,short_sleeve,1,0.0041642,0,0.9968867,1,E5_attribute,fixed,curated/E5_attribute_fixed_short_sleeve_080317.png
+data/085129.jpg,short_sleeve,1,0.9996406,1,0.0006218,0,E5_attribute,new,curated/E5_attribute_new_short_sleeve_085129.png
