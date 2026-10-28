@@ -183,6 +183,163 @@ def blend(probabilities, weights):
     return sum(probabilities[name] * weight for name, weight in weights.items())
 
 
+def blend_groupwise(probabilities, group_weights, spec):
+    """Blend each attribute group with its own normalized model weights."""
+    first = next(iter(probabilities.values()))
+    output = np.zeros_like(first, dtype=np.float64)
+    for group in spec["groups"]:
+        name, indices = group["name"], group["indices"]
+        if name not in group_weights:
+            raise ValueError(f"Missing weights for group {name}")
+        weights = group_weights[name]
+        if set(weights) != set(probabilities):
+            raise ValueError(f"{name}: weights and probability models differ")
+        if not np.isclose(sum(weights.values()), 1.0):
+            raise ValueError(f"{name}: weights must sum to 1")
+        output[:, indices] = sum(probabilities[model][:, indices] * weight
+                                 for model, weight in weights.items())
+    return output
+
+
+def group_score(metrics, baseline_metrics, group_name):
+    """Equal relative gain in group accuracy, mA and F1."""
+    current = (metrics["legacy_group_AttrAcc"][group_name],
+               metrics["groups"][group_name]["mA"],
+               metrics["groups"][group_name]["f1"])
+    baseline = (baseline_metrics["legacy_group_AttrAcc"][group_name],
+                baseline_metrics["groups"][group_name]["mA"],
+                baseline_metrics["groups"][group_name]["f1"])
+    return float(np.mean([value / max(abs(reference), 1e-12)
+                          for value, reference in zip(current, baseline)]))
+
+
+def select_group_weights(probabilities, targets, baseline_probabilities, spec,
+                         first_model, second_model, center, step, penalty):
+    """Choose two-model weights independently per group on calibration data."""
+    baseline_metrics = calculate_metrics(baseline_probabilities, targets, spec)
+    grid = np.linspace(0.0, 1.0, round(1.0 / step) + 1)
+    selected = {}
+    for group in spec["groups"]:
+        best = None
+        for first_weight in grid:
+            weights = {first_model: float(first_weight),
+                       second_model: float(1.0 - first_weight)}
+            combined = blend(probabilities, weights)
+            metrics = calculate_metrics(combined, targets, spec)
+            raw_score = group_score(metrics, baseline_metrics, group["name"])
+            regularized = raw_score - penalty * (first_weight - center) ** 2
+            row = {"weights": weights, "raw_score": raw_score,
+                   "regularized_score": regularized}
+            if best is None or row["regularized_score"] > best["regularized_score"]:
+                best = row
+        selected[group["name"]] = best
+    return selected
+
+
+def optimize_groups(args):
+    """Five-fold validation-only group-weight optimization for E4b."""
+    if args.split.lower() != "val":
+        raise ValueError("Group-weight optimization is restricted to validation data")
+    spec = load_spec(args.attributes)
+    sources = parse_named_paths(args.prediction)
+    required = {args.baseline, args.first_model, args.second_model}
+    if not required.issubset(sources):
+        raise ValueError(f"Missing predictions for {sorted(required - set(sources))}")
+    loaded = {name: load_prediction(path) for name, path in sources.items()}
+    reference = assert_aligned(loaded)
+    probabilities = {name: item["probabilities"] for name, item in loaded.items()}
+    pair = {args.first_model: probabilities[args.first_model],
+            args.second_model: probabilities[args.second_model]}
+    sample_count = len(reference["targets"])
+    if args.folds < 2 or args.folds > sample_count:
+        raise ValueError("--folds must be between 2 and the number of samples")
+    rng = np.random.default_rng(args.seed)
+    folds = np.array_split(rng.permutation(sample_count), args.folds)
+    oof = np.zeros_like(probabilities[args.first_model], dtype=np.float64)
+    fold_records = []
+    all_indices = np.arange(sample_count)
+    for fold_index, holdout in enumerate(folds):
+        train = np.setdiff1d(all_indices, holdout, assume_unique=True)
+        chosen = select_group_weights(
+            {name: value[train] for name, value in pair.items()},
+            reference["targets"][train], probabilities[args.baseline][train], spec,
+            args.first_model, args.second_model, args.center, args.step, args.penalty)
+        fold_weights = {name: result["weights"] for name, result in chosen.items()}
+        oof[holdout] = blend_groupwise(
+            {name: value[holdout] for name, value in pair.items()}, fold_weights, spec)
+        for group_name, result in chosen.items():
+            fold_records.append({"fold": fold_index, "group": group_name,
+                                 **result["weights"],
+                                 "calibration_raw_score": result["raw_score"],
+                                 "calibration_regularized_score": result["regularized_score"]})
+
+    baseline_metrics = calculate_metrics(probabilities[args.baseline],
+                                         reference["targets"], spec)
+    global_weights = {args.first_model: args.center,
+                      args.second_model: 1.0 - args.center}
+    global_metrics = calculate_metrics(blend(pair, global_weights),
+                                       reference["targets"], spec)
+    oof_metrics = calculate_metrics(oof, reference["targets"], spec)
+    full_selection = select_group_weights(
+        pair, reference["targets"], probabilities[args.baseline], spec,
+        args.first_model, args.second_model, args.center, args.step, args.penalty)
+    final_group_weights = {name: result["weights"]
+                           for name, result in full_selection.items()}
+    stability = {}
+    for group in spec["groups"]:
+        values = [row[args.first_model] for row in fold_records
+                  if row["group"] == group["name"]]
+        stability[group["name"]] = {
+            f"{args.first_model}_mean": float(np.mean(values)),
+            f"{args.first_model}_std": float(np.std(values)),
+            f"{args.first_model}_min": float(np.min(values)),
+            f"{args.first_model}_max": float(np.max(values)),
+        }
+
+    output = Path(args.out_dir)
+    output.mkdir(parents=True, exist_ok=True)
+    config = {
+        "schema_version": 1,
+        "experiment": "E4b",
+        "status": "validation_candidate_not_tested",
+        "method": "groupwise_probability_soft_voting",
+        "selection_split": "val",
+        "test_split_used": False,
+        "models": [args.first_model, args.second_model],
+        "global_center_weights": global_weights,
+        "group_weights": final_group_weights,
+        "selection": {"folds": args.folds, "seed": args.seed, "step": args.step,
+                      "shrinkage_penalty": args.penalty,
+                      "group_objective": "equal relative group AttrAcc, mA and F1 vs E0"},
+        "prediction_sources": {name: {"path": str(path), "sha256": sha256(path)}
+                               for name, path in sources.items()},
+    }
+    save_json(output / "group_ensemble_config.json", config)
+    save_json(output / "group_cv_evaluation.json", {
+        "baseline": baseline_metrics,
+        "global_E4": global_metrics,
+        "groupwise_E4b_out_of_fold": oof_metrics,
+        "composite_scores": {
+            "global_E4_vs_E0": composite_score(global_metrics, baseline_metrics),
+            "groupwise_E4b_oof_vs_E0": composite_score(oof_metrics, baseline_metrics),
+        },
+        "fold_weight_stability": stability,
+        "full_validation_selection": full_selection,
+    })
+    with (output / "group_weight_folds.csv").open(
+            "w", newline="", encoding="utf-8-sig") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(fold_records[0]))
+        writer.writeheader()
+        writer.writerows(fold_records)
+    print(json.dumps({
+        "config": str(output / "group_ensemble_config.json"),
+        "global_E4_composite": composite_score(global_metrics, baseline_metrics),
+        "E4b_oof_composite": composite_score(oof_metrics, baseline_metrics),
+        "group_weights": final_group_weights,
+        "stability": stability,
+    }, indent=2, ensure_ascii=False))
+
+
 def save_json(path, value):
     Path(path).write_text(json.dumps(value, indent=2, ensure_ascii=False,
                                      allow_nan=False), encoding="utf-8")
@@ -336,6 +493,19 @@ def main():
     search.add_argument("--threshold", type=float, default=0.5)
     search.set_defaults(func=optimize)
 
+    group_search = sub.add_parser("optimize-groups", parents=[common])
+    group_search.add_argument("--split", default="val")
+    group_search.add_argument("--baseline", default="E0")
+    group_search.add_argument("--first-model", default="E1a")
+    group_search.add_argument("--second-model", default="E2_center")
+    group_search.add_argument("--center", type=float, default=0.45,
+                              help="Global first-model weight used as shrinkage center")
+    group_search.add_argument("--step", type=float, default=0.05)
+    group_search.add_argument("--penalty", type=float, default=0.02)
+    group_search.add_argument("--folds", type=int, default=5)
+    group_search.add_argument("--seed", type=int, default=2026)
+    group_search.set_defaults(func=optimize_groups)
+
     frozen = sub.add_parser("apply", parents=[common])
     frozen.add_argument("--config", required=True)
     frozen.add_argument("--split", default="test")
@@ -345,6 +515,10 @@ def main():
     args = parser.parse_args()
     if getattr(args, "step", 0.05) <= 0 or getattr(args, "step", 0.05) > 1:
         parser.error("--step must be in (0, 1]")
+    if hasattr(args, "center") and not 0 <= args.center <= 1:
+        parser.error("--center must be in [0, 1]")
+    if hasattr(args, "penalty") and args.penalty < 0:
+        parser.error("--penalty must be non-negative")
     args.func(args)
 
 

@@ -91,8 +91,10 @@ def main():
             for name, (model, _, _) in loaded.items():
                 current = group_probabilities(model(image), spec)
                 for group_name, probability in current.items():
+                    weights = (config["group_weights"][group_name]
+                               if "group_weights" in config else config["weights"])
                     blended[group_name] = (blended.get(group_name, 0)
-                                           + config["weights"][name] * probability)
+                                           + weights[name] * probability)
         result = {}
         for group in spec["groups"]:
             probability = blended[group["name"]][0].cpu()

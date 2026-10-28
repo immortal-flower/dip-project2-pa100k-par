@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "experiment": "E4b",
+  "status": "validation_candidate_not_tested",
+  "method": "groupwise_probability_soft_voting",
+  "selection_split": "val",
+  "test_split_used": false,
+  "models": [
+    "E1a",
+    "E2_center"
+  ],
+  "global_center_weights": {
+    "E1a": 0.45,
+    "E2_center": 0.55
+  },
+  "group_weights": {
+    "gender": {
+      "E1a": 0.25,
+      "E2_center": 0.75
+    },
+    "age": {
+      "E1a": 0.1,
+      "E2_center": 0.9
+    },
+    "orientation": {
+      "E1a": 0.45,
+      "E2_center": 0.55
+    },
+    "accessory": {
+      "E1a": 0.6000000000000001,
+      "E2_center": 0.3999999999999999
+    },
+    "upper": {
+      "E1a": 0.5,
+      "E2_center": 0.5
+    },
+    "lower": {
+      "E1a": 0.45,
+      "E2_center": 0.55
+    },
+    "bag": {
+      "E1a": 0.5,
+      "E2_center": 0.5
+    },
+    "boots": {
+      "E1a": 0.55,
+      "E2_center": 0.44999999999999996
+    },
+    "holding": {
+      "E1a": 0.8500000000000001,
+      "E2_center": 0.1499999999999999
+    }
+  },
+  "selection": {
+    "folds": 5,
+    "seed": 2026,
+    "step": 0.05,
+    "shrinkage_penalty": 0.02,
+    "group_objective": "equal relative group AttrAcc, mA and F1 vs E0"
+  },
+  "prediction_sources": {
+    "E0": {
+      "path": "runs\\metric-combination\\predictions\\E0_val.npz",
+      "sha256": "4bc5d530e1925b31d63ad15777c8162dd7f4c417118b27b9a820e8c6e740d8eb"
+    },
+    "E1a": {
+      "path": "runs\\metric-combination\\predictions\\E1a_val.npz",
+      "sha256": "6232c1be58b1e89d6b1ddc8fc676c812d5cd974a5a3219cd766b73e1de764d2a"
+    },
+    "E2_center": {
+      "path": "runs\\metric-combination\\predictions\\E2_center_val.npz",
+      "sha256": "ed9f7328421c17822a7613c3ff4ef50ae321fcee5bb881d4310d417bf82834a3"
+    }
+  }
+}

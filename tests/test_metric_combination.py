@@ -5,8 +5,8 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parents[1] / "starter_code"))
-from optimize_ensemble import (assert_aligned, blend, calculate_metrics,
-                               decode_probabilities)
+from optimize_ensemble import (assert_aligned, blend, blend_groupwise,
+                               calculate_metrics, decode_probabilities)
 
 
 SPEC = {
@@ -51,6 +51,15 @@ class MetricCombinationTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "sum to 1"):
             blend({"a": np.ones((1, 1)), "b": np.ones((1, 1))},
                   {"a": 0.6, "b": 0.6})
+
+    def test_groupwise_blend_uses_group_specific_weights(self):
+        first = np.array([[0.8, 0.2, 0.9]])
+        second = np.array([[0.1, 0.9, 0.3]])
+        output = blend_groupwise(
+            {"first": first, "second": second},
+            {"class": {"first": 1.0, "second": 0.0},
+             "flag": {"first": 0.0, "second": 1.0}}, SPEC)
+        np.testing.assert_allclose(output, [[0.8, 0.2, 0.3]])
 
 
 if __name__ == "__main__":
